@@ -1,0 +1,1730 @@
+{
+  "incident_id": "INC-002",
+  "schema_version": "1.0",
+  "is_anomaly": true,
+  "title": "Database connection pool exhaustion on db-primary",
+  "description": "Connection pool gradually exhausted over 8 minutes. Cascade effect causing 503 errors on API Gateway.",
+  "severity": "HIGH",
+  "error_code": "ERR_DB_001",
+  "event_type": "db_pool_exhausted",
+  "affected_service": "db-primary",
+  "affected_host": "db-primary.internal",
+  "affected_region": "us-east-1",
+  "detected_at": "2024-01-15T12:05:00.000Z",
+  "duration_minutes": 8,
+  "expected_root_cause": "Runaway query from analytics job holding connections open. Pool exhausted due to no connection timeout configured.",
+  "expected_remediation": [
+    "increase_pool_size",
+    "flush_connections",
+    "restart_service"
+  ],
+  "ground_truth_labels": {
+    "is_security_incident": false,
+    "is_automated_attack": false,
+    "requires_human_approval": false
+  },
+  "logs": [
+    {
+      "log_id": "cc5d89c7-e895-473c-a169-4e3c7a869189",
+      "timestamp": "2024-01-15T12:00:00.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 5% (5/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "cb492759-8417-4138-b0b4-f0281af57544",
+      "span_id": "6b6e1028c86c4ccc",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 5,
+        "idle_connections": 95,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 60
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "33405be5-6a57-4eda-889c-8439efbb48eb",
+      "timestamp": "2024-01-15T12:00:12.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 7% (7/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "157eb598-9035-4cc3-8c89-7afdc230b091",
+      "span_id": "d7e5aba2002a452f",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 7,
+        "idle_connections": 93,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 64
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "74659b28-d10a-4fe6-805e-e5551569e197",
+      "timestamp": "2024-01-15T12:00:24.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 9% (9/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "0016fd00-428f-41ee-ab98-f1832c114832",
+      "span_id": "a3a1c5892fe24abb",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 9,
+        "idle_connections": 91,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 68
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ebee38aa-8c23-4aec-a5fb-d0716c6aa95c",
+      "timestamp": "2024-01-15T12:00:36.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 11% (11/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "740fd799-3297-4910-a778-4f9bf61d40c2",
+      "span_id": "679184a803084493",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 11,
+        "idle_connections": 89,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 72
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d14032b5-2d58-48ec-bdfd-30be99939d29",
+      "timestamp": "2024-01-15T12:00:48.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 13% (13/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "feb3f6d2-3f4b-43c2-9c1c-4b6e94f8de90",
+      "span_id": "6dafafc3ff7049c2",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 13,
+        "idle_connections": 87,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 76
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "fae3cd83-d178-4711-aaee-3968096389fb",
+      "timestamp": "2024-01-15T12:01:00.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 15% (15/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "c2c61deb-fc8e-4d6d-8265-def78a19ac27",
+      "span_id": "16a75a3b308a4a5e",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 15,
+        "idle_connections": 85,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 80
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d3a80ce1-bdfc-4783-9cd2-ab80a3295e09",
+      "timestamp": "2024-01-15T12:01:12.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 17% (17/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "3e05f1a1-8899-47b4-83aa-9366a38183d5",
+      "span_id": "d3c935b520af4f20",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 17,
+        "idle_connections": 83,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 84
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5fce04a2-e34f-45e2-826e-55228c09603d",
+      "timestamp": "2024-01-15T12:01:24.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 19% (19/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "8faba2ff-4caa-4e88-b024-152930bea9f7",
+      "span_id": "f1f692bdb01e46b4",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 19,
+        "idle_connections": 81,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 88
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "12fd2039-88fb-4045-997d-73ad7da6c46b",
+      "timestamp": "2024-01-15T12:01:36.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 21% (21/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "7e7804a4-a002-4a04-823c-f0c9471fa314",
+      "span_id": "fad04216031443ea",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 21,
+        "idle_connections": 79,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 92
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "a86791b6-3443-4dc3-901e-d27569721825",
+      "timestamp": "2024-01-15T12:01:48.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 23% (23/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "7b14af0e-0c2c-46ad-b74c-ca9940cddff1",
+      "span_id": "4cdf7103925243a9",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 23,
+        "idle_connections": 77,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 96
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2238f691-7757-4355-99f8-676b9e585b9c",
+      "timestamp": "2024-01-15T12:02:00.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 25% (25/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "6c315f18-1661-40e1-a04b-4bbd4f7e4c97",
+      "span_id": "143672a4b5e446f5",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 25,
+        "idle_connections": 75,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 100
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "0e919f70-63ca-4fcd-bf0d-7b8970f6a146",
+      "timestamp": "2024-01-15T12:02:12.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 27% (27/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "efef68f6-9b68-4593-a44c-e65929091775",
+      "span_id": "df4e893f94bb4e48",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 27,
+        "idle_connections": 73,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 104
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4293fb5b-af9b-44f6-a234-3b9e5f9f2594",
+      "timestamp": "2024-01-15T12:02:24.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 29% (29/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "7ad25c98-ed64-42ed-a837-03147beffce6",
+      "span_id": "aa6a5173f21349a6",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 29,
+        "idle_connections": 71,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 108
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b2a4728e-c688-4189-8f38-e33b111646f1",
+      "timestamp": "2024-01-15T12:02:36.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 31% (31/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "4176cab4-baab-4f26-866f-92c196a127e8",
+      "span_id": "7c9e29e04bec4736",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 31,
+        "idle_connections": 69,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 112
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d1ff06d1-a9a6-42d5-9f92-edec7e316ab6",
+      "timestamp": "2024-01-15T12:02:48.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 33% (33/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "db97a4c6-267c-4d4f-920a-af82d2d9bca9",
+      "span_id": "9315a6465def4e3f",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 33,
+        "idle_connections": 67,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 116
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "cead3444-e3ab-4347-b9bb-0ada35cc7d05",
+      "timestamp": "2024-01-15T12:03:00.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 35% (35/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "1991f012-14cd-4ac8-8010-8cc793075c6c",
+      "span_id": "296bc6a5a2794609",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 35,
+        "idle_connections": 65,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 120
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3cfa6abd-4f17-42f3-a0a1-be7416d8def1",
+      "timestamp": "2024-01-15T12:03:12.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 37% (37/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "1aaf175b-e110-476e-b9aa-3200e46ad799",
+      "span_id": "382a241cb8ea4878",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 37,
+        "idle_connections": 63,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 124
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "67b8166e-55d7-467c-9fe9-70b4c11a6590",
+      "timestamp": "2024-01-15T12:03:24.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 39% (39/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "6f8aa4d0-8448-499b-82ab-f745da885e2e",
+      "span_id": "014c5fb6c8694dea",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 39,
+        "idle_connections": 61,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 128
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b5a706ae-f960-4c18-b231-f556428671bd",
+      "timestamp": "2024-01-15T12:03:36.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 41% (41/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "d1efae1a-0d04-4194-bc93-09eb51bc1d89",
+      "span_id": "758c7f32b8eb45a1",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 41,
+        "idle_connections": 59,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 132
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "bf4b357c-fdb5-438a-a376-1de731f9072d",
+      "timestamp": "2024-01-15T12:03:48.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 43% (43/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "8725faa9-5f42-46c4-9046-d4693434a74d",
+      "span_id": "d51800f6055549bf",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 43,
+        "idle_connections": 57,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 136
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5b242b72-0539-4f63-a21d-f22abc3e02a6",
+      "timestamp": "2024-01-15T12:04:00.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 45% (45/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "6d5e484a-14c6-414a-81c0-42f409d29066",
+      "span_id": "5634887d2b524ea8",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 45,
+        "idle_connections": 55,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 140
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "90688c50-d562-41df-af34-f4996147385d",
+      "timestamp": "2024-01-15T12:04:12.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 47% (47/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "31c9a1bd-6f2d-4871-a077-8390cc7aaf15",
+      "span_id": "b92562ac91844d29",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 47,
+        "idle_connections": 53,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 144
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "926fe3bb-646e-4ba6-97c8-7be0d88b852b",
+      "timestamp": "2024-01-15T12:04:24.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 49% (49/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "dbc87a59-94f7-4a1d-ab4e-634ebc7c36f0",
+      "span_id": "b838abdb11ec41a5",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 49,
+        "idle_connections": 51,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 148
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5b96e1c0-3cef-4393-b914-3b2b410e8da5",
+      "timestamp": "2024-01-15T12:04:36.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 51% (51/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "8d5c0b11-8530-4c23-98c7-4bcf5b2693b0",
+      "span_id": "4077b1bffa2940bb",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 51,
+        "idle_connections": 49,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 152
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "32e3b5a0-37dd-4a77-87a5-676828273b67",
+      "timestamp": "2024-01-15T12:04:48.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 53% (53/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "d0644152-ddf9-48e7-9b0c-a9c92d6de09d",
+      "span_id": "32b70d4de9c04f02",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 53,
+        "idle_connections": 47,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 156
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "37b0e845-bf8b-44a6-9759-6ec6ddddadb0",
+      "timestamp": "2024-01-15T12:05:00.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 55% (55/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "0bdef4d7-d3c4-4849-b9e4-f538722e3669",
+      "span_id": "f621fd5a54fd40c1",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 55,
+        "idle_connections": 45,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 160
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8e546135-d799-4361-a639-09bb5fa14473",
+      "timestamp": "2024-01-15T12:05:12.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 57% (57/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "83328a77-e417-422e-94e3-bfe5ac48f860",
+      "span_id": "04a617d8812445f2",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 57,
+        "idle_connections": 43,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 164
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6c553faf-1e17-4d7f-b60a-788b4484b63e",
+      "timestamp": "2024-01-15T12:05:24.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 59% (59/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "393e899f-5263-4b70-833c-37ffb0a02fa2",
+      "span_id": "b8ca9031f680472d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 59,
+        "idle_connections": 41,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 168
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d6c2422c-d656-44e9-9a0e-429c600a34cf",
+      "timestamp": "2024-01-15T12:05:36.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 61% (61/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "3403e3a7-8ed8-4b3f-abad-3141c1a44c53",
+      "span_id": "def6412f1f764055",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 61,
+        "idle_connections": 39,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 172
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "95665aa1-1e8a-4f6b-a4f5-753d045a3933",
+      "timestamp": "2024-01-15T12:05:48.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 63% (63/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "04b3a83d-8789-4d19-82c0-9f123cf84e7a",
+      "span_id": "1eeac8c231d24f2a",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 63,
+        "idle_connections": 37,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 176
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "cca85b03-6d24-4c54-838b-a512b83493cc",
+      "timestamp": "2024-01-15T12:06:00.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 65% (65/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "8e497176-94de-41d3-84e1-c87baa5c7cb1",
+      "span_id": "007abb4635794d6d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 65,
+        "idle_connections": 35,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 180
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5ed6f32f-91e6-47ca-8ecc-6ed622ffa5b5",
+      "timestamp": "2024-01-15T12:06:12.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 67% (67/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "e72402ac-9d91-43df-8fd8-d4ac91e04d74",
+      "span_id": "f1ac05e996c34bf1",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 67,
+        "idle_connections": 33,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 184
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6b3416b3-4007-4076-a389-ca387666ec38",
+      "timestamp": "2024-01-15T12:06:24.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 69% (69/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "04c1106b-60b8-4a0d-bbe4-971d493256dc",
+      "span_id": "3731983c567a4dfc",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 69,
+        "idle_connections": 31,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 188
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2f5e02f2-c9ae-4bfa-80fb-3ffe4b49671e",
+      "timestamp": "2024-01-15T12:06:36.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 71% (71/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "0ad36d43-120e-4ad3-a105-5af9da4a20c8",
+      "span_id": "cd574e7f105e4e6c",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 71,
+        "idle_connections": 29,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 192
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4ef693e2-0f49-4af8-8402-9cbe00b2cabf",
+      "timestamp": "2024-01-15T12:06:48.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 73% (73/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "a163138f-bde8-46d5-b02f-2d310523230b",
+      "span_id": "4afba4858fa64e88",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 73,
+        "idle_connections": 27,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 196
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "63fda722-16ad-44e8-81a8-008d41826e5d",
+      "timestamp": "2024-01-15T12:07:00.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 75% (75/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "1a1636b4-4242-4640-83db-2b2605e843cf",
+      "span_id": "4af27d2d3bee4978",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 75,
+        "idle_connections": 25,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 200
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "310aa738-9425-437f-b24b-89d46a9ccb0e",
+      "timestamp": "2024-01-15T12:07:12.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 77% (77/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "c1a615ad-7453-48ac-9972-7bf02f45930b",
+      "span_id": "f669ddb0318d487e",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 77,
+        "idle_connections": 23,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 204
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "fbc28cc3-c68e-4fec-8e05-a9cd02c040c2",
+      "timestamp": "2024-01-15T12:07:24.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "db_slow_query",
+      "message": "Connection pool usage at 79% (79/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "811f5586-cd2d-4861-a309-3091296fdcbb",
+      "span_id": "082f63b772964695",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 79,
+        "idle_connections": 21,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 208
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4510526e-05df-4c07-b1a0-4a7acf5fb349",
+      "timestamp": "2024-01-15T12:07:36.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "db_connection_error",
+      "message": "Connection pool usage at 81% (81/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "5a7cd9d3-fcdd-4550-a531-7997fc283296",
+      "span_id": "ec67f41a6f5246fb",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 81,
+        "idle_connections": 19,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 212
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "94cb51cc-732d-4ed0-b926-0913ba4abaec",
+        "rule_name": "db_connection_error_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "de0a6b54-6a27-4769-9392-fab88516fea1",
+      "timestamp": "2024-01-15T12:07:48.000Z",
+      "service": "db-primary",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "db_connection_error",
+      "message": "Connection pool usage at 83% (83/100 connections in use)",
+      "host": "db-primary.internal",
+      "region": "us-east-1",
+      "trace_id": "f23cb71f-1770-4377-9954-892e6b1b3762",
+      "span_id": "cbc8ed778c0b4f3f",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "pool_size": 100,
+        "active_connections": 83,
+        "idle_connections": 17,
+        "waiting_requests": 0,
+        "avg_query_time_ms": 216
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "552c77fb-1c32-456e-8ff0-29738680aeb0",
+        "rule_name": "db_connection_error_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5917101f-9cdb-4268-9e6f-d826df9e9cb1",
+      "timestamp": "2024-01-15T12:06:40.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "64cf7308-3c91-43e9-a176-02607a52a0f4",
+      "span_id": "f535c8ae6f074a06",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "d9ff3843-da85-4e69-8708-2892d7d88cb7",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7a73784f-0f6a-44fc-a353-3db02b849712",
+      "timestamp": "2024-01-15T12:06:45.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "cf333d3b-a2aa-452d-b3ba-6c96044924be",
+      "span_id": "6ccb9934ed3044af",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "d926e984-39eb-4f5f-abd0-a7e8534057a7",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "71639365-d0eb-424d-8b10-486d83f1d841",
+      "timestamp": "2024-01-15T12:06:50.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "6427fb4a-3ae9-4528-92be-64c146cbbdd1",
+      "span_id": "f2b7ef73c22a4775",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "2c7cc53f-9bed-4e43-ac12-9bda2b932089",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d4147b5b-7cd2-4289-88d5-51f0da1e7322",
+      "timestamp": "2024-01-15T12:06:55.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "104e3e20-b8cb-400a-90e9-ef2bba859a23",
+      "span_id": "b7dd55eda5d742fd",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "c6104fa5-3cac-4493-a8ab-05e94064e802",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "f97d7cb4-8a4e-44cb-9e83-46387ca22728",
+      "timestamp": "2024-01-15T12:07:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "daac4e41-6286-41e6-a6ff-81fad9edb398",
+      "span_id": "4d7f9e1f71834a94",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "15fbb0a9-2a9a-41f0-bf17-d0747fc0bd76",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "38331ec9-b1fa-41db-b81c-2a1777f03866",
+      "timestamp": "2024-01-15T12:07:05.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "029c56f4-a299-406c-ba56-f9e200dad9dc",
+      "span_id": "f0dfd8475b8c40e0",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "dd0e9ded-d68a-4a81-ba98-3f2a720ffce0",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4ba79160-2e2f-4e51-bf9b-2f78e46c346e",
+      "timestamp": "2024-01-15T12:07:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "66fb5d56-d704-46f6-bd8e-2645ec31a2cd",
+      "span_id": "262d1c2084414db9",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "0386a985-d3b6-470a-8169-fed65762980b",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "81e2fbd5-0626-4040-bdd9-53cc8da51ddb",
+      "timestamp": "2024-01-15T12:07:15.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "85fef6f6-27ce-415a-ba7a-c72652953e5c",
+      "span_id": "cd1b924420a04dc4",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "33735850-28f7-486c-8c7c-c21cb747aea8",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2bb2447d-a4ec-4bf3-8eaf-f17504a80ef5",
+      "timestamp": "2024-01-15T12:07:20.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "61831b47-7475-4c94-9cf6-cc2744030117",
+      "span_id": "300cc63128ca45c8",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "07099f7a-5843-400e-b640-77d256e88b3b",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e3bd6ec0-4de5-4d4f-a9cc-c36223cb4969",
+      "timestamp": "2024-01-15T12:07:25.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "33abeaa3-2b3e-4e35-beab-5f6ae263690c",
+      "span_id": "26d66fef53e84044",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "1f427e72-d32b-4530-b307-55fd5440c4e9",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3aeeed18-cb78-4ed2-ac38-ce7fa9e22007",
+      "timestamp": "2024-01-15T12:07:30.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "430e5a83-310b-40ea-bd3e-21fed54422e5",
+      "span_id": "fdac748590dd4520",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "514b68fe-aff4-4eb0-8498-ec2d6c19f72b",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4fed3e81-1eba-4fbb-ba23-f77256b657b6",
+      "timestamp": "2024-01-15T12:07:35.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "e72a111b-f394-42b3-80bc-d185bd87e376",
+      "span_id": "c33283737f7d415f",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "b4dec4e3-f1a9-43c7-a074-4f5093e5d172",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "065cc96b-132c-4812-b4b8-ea685470edeb",
+      "timestamp": "2024-01-15T12:07:40.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "8b8c401c-ce49-4d8b-910b-cb0b610ef9ba",
+      "span_id": "980275e467874d16",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "ca56c8bf-cf0d-4ef1-9588-9abedc9eb20f",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "1e023849-82bf-4071-97c9-601dd38dd85f",
+      "timestamp": "2024-01-15T12:07:45.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "ded21556-b239-4b1f-9325-fd238850bde8",
+      "span_id": "4d2f9df629164119",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "48308350-a317-430f-b4f1-a8e1ee4cb433",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "25613a91-0c5b-4acd-af1a-888aeb831401",
+      "timestamp": "2024-01-15T12:07:50.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "b40de401-dbdf-4ab6-9ab0-6b1c44a9094c",
+      "span_id": "9485d7d1b7824b42",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "0056b918-31e3-4ebf-ad8a-8f79e18ca43e",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3e591cd1-69a9-4f7b-8b5a-db032e7fb6f1",
+      "timestamp": "2024-01-15T12:07:55.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "8fd33048-0267-4035-8627-7c3e9135ba81",
+      "span_id": "b244cabc0f4d44a1",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "480b1fe0-a8ba-4bc1-8c13-56dc6a4b4a83",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7ebd7482-00a2-4a5d-9908-6e0bae6f1668",
+      "timestamp": "2024-01-15T12:08:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "5e3afa3b-374f-4820-a527-c257c409d4ac",
+      "span_id": "a0e13828462b4b8c",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "203c9a29-c141-49bf-90fa-331d8355af48",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2455efbf-ab73-47c5-aef0-d3951a0bf98a",
+      "timestamp": "2024-01-15T12:08:05.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "9e317018-858d-413e-9e99-2bd2e1f3299b",
+      "span_id": "40c6908ab179448e",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "9da2558a-3b25-4d19-a48a-442c2177ac95",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3575fcd2-effc-41c1-a8ac-1bf46da874c8",
+      "timestamp": "2024-01-15T12:08:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "4fbda55e-470f-4943-b15d-5922ab62ea77",
+      "span_id": "3078020ed6104156",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "80ee06c0-a0a5-4d22-99e9-2f25dbc71f3e",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "0f3e0a78-e328-457d-b532-75eb2089607e",
+      "timestamp": "2024-01-15T12:08:15.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "503 Service Unavailable: upstream database connection timeout",
+      "host": "api-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "216858df-0db4-407c-9420-64610ba594f1",
+      "span_id": "4b5ce5aa2c3646fd",
+      "error_code": "ERR_API_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "upstream": "db-primary",
+        "timeout_ms": 30000,
+        "status_code": 503
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "0fa43155-e0a1-4eb3-b7f5-4f71f777b8fb",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    }
+  ],
+  "alert_count": 22,
+  "log_count": 60
+}

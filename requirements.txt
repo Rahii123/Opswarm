@@ -1,0 +1,98 @@
+# ============================================================
+# OpsSwarm — Python Dependencies
+# ============================================================
+# Install: pip install -r requirements.txt
+# Python version: 3.11+
+# ============================================================
+
+# ─── WEB FRAMEWORK ──────────────────────────────────────────
+fastapi==0.110.3
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+httpx==0.27.0
+
+# ─── CONFIGURATION & VALIDATION ─────────────────────────────
+pydantic==2.7.1
+pydantic-settings==2.2.1
+python-dotenv==1.0.1
+
+# ─── DATABASE — POSTGRESQL ──────────────────────────────────
+sqlalchemy[asyncio]==2.0.30
+asyncpg==0.29.0
+alembic==1.13.1
+psycopg2-binary==2.9.9         # Sync driver for migrations
+
+# ─── DATABASE — REDIS ───────────────────────────────────────
+redis[hiredis]==5.0.4
+aioredis==2.0.1
+
+# ─── DATABASE — QDRANT ──────────────────────────────────────
+qdrant-client==1.9.1
+
+# ─── AWS SDK ────────────────────────────────────────────────
+boto3==1.34.101
+botocore==1.34.101
+
+# ─── AI / LLM ORCHESTRATION ─────────────────────────────────
+langchain==0.2.1
+langchain-core==0.2.3
+langchain-community==0.2.1
+langgraph==0.1.5
+langchain-groq==0.1.3
+langchain-google-genai==1.0.3
+langchain-openai==0.1.7        # Also used for embeddings
+
+# ─── LLM OBSERVABILITY ──────────────────────────────────────
+langfuse==2.36.1
+
+# ─── EMBEDDINGS ─────────────────────────────────────────────
+google-generativeai==0.5.4
+openai==1.30.1
+sentence-transformers==3.0.0   # Local embedding fallback
+
+# ─── LOGGING & OBSERVABILITY ────────────────────────────────
+structlog==24.2.0
+rich==13.7.1                   # Console formatting
+python-json-logger==2.0.7
+
+# ─── HTTP & ASYNC ───────────────────────────────────────────
+aiohttp==3.9.5
+tenacity==8.3.0                # Retry logic with exponential backoff
+
+# ─── DATA PROCESSING ────────────────────────────────────────
+pandas==2.2.2
+numpy==1.26.4
+orjson==3.10.3                 # Fast JSON serialisation
+
+# ─── SIMULATION & FAKE DATA ─────────────────────────────────
+faker==25.2.0
+factory-boy==3.3.0
+
+# ─── DATE & TIME ────────────────────────────────────────────
+arrow==1.3.0
+python-dateutil==2.9.0
+
+# ─── SECURITY ───────────────────────────────────────────────
+cryptography==42.0.7
+pyjwt[crypto]==2.8.0
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+
+# ─── TESTING ────────────────────────────────────────────────
+pytest==8.2.0
+pytest-asyncio==0.23.6
+pytest-cov==5.0.0
+pytest-mock==3.14.0
+httpx==0.27.0                  # For TestClient
+factory-boy==3.3.0
+
+# ─── CODE QUALITY ───────────────────────────────────────────
+ruff==0.4.4                    # Linting + formatting
+mypy==1.10.0                   # Type checking
+pre-commit==3.7.1
+
+# ─── UTILITIES ──────────────────────────────────────────────
+typer==0.12.3                  # CLI for scripts
+rich==13.7.1
+uuid==1.30                     # UUID generation
+python-slugify==8.0.4

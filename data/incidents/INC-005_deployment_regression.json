@@ -1,0 +1,2202 @@
+{
+  "incident_id": "INC-005",
+  "schema_version": "1.0",
+  "is_anomaly": true,
+  "title": "Deployment regression — v2.3.2 causing 35% error rate spike",
+  "description": "API error rate jumped from <1% to 35% immediately after deploying api-gateway v2.3.2. NullPointerException in UserController.",
+  "severity": "HIGH",
+  "error_code": "ERR_DEPLOY_001",
+  "event_type": "deployment_regression",
+  "affected_service": "api-gateway",
+  "affected_host": "api-gw.internal",
+  "affected_region": "us-east-1",
+  "detected_at": "2024-01-15T18:03:20.000Z",
+  "duration_minutes": 5,
+  "expected_root_cause": "NullPointerException in UserController.getProfile() introduced in v2.3.2. Null user preference object not handled.",
+  "expected_remediation": [
+    "rollback_deployment",
+    "notify_on_call",
+    "create_incident_ticket"
+  ],
+  "ground_truth_labels": {
+    "is_security_incident": false,
+    "is_automated_attack": false,
+    "requires_human_approval": true
+  },
+  "logs": [
+    {
+      "log_id": "eade0678-524c-414f-aabe-a22dbbec15c8",
+      "timestamp": "2024-01-15T18:00:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "29f98d37-a06e-4938-98da-9ef0776a561f",
+      "span_id": "1044e8b960b648fd",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 70,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "246e3f44-1713-4ae2-b390-fc639a4efd3e",
+      "timestamp": "2024-01-15T18:00:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "8758915e-e556-48e5-81bd-abcfbb3ce77f",
+      "span_id": "21ba86c59d224fa5",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 72,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "26903514-17eb-4f9b-b4ba-2a8b8fc69431",
+      "timestamp": "2024-01-15T18:00:20.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "cabce394-764b-4c3d-bb34-640b1025e98d",
+      "span_id": "7dbb52235dfe4dc5",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 102,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "20e7d5be-0707-4310-b8ca-f66fd09f006c",
+      "timestamp": "2024-01-15T18:00:30.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "6529301f-a6bd-407c-8d0d-0bceacb90d6d",
+      "span_id": "b71490ebfaf744f0",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 53,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "bb3766da-10ee-460d-a5ab-d6bc55ca4f21",
+      "timestamp": "2024-01-15T18:00:40.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "2dbfac4d-691b-44b2-97a2-805b6976fd33",
+      "span_id": "4da4d05798e648ec",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 72,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d9f70d1e-294e-4e0b-b8cc-bfd026d819d8",
+      "timestamp": "2024-01-15T18:00:50.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "6f098a1c-a8e8-4a0a-ad1a-e43757f477fa",
+      "span_id": "8f6db30c4ab14546",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 144,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3df6f1bb-0465-45d7-8efa-8ef794f30426",
+      "timestamp": "2024-01-15T18:01:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "36c3f9fc-799f-4255-9773-1b757223218d",
+      "span_id": "be831302c1d44e74",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 92,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e7e3e221-934e-4cda-8e64-50ba8cde41e2",
+      "timestamp": "2024-01-15T18:01:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "32bd818a-8d0e-4da9-90b1-1b4c53f5508f",
+      "span_id": "6ac30c9cbb28494d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 150,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d463953e-8f0a-4f71-b727-1b2de2814998",
+      "timestamp": "2024-01-15T18:01:20.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "701a4009-4594-4007-96f0-1ca710749c5c",
+      "span_id": "f0b7a6faf83f4085",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 102,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e834c79e-0ba6-4049-80a0-591d63bafd60",
+      "timestamp": "2024-01-15T18:01:30.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "0fabcf5c-0230-406a-8552-46dcc7f4b088",
+      "span_id": "36348b44604f4391",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 135,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "abf87921-6ccb-40a1-b6aa-26c4cfb9e3c9",
+      "timestamp": "2024-01-15T18:01:40.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "987b6015-ae5d-441d-9bd8-14f0831b4824",
+      "span_id": "c3f57c5c49834eaf",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 144,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3c56ac10-a2d2-4dae-a9f3-4896f548111b",
+      "timestamp": "2024-01-15T18:01:50.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "94d5f9ac-0748-40b4-b516-e7511cf76aa1",
+      "span_id": "2a565ef2c9494378",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 81,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "c3a92de3-bef6-4154-ae9a-e216930f9bc3",
+      "timestamp": "2024-01-15T18:02:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "90a67609-defe-4780-8adf-ca9ef47dfa1b",
+      "span_id": "bad9c9e5d58b41b4",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 84,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b702e035-8f5d-4a1e-b3e3-d7e3086e44e0",
+      "timestamp": "2024-01-15T18:02:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "fd52c1c2-e250-4b66-92a9-56c691e464b5",
+      "span_id": "6b390c8669364ad4",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 70,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "0b5af484-5628-490f-8362-b8f8c0eda857",
+      "timestamp": "2024-01-15T18:02:20.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Request processed successfully",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "b5921d5b-9ec9-4e41-ac2a-3bcf571b9ac6",
+      "span_id": "0a48b792cdd843f5",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 150,
+        "version": "v2.3.1"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6b70a49d-c0d6-4fa1-b672-1f20d55e2d14",
+      "timestamp": "2024-01-15T18:02:30.000Z",
+      "service": "deployment-pipeline",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "health_check_failure",
+      "message": "Deployment started: api-gateway v2.3.2 rolling update initiated",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "bd89a435-d708-4565-b91f-135ec6a7935b",
+      "span_id": "aa0731a2759b42ad",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "version": "v2.3.2",
+        "strategy": "rolling",
+        "replicas": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2661ff47-1df7-4f6b-b2fb-5a38e7d5c306",
+      "timestamp": "2024-01-15T18:03:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "41c312cf-73bf-4a72-b857-97f17682cce5",
+      "span_id": "b866fd57a8584a3d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 98,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7b47124c-5009-43b0-8738-8b8cfcf2022e",
+      "timestamp": "2024-01-15T18:03:05.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "c80c3ef1-5f13-4c14-94cd-61bf8a1db259",
+      "span_id": "83cf6225191f4c8e",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 110,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5d7dfb84-3e5f-48b4-b309-f422fa38b671",
+      "timestamp": "2024-01-15T18:03:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "617ca529-1218-4583-973c-008e80d1a6ab",
+      "span_id": "8fd9ede0531040bc",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 4344,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "0df91e3c-6bf4-4306-8c7a-d8a38271733d",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7913b241-b436-47ed-8786-21947d790e9f",
+      "timestamp": "2024-01-15T18:03:15.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "b1aa82f2-b31c-46d4-b88b-5e0ac196203d",
+      "span_id": "664d445e8be34850",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 94,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6e4398dc-d242-4736-b3c2-74588b20ed4a",
+      "timestamp": "2024-01-15T18:03:20.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "a3a1cc42-e8c3-453a-9d9a-bba83c300432",
+      "span_id": "00484e8cb1c7421c",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 4257,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "5aed6ac5-6b22-4c0e-9989-a946d4b414d5",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "1678d4e7-e075-4e32-a02d-bcf5c0f8e28c",
+      "timestamp": "2024-01-15T18:03:25.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "41b7126e-6ec4-4e34-a0dc-fa519e57fdb9",
+      "span_id": "821a1c7113d94eda",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 78,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "9a88430c-539b-43be-8ceb-31e1bce57ccf",
+      "timestamp": "2024-01-15T18:03:30.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "c6461610-a2c0-479b-bcfb-2ab65dd72bd1",
+      "span_id": "c9b69e8bdcb74e5f",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 1791,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "ad7fd69b-f0ca-4127-be3b-5233d066686f",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "0967f151-e300-4f1f-9789-94ce666802ea",
+      "timestamp": "2024-01-15T18:03:35.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "ce015183-9a09-4357-b8c2-3137b6a3db41",
+      "span_id": "0901ca5150134a94",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 85,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7f68a28d-baad-40c8-9a7b-7809f107273a",
+      "timestamp": "2024-01-15T18:03:40.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "20b162a8-088f-4331-909e-e4de21b0f07e",
+      "span_id": "bf3dbc7e61ce41f3",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 148,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "57fd4109-9cb4-48dd-b8b6-ff5c99534a02",
+      "timestamp": "2024-01-15T18:03:45.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "4c929fce-21c9-41e9-a291-a6580d898b0f",
+      "span_id": "041dc048a2954629",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 3627,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "381d892e-d447-4a45-a30f-e056b95f5658",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e59e2ccd-6f4a-4792-9994-d56675b18018",
+      "timestamp": "2024-01-15T18:03:50.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "a2f50bb8-6053-4b42-a7b5-fb4bbb69a627",
+      "span_id": "11b198b894b04db7",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 136,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "a5dc3617-353b-4b91-bb64-aac18cc8e4cb",
+      "timestamp": "2024-01-15T18:03:55.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "c4cf4eff-cd73-4ce5-acc0-7c3fad562ae9",
+      "span_id": "d0f1d61f646d4a30",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 118,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "560216d8-6c3f-48a7-b614-b655a1499af9",
+      "timestamp": "2024-01-15T18:04:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "05fc25cc-5a42-496a-acc5-65ccd728b91a",
+      "span_id": "d9111219ea3f457f",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 1113,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "325aa690-7688-4e8a-871e-50c35b3a15ab",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2325ae4d-d340-4758-9919-997b0cd92767",
+      "timestamp": "2024-01-15T18:04:05.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "9368d008-4f1b-49fe-9e91-d84a73a23d6c",
+      "span_id": "ab723fbbcd654e9d",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 4974,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "3767852a-b5df-40e7-8b10-f4f0db57493f",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e914523a-1e6a-4e93-a5f0-e8238fc0bf05",
+      "timestamp": "2024-01-15T18:04:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "2c2f8460-c42d-420d-84cf-2954dfba4703",
+      "span_id": "fcf9be5169954c80",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 3378,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "31dd506e-d136-44ff-9059-ac731045ca19",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ee028a2c-10f7-4058-a188-7ccb7e33c21a",
+      "timestamp": "2024-01-15T18:04:15.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "a8b427ba-4580-4630-8d72-3e1af9b970a9",
+      "span_id": "6c5a06fcec9749f5",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 83,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "48328b27-0464-4f92-af07-27b8142807a7",
+      "timestamp": "2024-01-15T18:04:20.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "4659219e-64ff-46ab-9c3f-3e32f9b09292",
+      "span_id": "66fb9dd8463b4c90",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 3443,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "a410635c-ab7e-4396-b315-55833554465a",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "083b7cdf-44a7-4022-a6f7-9bae702f69a4",
+      "timestamp": "2024-01-15T18:04:25.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "ab9c8f7d-322b-4a4e-8285-b8b250cf3db1",
+      "span_id": "664f661866e843cf",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 143,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "a546b505-84a5-4b87-a880-bb8db47bc4f9",
+      "timestamp": "2024-01-15T18:04:30.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "8090a302-d64a-4cfd-a525-667b740fead6",
+      "span_id": "2abf6c976f80442a",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 105,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "44f1e485-a070-4aa8-b838-adfd71fee108",
+      "timestamp": "2024-01-15T18:04:35.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "92d63359-d96c-496d-a4c5-92bf061255d1",
+      "span_id": "3581576f415a44b7",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 115,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "866f3efe-769e-45c6-a8d2-eb984a500e15",
+      "timestamp": "2024-01-15T18:04:40.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "f69c814f-f6fc-443d-a47c-aa89f406c99e",
+      "span_id": "74f3da31c1d340db",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 4684,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "05f1b10d-8617-4d54-a6d7-42e0142ec9b8",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "76f2741d-781e-488d-81cc-bf34791ef68b",
+      "timestamp": "2024-01-15T18:04:45.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "1cb0be72-405e-48be-85ee-6e01c28fa903",
+      "span_id": "0b11e922b71945a6",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 82,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ad976e31-2bff-44a4-81ad-1dc6648e1201",
+      "timestamp": "2024-01-15T18:04:50.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "43f5f364-6e2e-425e-b1f4-7ca998abb50d",
+      "span_id": "c99512d622a44eef",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 2786,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "7b4deea1-0dd2-48f1-bd7f-1ead62ccc2ed",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "14b56ad5-f085-4706-91a9-9975a244dc33",
+      "timestamp": "2024-01-15T18:04:55.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "221029c4-1cb3-4510-b4a6-b6307ebde314",
+      "span_id": "280a3120b76f48ea",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 4791,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "9457e4a5-9dae-4f8b-9b70-c95786dbea18",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "0d391e16-a115-47e8-9208-41f6d0488f4c",
+      "timestamp": "2024-01-15T18:05:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "6deaba86-5a4f-4b10-bd00-fe3390d1991f",
+      "span_id": "7d183fd985c04979",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 137,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5b489f20-c159-46fc-b011-120ccc969571",
+      "timestamp": "2024-01-15T18:05:05.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "4c67395f-45ee-44ef-a7f0-7fa9df5cc7bb",
+      "span_id": "9e3a505cafee46c9",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 144,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b99d0522-a0dd-406a-b717-a1bc986e329f",
+      "timestamp": "2024-01-15T18:05:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "e76b0226-6d58-4a07-bc9e-a65dde1fee32",
+      "span_id": "59a7d6bb47674a1d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 75,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "394ae783-58c7-4b98-a8f7-a32777b62c27",
+      "timestamp": "2024-01-15T18:05:15.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "85589179-68b8-4ba6-a23b-ecc88432b012",
+      "span_id": "56fef1810b034a80",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 58,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b4ff042b-69ba-421e-95c5-df7d86c1a649",
+      "timestamp": "2024-01-15T18:05:20.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "962246b4-9c44-466d-bb8f-9f6a6dda655b",
+      "span_id": "16c2e12988874fbe",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 92,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "15f8f841-1633-4cf3-813e-e2a390dc4870",
+      "timestamp": "2024-01-15T18:05:25.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "480f2480-9cbb-49a1-9206-aece613064ff",
+      "span_id": "00853ffa4a5a43b9",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 134,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "9b787d18-27e1-46ad-a040-2f1f9ab7538b",
+      "timestamp": "2024-01-15T18:05:30.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "186ee506-7623-4dcd-81ea-4f98c60e0963",
+      "span_id": "292f072818e64e75",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 142,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "a022480f-9b3e-4f27-a739-ebc52256bbdd",
+      "timestamp": "2024-01-15T18:05:35.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "b6010f69-9a8b-4672-a943-0dc144ebfadd",
+      "span_id": "744bb36d40bc46d4",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 114,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "244081b6-5a8c-4654-bdb3-a38396304cfa",
+      "timestamp": "2024-01-15T18:05:40.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "674930ad-d259-4927-9aac-1250ee893b5c",
+      "span_id": "375da88199614549",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 2672,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "04042754-4128-4403-bbf9-1b63fc47ff63",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "842cf816-4647-4d6f-9a21-c4bf5eae299f",
+      "timestamp": "2024-01-15T18:05:45.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "be5455eb-412b-4547-b1f0-8af6bc86bd25",
+      "span_id": "eb1c74de43944430",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 3855,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "19e8d228-a61e-47e9-be53-e950beb0d795",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "85b5199c-942e-45ba-b084-d446ed22e573",
+      "timestamp": "2024-01-15T18:05:50.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "d44f5096-c120-4265-9256-84b36e323105",
+      "span_id": "e6da06a4efe24664",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 1521,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "6e8697d1-3e5d-4dbb-9042-138612f162fa",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d73472e4-46cc-49ba-b5fb-f69e67a059a3",
+      "timestamp": "2024-01-15T18:05:55.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "e7384743-18d2-44a3-9bb2-dd9ea575b1db",
+      "span_id": "9bd1752a87464537",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 3723,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "a72bd46d-24aa-4dd2-b3a7-57f81b3a2034",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "fefd331b-8fd7-4f76-ae11-b598cfff0f6d",
+      "timestamp": "2024-01-15T18:06:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "dada8d9e-41b3-421d-abb9-c21d4fab0189",
+      "span_id": "830fd8ce9ca34d5b",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 136,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7baad02b-8f9b-451d-84b5-33859633f80d",
+      "timestamp": "2024-01-15T18:06:05.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "2ab115b9-ae12-4514-998c-3d5b3fd657ff",
+      "span_id": "421e9e6972be4024",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 72,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "08770e16-ffd2-4bc4-9ac1-aad5c25e32ee",
+      "timestamp": "2024-01-15T18:06:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "c5d23ff2-0dc2-42f2-a7f0-49f6e385b4aa",
+      "span_id": "efd49028648f43bb",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 88,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e0074f4c-6fba-4150-817e-8c861fb1c995",
+      "timestamp": "2024-01-15T18:06:15.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "bbd5af39-2612-4c0a-8862-c50095d31855",
+      "span_id": "1a66b661e06d48b7",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 50,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "0bac3e4c-9a20-4934-b857-22437016f8b6",
+      "timestamp": "2024-01-15T18:06:20.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "ed27876f-1ee4-4f51-8b07-79951e38f342",
+      "span_id": "cc84395c2ede4ffb",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 1860,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "6a4544a0-dc13-4563-9d03-ac2d57468a68",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4320301a-b957-4982-8332-55fd3a5f052a",
+      "timestamp": "2024-01-15T18:06:25.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "f387ef09-4dfd-49db-ae3f-07d2bf78603e",
+      "span_id": "183f46e2b12d42ea",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 124,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "c715f214-6530-4211-b926-e5d475752ad4",
+      "timestamp": "2024-01-15T18:06:30.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "1980615f-bdc5-4f08-9612-da625f175487",
+      "span_id": "0246181a35d94db4",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 91,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "32003fc9-0420-4e80-bfc4-0697c3500f79",
+      "timestamp": "2024-01-15T18:06:35.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "974b8a83-f528-488f-908c-c2b9af388967",
+      "span_id": "d029c2fc0e074a2b",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 106,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8cd82d78-c169-47d4-8d7f-91fe5f079158",
+      "timestamp": "2024-01-15T18:06:40.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "810b6105-80c1-4715-9009-1b0d506f71b5",
+      "span_id": "6197b9914ce647ec",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 115,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "897a49d4-f297-4a22-811b-01b211be596e",
+      "timestamp": "2024-01-15T18:06:45.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "8093a35b-2da1-439e-85f1-a7c4d1862507",
+      "span_id": "e04b9f67f1c545d8",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 144,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "07dd348e-771d-4945-bd9a-2d566a9b8c07",
+      "timestamp": "2024-01-15T18:06:50.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "fd31238b-cf03-410f-b1b2-04ac69dbadda",
+      "span_id": "4ae43439e52d4d2e",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 1347,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "52c00477-915c-480e-9726-014569fcfdf2",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2cd7ab83-03ae-4d72-be15-e499d95d4964",
+      "timestamp": "2024-01-15T18:06:55.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "7d415bea-1191-47f8-83a9-19aca029fe33",
+      "span_id": "aff8a00c339f4ce1",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 3719,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "e1531203-8ee8-4014-b846-278cfd43cc7a",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b8a19be2-0a2a-4cce-b66b-241797c75ed6",
+      "timestamp": "2024-01-15T18:07:00.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "581aafbb-a004-4cf4-9494-7943b7cd99c9",
+      "span_id": "a93ee7c07a844d9c",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 92,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7c790c54-4330-4703-ae72-9368d2c00342",
+      "timestamp": "2024-01-15T18:07:05.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "3c55c77c-1c45-4112-9d74-742356be2c33",
+      "span_id": "2e61b845b7fe421c",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 4899,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "e2c656b3-9801-439f-b66c-a6cdac209507",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "a5da5991-487d-4f27-b117-3cf9339bc8f6",
+      "timestamp": "2024-01-15T18:07:10.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "c572f660-6e02-4875-adcf-da87feb194af",
+      "span_id": "e55460206e8b41e0",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 136,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "abf5480a-5c23-48c5-9258-9409028f50ba",
+      "timestamp": "2024-01-15T18:07:15.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "ac9cbad3-eb3c-4b4b-8de5-e553f4776ea4",
+      "span_id": "bb1a22526c3b44ae",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 4303,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "e338ad77-5286-4bd9-bdb6-5faf32f09d37",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "c300d41e-36e2-46bc-9991-7771ee1e8fde",
+      "timestamp": "2024-01-15T18:07:20.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "fc7fd8e5-2a1e-4f2d-b0d7-a2ca2826e1e8",
+      "span_id": "00e7ff41704644c9",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 1100,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "b74b4538-74a5-4779-bb31-43453a3ed8fc",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "99f43d1d-165c-4699-8d9d-069445197946",
+      "timestamp": "2024-01-15T18:07:25.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "ecc452a1-0732-40f2-8b5c-dc52aede9b61",
+      "span_id": "6f74fbda9b8242a3",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 2946,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "de45a0ca-cead-4eeb-9677-b106ad19074d",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4280f233-ad4f-4690-aff7-82001801c08f",
+      "timestamp": "2024-01-15T18:07:30.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "c250af68-0493-4768-9b41-b9fb29198dd9",
+      "span_id": "b7296f3e349c4cf7",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 148,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d86da288-38fd-4cba-b675-b8ff0d82768b",
+      "timestamp": "2024-01-15T18:07:35.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "7ddd3d26-9afc-4b77-a53e-46dee9f0c1ba",
+      "span_id": "e41168bb46dc4ca1",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 2697,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "6b6d784f-f849-41ad-a5fe-04b6045e5870",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "aa4ed16a-db4a-4471-8c14-02b78b45c770",
+      "timestamp": "2024-01-15T18:07:40.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "73c697fb-a318-4e43-af39-08de6bfb95f3",
+      "span_id": "ed9bc3266f9f422e",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 123,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "1c631b43-63e9-474d-bef8-5df55af4e551",
+      "timestamp": "2024-01-15T18:07:45.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "a5010594-9c6a-4a83-bf80-28ba4578f5f2",
+      "span_id": "cb4f6cb616014539",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 3852,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "80bf9c8e-e713-4b94-b378-79c1f22af4bf",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "947e38ad-63e1-4f64-8f16-25cf0e57d0cf",
+      "timestamp": "2024-01-15T18:07:50.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "authentication_success",
+      "message": "Request OK",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "2f36de5f-d5ff-4095-a0f9-e3ab3665a349",
+      "span_id": "651fd31a166f4696",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 200,
+        "latency_ms": 101,
+        "version": "v2.3.2",
+        "error": null,
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "29bec788-fca9-4a08-a738-b48b4ee69588",
+      "timestamp": "2024-01-15T18:07:55.000Z",
+      "service": "api-gateway",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "api_5xx_spike",
+      "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
+      "host": "10.0.1.100",
+      "region": "us-east-1",
+      "trace_id": "d638deee-5ad9-4678-a89d-5a5886f443e0",
+      "span_id": "0ee323a73faa41e5",
+      "error_code": "ERR_DEPLOY_001",
+      "schema_version": "1.0",
+      "metadata": {
+        "status_code": 500,
+        "latency_ms": 3687,
+        "version": "v2.3.2",
+        "error": "NullPointerException",
+        "endpoint": "/api/v1/users/profile"
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "ebddb17d-ce4b-4ad1-a676-d27541cc2891",
+        "rule_name": "api_5xx_spike_threshold",
+        "suppressed": false
+      }
+    }
+  ],
+  "alert_count": 25,
+  "log_count": 76
+}

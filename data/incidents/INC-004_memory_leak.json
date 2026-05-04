@@ -1,0 +1,2640 @@
+{
+  "incident_id": "INC-004",
+  "schema_version": "1.0",
+  "is_anomaly": true,
+  "title": "Gradual memory leak on worker-service",
+  "description": "Memory usage increasing monotonically from 40% to 94% over 90 minutes. GC runs are not reclaiming memory.",
+  "severity": "HIGH",
+  "error_code": "ERR_INFRA_003",
+  "event_type": "memory_leak",
+  "affected_service": "worker-service",
+  "affected_host": "worker-01.internal",
+  "affected_region": "us-east-1",
+  "detected_at": "2024-01-15T16:40:00.000Z",
+  "duration_minutes": 90,
+  "expected_root_cause": "Object accumulation in in-memory job queue. Items enqueued but never dequeued due to a consumer thread deadlock.",
+  "expected_remediation": [
+    "restart_service",
+    "scale_out",
+    "notify_on_call"
+  ],
+  "ground_truth_labels": {
+    "is_security_incident": false,
+    "is_automated_attack": false,
+    "requires_human_approval": false
+  },
+  "logs": [
+    {
+      "log_id": "c7871730-3a42-41fd-83e2-634751765da2",
+      "timestamp": "2024-01-15T16:00:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 40.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "6ea1de45-6334-4a91-a5ae-40051e91a677",
+      "span_id": "8fbc3ae7885842fe",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 40.0,
+        "memory_mb_used": 3276,
+        "memory_mb_total": 8192,
+        "gc_runs": 0,
+        "active_threads": 24
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "418d1ad1-240f-4dbc-828c-4b4436d850ad",
+      "timestamp": "2024-01-15T16:01:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 40.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "f663fa13-817a-4645-b530-81abc04086c0",
+      "span_id": "282b9533828146d0",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 40.6,
+        "memory_mb_used": 3325,
+        "memory_mb_total": 8192,
+        "gc_runs": 3,
+        "active_threads": 24
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ca06b85a-5ced-449e-9795-c4da48186e5c",
+      "timestamp": "2024-01-15T16:02:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 41.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "093bb90a-60d4-4e47-98a5-b103b92cc9e9",
+      "span_id": "57939e7879f34d1a",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 41.2,
+        "memory_mb_used": 3375,
+        "memory_mb_total": 8192,
+        "gc_runs": 6,
+        "active_threads": 24
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "75a39437-55e0-47d9-8592-a4d4d176cc40",
+      "timestamp": "2024-01-15T16:03:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 41.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "58f57c1b-067c-4f9e-b242-7b3914dd4d6f",
+      "span_id": "9193b5cae8ed45af",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 41.8,
+        "memory_mb_used": 3424,
+        "memory_mb_total": 8192,
+        "gc_runs": 9,
+        "active_threads": 24
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "768bfa9b-95bf-47cb-9a6f-b49cda3b7670",
+      "timestamp": "2024-01-15T16:04:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 42.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "d545d431-48e3-4c41-8894-8311c0dce959",
+      "span_id": "8d71cfd40dac49bd",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 42.4,
+        "memory_mb_used": 3473,
+        "memory_mb_total": 8192,
+        "gc_runs": 12,
+        "active_threads": 24
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "54f00d21-5eca-4d4e-bb93-63f5e7853b37",
+      "timestamp": "2024-01-15T16:05:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 43.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "8fb0d20e-79ff-4c73-8d41-000e055d933a",
+      "span_id": "ac95b40be6f94ca0",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 43.0,
+        "memory_mb_used": 3522,
+        "memory_mb_total": 8192,
+        "gc_runs": 15,
+        "active_threads": 25
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3e122f50-a0e1-4141-8598-060d5e95c80e",
+      "timestamp": "2024-01-15T16:06:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 43.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "69583ad0-d62f-4a8e-bffc-9961283bf868",
+      "span_id": "c217df8d63aa4424",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 43.6,
+        "memory_mb_used": 3571,
+        "memory_mb_total": 8192,
+        "gc_runs": 18,
+        "active_threads": 25
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "00b8f745-0756-4683-86a6-12c0d5c512f2",
+      "timestamp": "2024-01-15T16:07:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 44.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "4dd3f96b-0511-48a4-a893-650f773aa860",
+      "span_id": "3c3acc49ae644700",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 44.2,
+        "memory_mb_used": 3620,
+        "memory_mb_total": 8192,
+        "gc_runs": 21,
+        "active_threads": 25
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d9c28f08-ce76-4e04-be91-734d53a3d55e",
+      "timestamp": "2024-01-15T16:08:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 44.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "c4a8976b-6fad-4e70-9392-a1863b8273f4",
+      "span_id": "0bba13fdb8304064",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 44.8,
+        "memory_mb_used": 3670,
+        "memory_mb_total": 8192,
+        "gc_runs": 24,
+        "active_threads": 25
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6f755622-b888-4c7d-a437-6acaffbc99e7",
+      "timestamp": "2024-01-15T16:09:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 45.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "447aca9b-ee33-4f85-9e8f-9bd8e9f59a7a",
+      "span_id": "bf63be70fe8d4ca7",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 45.4,
+        "memory_mb_used": 3719,
+        "memory_mb_total": 8192,
+        "gc_runs": 27,
+        "active_threads": 25
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "204e596e-fa57-4d6e-8e40-21b8618070ec",
+      "timestamp": "2024-01-15T16:10:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 46.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "37156f31-d383-4b0f-8710-2d30c20d8fd0",
+      "span_id": "0acc3b1a6a364314",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 46.0,
+        "memory_mb_used": 3768,
+        "memory_mb_total": 8192,
+        "gc_runs": 30,
+        "active_threads": 26
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3488650d-1e7d-4247-958a-9bcc290036f9",
+      "timestamp": "2024-01-15T16:11:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 46.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "e2f896c9-c916-4cdc-ad11-0570f87042d3",
+      "span_id": "f7cfe059838e4564",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 46.6,
+        "memory_mb_used": 3817,
+        "memory_mb_total": 8192,
+        "gc_runs": 33,
+        "active_threads": 26
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "bf7ffc66-2085-4af8-b5fe-8d27a370d590",
+      "timestamp": "2024-01-15T16:12:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 47.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "e308e8bd-22c5-40ec-a537-eadf8de016c7",
+      "span_id": "3ccde917ed904ce9",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 47.2,
+        "memory_mb_used": 3866,
+        "memory_mb_total": 8192,
+        "gc_runs": 36,
+        "active_threads": 26
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "1bce061a-9c71-49d8-b9c4-ae44a1a9e891",
+      "timestamp": "2024-01-15T16:13:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 47.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "fbb34d4e-4771-46f2-abe2-fc7ab5286e36",
+      "span_id": "d58cd877dcbc45ac",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 47.8,
+        "memory_mb_used": 3915,
+        "memory_mb_total": 8192,
+        "gc_runs": 39,
+        "active_threads": 26
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "c1e09fa5-07ae-4753-be03-5836507bebab",
+      "timestamp": "2024-01-15T16:14:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 48.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "118c0037-513d-4e68-a954-ce8d32f1f39e",
+      "span_id": "69bb9878e1d84999",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 48.4,
+        "memory_mb_used": 3964,
+        "memory_mb_total": 8192,
+        "gc_runs": 42,
+        "active_threads": 26
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ffcfb6f0-a6f1-4128-bf83-3b81e769c958",
+      "timestamp": "2024-01-15T16:15:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 49.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "5cea849f-0be2-4ccb-a239-3bc9800e628c",
+      "span_id": "02ab916eb4094c7d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 49.0,
+        "memory_mb_used": 4014,
+        "memory_mb_total": 8192,
+        "gc_runs": 45,
+        "active_threads": 27
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8ef002bc-6ab4-4d00-b984-8555951a6af3",
+      "timestamp": "2024-01-15T16:16:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 49.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "490a9c42-7d3b-409e-b209-c6293e4549dc",
+      "span_id": "acbc1a8992904135",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 49.6,
+        "memory_mb_used": 4063,
+        "memory_mb_total": 8192,
+        "gc_runs": 48,
+        "active_threads": 27
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "64520a68-9099-44ae-8950-f535e364e701",
+      "timestamp": "2024-01-15T16:17:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 50.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "539ed435-96bf-49ba-a618-4b90856b4ebd",
+      "span_id": "ff4997b998384aff",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 50.2,
+        "memory_mb_used": 4112,
+        "memory_mb_total": 8192,
+        "gc_runs": 51,
+        "active_threads": 27
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "be0f9f34-d033-4b8b-b713-959bf2166f98",
+      "timestamp": "2024-01-15T16:18:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 50.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "3d572ff9-407a-48cc-af4a-e93e778f72d4",
+      "span_id": "8e6487786a6248f3",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 50.8,
+        "memory_mb_used": 4161,
+        "memory_mb_total": 8192,
+        "gc_runs": 54,
+        "active_threads": 27
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6288a81f-f93a-44f6-88df-78991375391f",
+      "timestamp": "2024-01-15T16:19:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 51.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "46d1d141-6a1e-4805-9623-867c229ad02e",
+      "span_id": "66dcde0f8de644e4",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 51.4,
+        "memory_mb_used": 4210,
+        "memory_mb_total": 8192,
+        "gc_runs": 57,
+        "active_threads": 27
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "117a4661-8c5b-4935-8fc1-37977a8a8377",
+      "timestamp": "2024-01-15T16:20:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 52.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "967e9de6-243c-4995-8612-ba33e68ba083",
+      "span_id": "ad60888b2a004ba2",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 52.0,
+        "memory_mb_used": 4259,
+        "memory_mb_total": 8192,
+        "gc_runs": 60,
+        "active_threads": 28
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "903f9a87-5328-4bcc-993f-d4c0fa318a62",
+      "timestamp": "2024-01-15T16:21:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 52.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "4e7c763d-9bb9-44bd-8e34-66b16df42465",
+      "span_id": "a9ff63c3968e4a43",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 52.6,
+        "memory_mb_used": 4308,
+        "memory_mb_total": 8192,
+        "gc_runs": 63,
+        "active_threads": 28
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "724153c4-0753-42cd-9575-709484314e0f",
+      "timestamp": "2024-01-15T16:22:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 53.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "0eda615c-707c-4bd6-a429-082799c2cc4b",
+      "span_id": "2858f4b8908845b7",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 53.2,
+        "memory_mb_used": 4358,
+        "memory_mb_total": 8192,
+        "gc_runs": 66,
+        "active_threads": 28
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "af6809f4-e7ba-47b8-baa9-060a0c4bed90",
+      "timestamp": "2024-01-15T16:23:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 53.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "35b92b10-d9c9-435e-b74e-01a880e5d1c8",
+      "span_id": "4fb645b5c7b54a62",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 53.8,
+        "memory_mb_used": 4407,
+        "memory_mb_total": 8192,
+        "gc_runs": 69,
+        "active_threads": 28
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "bdbc49ef-6ecb-41dc-9717-1715eb908234",
+      "timestamp": "2024-01-15T16:24:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 54.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "0d60cf34-0755-49d6-a239-afdd08b57b0e",
+      "span_id": "6452da31c1d94caf",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 54.4,
+        "memory_mb_used": 4456,
+        "memory_mb_total": 8192,
+        "gc_runs": 72,
+        "active_threads": 28
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "945f9bce-37be-4996-9dbc-9ed25ee276ce",
+      "timestamp": "2024-01-15T16:25:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 55.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "5040d2e2-9d3d-46ed-93a3-9758ed3c9cfd",
+      "span_id": "bb98725d424c4d8b",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 55.0,
+        "memory_mb_used": 4505,
+        "memory_mb_total": 8192,
+        "gc_runs": 75,
+        "active_threads": 29
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5ba49fa8-815c-4d6e-b2b9-09ef4c933aef",
+      "timestamp": "2024-01-15T16:26:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 55.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "5badbcf6-0ae6-495c-a4fd-6c6ca916df64",
+      "span_id": "acc57d5c7b34464e",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 55.6,
+        "memory_mb_used": 4554,
+        "memory_mb_total": 8192,
+        "gc_runs": 78,
+        "active_threads": 29
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "649f9a3e-befd-4a1d-87ea-46de10b3cfc1",
+      "timestamp": "2024-01-15T16:27:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 56.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "eade6033-74ae-4cd8-bce2-a88ef7bba270",
+      "span_id": "ef4bf5c5cd7d452d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 56.2,
+        "memory_mb_used": 4603,
+        "memory_mb_total": 8192,
+        "gc_runs": 81,
+        "active_threads": 29
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "28dcec07-7cfd-4826-8f9b-f94e00f3d961",
+      "timestamp": "2024-01-15T16:28:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 56.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "a5dfd092-fcdf-424b-a6b3-140ffb2699cc",
+      "span_id": "0ccc1bb57f3c48e5",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 56.8,
+        "memory_mb_used": 4653,
+        "memory_mb_total": 8192,
+        "gc_runs": 84,
+        "active_threads": 29
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "01f2ffca-b619-4d27-ac9b-585da7f69e73",
+      "timestamp": "2024-01-15T16:29:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 57.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "8045429c-f9a6-4656-ad8e-10eefd381a63",
+      "span_id": "06621587d07f42ed",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 57.4,
+        "memory_mb_used": 4702,
+        "memory_mb_total": 8192,
+        "gc_runs": 87,
+        "active_threads": 29
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "1a8bbb53-1d24-4219-9d1f-3e8d33a50974",
+      "timestamp": "2024-01-15T16:30:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 58.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "16a64c62-bec1-4b21-9349-efd9e38a2f31",
+      "span_id": "89373dda0c6144ba",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 58.0,
+        "memory_mb_used": 4751,
+        "memory_mb_total": 8192,
+        "gc_runs": 90,
+        "active_threads": 30
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "31932f51-0a73-4878-b405-3f1fff8bb594",
+      "timestamp": "2024-01-15T16:31:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 58.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "bf33881a-4e3b-46d4-9df7-5d37d9cb3724",
+      "span_id": "a738a8ea7bca45fc",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 58.6,
+        "memory_mb_used": 4800,
+        "memory_mb_total": 8192,
+        "gc_runs": 93,
+        "active_threads": 30
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b7cd37ed-7786-4d9b-ac41-321fde291c00",
+      "timestamp": "2024-01-15T16:32:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 59.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "a52830e8-9e92-4c73-856f-03cf7ce1dd93",
+      "span_id": "1630c72de1564d20",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 59.2,
+        "memory_mb_used": 4849,
+        "memory_mb_total": 8192,
+        "gc_runs": 96,
+        "active_threads": 30
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "833e1686-afd2-4074-9c2a-5fa2ead34886",
+      "timestamp": "2024-01-15T16:33:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 59.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "1ed93a67-a8a9-462d-8cc9-cad2b1b3f18f",
+      "span_id": "9997206ce37f4521",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 59.8,
+        "memory_mb_used": 4898,
+        "memory_mb_total": 8192,
+        "gc_runs": 99,
+        "active_threads": 30
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "802a9809-015e-4f2b-bcff-ba1b44489ad7",
+      "timestamp": "2024-01-15T16:34:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 60.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "e90f3cbf-0976-4444-bf5d-e705c882c052",
+      "span_id": "22f03f7f5c5f4285",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 60.4,
+        "memory_mb_used": 4947,
+        "memory_mb_total": 8192,
+        "gc_runs": 102,
+        "active_threads": 30
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ce158f96-fc03-423f-9174-ea09e7d2f92e",
+      "timestamp": "2024-01-15T16:35:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 61.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "92d3ac68-4cef-470f-87f6-538be21edc52",
+      "span_id": "1e6b305a944b4737",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 61.0,
+        "memory_mb_used": 4997,
+        "memory_mb_total": 8192,
+        "gc_runs": 105,
+        "active_threads": 31
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ee9bf415-f888-4d34-b914-7efe09760801",
+      "timestamp": "2024-01-15T16:36:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 61.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "eda2b774-57ef-40c2-8cbe-efdf1694d89b",
+      "span_id": "bd6fa1085b454d38",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 61.6,
+        "memory_mb_used": 5046,
+        "memory_mb_total": 8192,
+        "gc_runs": 108,
+        "active_threads": 31
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "50939e13-3964-43f7-8382-75603d60e858",
+      "timestamp": "2024-01-15T16:37:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 62.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "307ebb96-eec7-4b31-953e-681838ab8703",
+      "span_id": "410f46de860a489d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 62.2,
+        "memory_mb_used": 5095,
+        "memory_mb_total": 8192,
+        "gc_runs": 111,
+        "active_threads": 31
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6a8d2837-df2f-4b5d-9b39-1089813727be",
+      "timestamp": "2024-01-15T16:38:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 62.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "3d244086-97f1-4794-9658-17b811f3fb97",
+      "span_id": "cb8adfdb10b54fe2",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 62.8,
+        "memory_mb_used": 5144,
+        "memory_mb_total": 8192,
+        "gc_runs": 114,
+        "active_threads": 31
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8efb2ff6-dd00-4b21-aa75-91b16063193a",
+      "timestamp": "2024-01-15T16:39:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 63.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "b26502f9-ad8f-48ee-978b-6e491a46db1f",
+      "span_id": "97c90778a22147df",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 63.4,
+        "memory_mb_used": 5193,
+        "memory_mb_total": 8192,
+        "gc_runs": 117,
+        "active_threads": 31
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "29ab9c8b-d28f-4a41-91e7-1cb7b19cdcff",
+      "timestamp": "2024-01-15T16:40:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 64.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "752c14a9-41ba-49d6-bcdf-d74dc0dccc2d",
+      "span_id": "65baf8db8ed140a3",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 64.0,
+        "memory_mb_used": 5242,
+        "memory_mb_total": 8192,
+        "gc_runs": 120,
+        "active_threads": 32
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "df061c91-aa21-4ef7-8e0d-0e23d2ae11c0",
+      "timestamp": "2024-01-15T16:41:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 64.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "6d6224b3-5a94-4ad7-866a-c3b467955af7",
+      "span_id": "7f29a53428ca4979",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 64.6,
+        "memory_mb_used": 5292,
+        "memory_mb_total": 8192,
+        "gc_runs": 123,
+        "active_threads": 32
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "42e85ca3-33b4-4e87-bd83-7c1275fc4b9f",
+      "timestamp": "2024-01-15T16:42:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 65.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "13c63e9e-0471-4775-b29c-476d1a8ce93d",
+      "span_id": "f92591a688cb4fb4",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 65.2,
+        "memory_mb_used": 5341,
+        "memory_mb_total": 8192,
+        "gc_runs": 126,
+        "active_threads": 32
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "1f5cadeb-1353-4789-abb4-866265ae1afe",
+      "timestamp": "2024-01-15T16:43:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 65.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "3e7f2020-6b93-489d-a06f-8e5133d06ec7",
+      "span_id": "1e82cca4743842bc",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 65.8,
+        "memory_mb_used": 5390,
+        "memory_mb_total": 8192,
+        "gc_runs": 129,
+        "active_threads": 32
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5152c858-a888-453e-a05d-403b0a77daa9",
+      "timestamp": "2024-01-15T16:44:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 66.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "d19707d6-d807-4e3f-bbd3-62f198673a67",
+      "span_id": "582b738f1167425e",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 66.4,
+        "memory_mb_used": 5439,
+        "memory_mb_total": 8192,
+        "gc_runs": 132,
+        "active_threads": 32
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6a49e6b3-5a28-48de-8abd-a68b3bcde12b",
+      "timestamp": "2024-01-15T16:45:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 67.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "59198c08-3735-49c4-b663-babb6a39dfaa",
+      "span_id": "d8fd217d9caa46d7",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 67.0,
+        "memory_mb_used": 5488,
+        "memory_mb_total": 8192,
+        "gc_runs": 135,
+        "active_threads": 33
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3dd15ceb-b0eb-4aed-b0db-2c3ec11f208a",
+      "timestamp": "2024-01-15T16:46:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 67.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "558c2846-7799-4275-ac86-3dfad35a5242",
+      "span_id": "d66c0525938b46ab",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 67.6,
+        "memory_mb_used": 5537,
+        "memory_mb_total": 8192,
+        "gc_runs": 138,
+        "active_threads": 33
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3b7df2be-a789-4ead-9843-b5de81568d4d",
+      "timestamp": "2024-01-15T16:47:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 68.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "530725aa-52f2-44ce-a187-8f5519275116",
+      "span_id": "5615e80cb64b4e88",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 68.2,
+        "memory_mb_used": 5586,
+        "memory_mb_total": 8192,
+        "gc_runs": 141,
+        "active_threads": 33
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "f4adc800-704c-45fb-bb0a-3c59c6c5e4b4",
+      "timestamp": "2024-01-15T16:48:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 68.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "52eeea10-2866-495c-a0ac-9fb78a0fae8f",
+      "span_id": "f943dd9e8e3e47af",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 68.8,
+        "memory_mb_used": 5636,
+        "memory_mb_total": 8192,
+        "gc_runs": 144,
+        "active_threads": 33
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "88cd0c04-f3ad-41ac-a67a-3a0221f369d1",
+      "timestamp": "2024-01-15T16:49:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 69.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "5534b219-3e8a-4e90-ba2d-19a67b4a5da5",
+      "span_id": "2db2de3c1911468d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 69.4,
+        "memory_mb_used": 5685,
+        "memory_mb_total": 8192,
+        "gc_runs": 147,
+        "active_threads": 33
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4ddbe4cf-0f0d-451f-9f01-ab9ca7f9a7e3",
+      "timestamp": "2024-01-15T16:50:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 70.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "83151b79-8cc7-4518-bfd9-470ff0912335",
+      "span_id": "b186416d583e4d83",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 70.0,
+        "memory_mb_used": 5734,
+        "memory_mb_total": 8192,
+        "gc_runs": 150,
+        "active_threads": 34
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "61249d30-0f99-46d2-8fba-9861d273f751",
+      "timestamp": "2024-01-15T16:51:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 70.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "b42a5e9b-b4f5-4d0b-b9fb-aebd3667e6f5",
+      "span_id": "a150a6c49d614215",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 70.6,
+        "memory_mb_used": 5783,
+        "memory_mb_total": 8192,
+        "gc_runs": 153,
+        "active_threads": 34
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "26809792-54c8-42ab-b894-ebb09e658439",
+      "timestamp": "2024-01-15T16:52:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 71.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "9706686c-6680-4c81-b7e9-138f41257980",
+      "span_id": "61419a625b834143",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 71.2,
+        "memory_mb_used": 5832,
+        "memory_mb_total": 8192,
+        "gc_runs": 156,
+        "active_threads": 34
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "f42f9a64-551b-4945-a220-ef4e3b07b0fb",
+      "timestamp": "2024-01-15T16:53:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 71.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "ac94e61d-7532-46c6-959e-7c88a009edd9",
+      "span_id": "5e45665808194d90",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 71.8,
+        "memory_mb_used": 5881,
+        "memory_mb_total": 8192,
+        "gc_runs": 159,
+        "active_threads": 34
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "03ef0e1f-3d8f-4bf8-8ea7-cf061aee9cf8",
+      "timestamp": "2024-01-15T16:54:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 72.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "a41e0d44-0252-488a-9d85-a73a3d3792a3",
+      "span_id": "37e5c015cb874970",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 72.4,
+        "memory_mb_used": 5931,
+        "memory_mb_total": 8192,
+        "gc_runs": 162,
+        "active_threads": 34
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b2675127-f679-4c4f-9aea-68000ccf5bb9",
+      "timestamp": "2024-01-15T16:55:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 73.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "da923c76-6ca6-49e2-b33b-98648b73c4c8",
+      "span_id": "d86459a0367b47f0",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 73.0,
+        "memory_mb_used": 5980,
+        "memory_mb_total": 8192,
+        "gc_runs": 165,
+        "active_threads": 35
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "76ad10ac-6bd1-4f91-ab16-46972d349c60",
+      "timestamp": "2024-01-15T16:56:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 73.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "26abf30c-09f1-4451-82ac-0d4eda2d26fb",
+      "span_id": "c202211fdca94932",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 73.6,
+        "memory_mb_used": 6029,
+        "memory_mb_total": 8192,
+        "gc_runs": 168,
+        "active_threads": 35
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4d2df559-b681-41ab-af54-96a379ad8def",
+      "timestamp": "2024-01-15T16:57:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 74.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "2a15a9f9-6419-4123-96f5-b6bc24e435cb",
+      "span_id": "a01bb1dfaa324a57",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 74.2,
+        "memory_mb_used": 6078,
+        "memory_mb_total": 8192,
+        "gc_runs": 171,
+        "active_threads": 35
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d95b0a83-3e47-4f0e-a90d-a9422f5abb2b",
+      "timestamp": "2024-01-15T16:58:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 74.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "79f1a900-754e-4f03-8890-a5cd5a7e12b2",
+      "span_id": "d73e95bd2f4549cf",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 74.8,
+        "memory_mb_used": 6127,
+        "memory_mb_total": 8192,
+        "gc_runs": 174,
+        "active_threads": 35
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "f51f0adf-5d65-443f-9d2c-180b1f23fd15",
+      "timestamp": "2024-01-15T16:59:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 75.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "39a1903b-0262-44c9-93b7-7ce6be469854",
+      "span_id": "1e961114a0e24cd4",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 75.4,
+        "memory_mb_used": 6176,
+        "memory_mb_total": 8192,
+        "gc_runs": 177,
+        "active_threads": 35
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e7aa2e53-f7b5-4b62-9161-44bc83635826",
+      "timestamp": "2024-01-15T17:00:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 76.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "6eaa5fdc-a570-4484-b8f8-ab483cdf1458",
+      "span_id": "db6de7e95cbc4537",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 76.0,
+        "memory_mb_used": 6225,
+        "memory_mb_total": 8192,
+        "gc_runs": 180,
+        "active_threads": 36
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "635ca21e-c1e9-4c12-84f4-4500587acb04",
+      "timestamp": "2024-01-15T17:01:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 76.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "e80cc16b-40be-4482-9d05-6508a7135226",
+      "span_id": "cfa20fd81c744b9c",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 76.6,
+        "memory_mb_used": 6275,
+        "memory_mb_total": 8192,
+        "gc_runs": 183,
+        "active_threads": 36
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8d2124ee-02d6-4558-a407-7b1bb4c018c1",
+      "timestamp": "2024-01-15T17:02:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 77.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "cbdaa1cb-d074-4af6-aeff-3b07dbd95910",
+      "span_id": "594f918622994767",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 77.2,
+        "memory_mb_used": 6324,
+        "memory_mb_total": 8192,
+        "gc_runs": 186,
+        "active_threads": 36
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "02908f4b-c786-4f46-984a-7f847b09b411",
+      "timestamp": "2024-01-15T17:03:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 77.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "551f95a5-8598-4b29-a9fb-3eb9bf8855d9",
+      "span_id": "0ef53135931044ce",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 77.8,
+        "memory_mb_used": 6373,
+        "memory_mb_total": 8192,
+        "gc_runs": 189,
+        "active_threads": 36
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4cb5d775-5745-4871-99ac-f800417f5082",
+      "timestamp": "2024-01-15T17:04:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 78.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "b9c59cfd-206e-4a95-8f33-f74a606d9562",
+      "span_id": "84824b60cc6041c6",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 78.4,
+        "memory_mb_used": 6422,
+        "memory_mb_total": 8192,
+        "gc_runs": 192,
+        "active_threads": 36
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "beca0806-80b2-438e-8b0f-6dada1ded8d7",
+      "timestamp": "2024-01-15T17:05:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 79.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "c9e07f37-9dd3-4805-bb62-62e6149b8cfe",
+      "span_id": "394091f463f0410c",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 79.0,
+        "memory_mb_used": 6471,
+        "memory_mb_total": 8192,
+        "gc_runs": 195,
+        "active_threads": 37
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "9892098a-23d3-4504-85da-e7ffe074a96c",
+      "timestamp": "2024-01-15T17:06:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Memory usage at 79.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "4ce6d67e-276b-49c4-8766-93385f891469",
+      "span_id": "08f0521634cd41b7",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 79.6,
+        "memory_mb_used": 6520,
+        "memory_mb_total": 8192,
+        "gc_runs": 198,
+        "active_threads": 37
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8b32e1e9-c512-41c2-a077-8a60ed21c07e",
+      "timestamp": "2024-01-15T17:07:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 80.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "883ff7c6-b17f-40e2-a454-471c319978c4",
+      "span_id": "2a25bceaa0734f21",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 80.2,
+        "memory_mb_used": 6569,
+        "memory_mb_total": 8192,
+        "gc_runs": 201,
+        "active_threads": 37
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "fa6775e4-5920-4efa-b9cd-17b769ffd6f9",
+      "timestamp": "2024-01-15T17:08:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 80.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "ef9a48c4-4927-4053-8315-0da544bb584c",
+      "span_id": "4542adb033f245f0",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 80.8,
+        "memory_mb_used": 6619,
+        "memory_mb_total": 8192,
+        "gc_runs": 204,
+        "active_threads": 37
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6aebf2e2-85ed-4112-a51a-e061ae928c16",
+      "timestamp": "2024-01-15T17:09:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 81.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "bb7b419f-6106-4bfa-954c-8d4f9d6b3f62",
+      "span_id": "93d9040abc844172",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 81.4,
+        "memory_mb_used": 6668,
+        "memory_mb_total": 8192,
+        "gc_runs": 207,
+        "active_threads": 37
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "413cbbb4-7477-4b1d-8873-59a28140a473",
+      "timestamp": "2024-01-15T17:10:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 82.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "35f5a116-b38c-4d05-8d7e-64fddf49a362",
+      "span_id": "df8e9052cd8d4e5d",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 82.0,
+        "memory_mb_used": 6717,
+        "memory_mb_total": 8192,
+        "gc_runs": 210,
+        "active_threads": 38
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "a58b3f64-6b2c-4012-a54a-f39144e030e9",
+      "timestamp": "2024-01-15T17:11:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 82.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "196e9025-54ba-45a3-98c7-58f1680d03f4",
+      "span_id": "212eb3ff14984891",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 82.6,
+        "memory_mb_used": 6766,
+        "memory_mb_total": 8192,
+        "gc_runs": 213,
+        "active_threads": 38
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7765fb03-7722-439f-acc0-a2dbb0fd4465",
+      "timestamp": "2024-01-15T17:12:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 83.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "c64095c0-53e2-44bc-8de8-beb7c5146d90",
+      "span_id": "ea8a6ad6f4154ec4",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 83.2,
+        "memory_mb_used": 6815,
+        "memory_mb_total": 8192,
+        "gc_runs": 216,
+        "active_threads": 38
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2f7e7b27-f23c-4196-8761-c13c070a3b28",
+      "timestamp": "2024-01-15T17:13:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 83.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "3c597396-55cc-4880-9dcf-e7b449d2dc70",
+      "span_id": "d21e4610cbd04d8e",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 83.8,
+        "memory_mb_used": 6864,
+        "memory_mb_total": 8192,
+        "gc_runs": 219,
+        "active_threads": 38
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "9b061c18-8e4b-4a03-b4e4-26710dd3178f",
+      "timestamp": "2024-01-15T17:14:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 84.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "a679920b-b24b-4929-8652-127d6bf402dc",
+      "span_id": "e681bda084384fe5",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 84.4,
+        "memory_mb_used": 6914,
+        "memory_mb_total": 8192,
+        "gc_runs": 222,
+        "active_threads": 38
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "12e2d241-924c-4f47-b06a-2f4ae977a8f0",
+      "timestamp": "2024-01-15T17:15:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 85.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "627e8e42-54c8-45fc-89b6-f26dd0b24dd6",
+      "span_id": "7fc8bd51491d49eb",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 85.0,
+        "memory_mb_used": 6963,
+        "memory_mb_total": 8192,
+        "gc_runs": 225,
+        "active_threads": 39
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "967f0412-541a-47e1-892a-e07bf1144450",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7eb6613e-eb79-4648-b6bd-f77cabb74cc0",
+      "timestamp": "2024-01-15T17:16:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 85.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "ad8e1026-165c-4fb0-b61c-fcf7dc67b54a",
+      "span_id": "8ed7400f2e1d4774",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 85.6,
+        "memory_mb_used": 7012,
+        "memory_mb_total": 8192,
+        "gc_runs": 228,
+        "active_threads": 39
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "adf52ecc-35e3-4aa2-93af-5574533ca9b6",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "f190f541-2f80-4b1f-88cb-656264ceb2d7",
+      "timestamp": "2024-01-15T17:17:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 86.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "a51825f3-374e-4281-86f4-005bf9d5ca10",
+      "span_id": "326f55bb66ef4664",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 86.2,
+        "memory_mb_used": 7061,
+        "memory_mb_total": 8192,
+        "gc_runs": 231,
+        "active_threads": 39
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "4f42b5cc-e138-4c29-a752-cbd8301db7cd",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "186f835e-eb86-40d2-aa75-fbf3955d6207",
+      "timestamp": "2024-01-15T17:18:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 86.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "ffee902f-d8fa-483c-9c09-60f604e24034",
+      "span_id": "e0206c9b27734950",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 86.8,
+        "memory_mb_used": 7110,
+        "memory_mb_total": 8192,
+        "gc_runs": 234,
+        "active_threads": 39
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "7f1f37f2-aa2b-4c45-96cb-1d4ec02ebad5",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "c1701d17-d74c-4cbc-8d50-8a881a4033cb",
+      "timestamp": "2024-01-15T17:19:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 87.4% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "ea6d5263-ed0b-43f0-a115-daffd78c41a7",
+      "span_id": "88df0ef81933427a",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 87.4,
+        "memory_mb_used": 7159,
+        "memory_mb_total": 8192,
+        "gc_runs": 237,
+        "active_threads": 39
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "248c8465-f485-48aa-8ed6-ce668c1d0872",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "17e1e715-330b-4350-8d7a-57c6053df2ac",
+      "timestamp": "2024-01-15T17:20:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 88.0% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "c64a99ba-b286-4845-8d41-87faced1125a",
+      "span_id": "c14349cf02534db5",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 88.0,
+        "memory_mb_used": 7208,
+        "memory_mb_total": 8192,
+        "gc_runs": 240,
+        "active_threads": 40
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "0efcc4cd-0edd-42cb-97e3-e1cd8dd2c680",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8b8db3fe-cf23-4daa-85da-2436724c7e5b",
+      "timestamp": "2024-01-15T17:21:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 88.6% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "5b025edb-6505-4596-99ae-c51bcb42f88a",
+      "span_id": "b132ae6d92544a0a",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 88.6,
+        "memory_mb_used": 7258,
+        "memory_mb_total": 8192,
+        "gc_runs": 243,
+        "active_threads": 40
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "70c8ba58-ca00-4bab-89bb-35fc9cc698c3",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "73d0d140-50cf-4f0a-828d-c0018a9ab0bb",
+      "timestamp": "2024-01-15T17:22:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 89.2% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "ffb7a377-d390-4bc0-b253-d25ab401327a",
+      "span_id": "ceeecc753c214617",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 89.2,
+        "memory_mb_used": 7307,
+        "memory_mb_total": 8192,
+        "gc_runs": 246,
+        "active_threads": 40
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "11c655fd-9b8e-43d7-b3f1-8291b007ca8e",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "76262071-41b8-48c6-b2cf-292e97db0dd7",
+      "timestamp": "2024-01-15T17:23:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 89.8% — elevated and growing",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "150b9d27-fccc-40e3-bd2f-86959c003d92",
+      "span_id": "5798f4bcbd26401b",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 89.8,
+        "memory_mb_used": 7356,
+        "memory_mb_total": 8192,
+        "gc_runs": 249,
+        "active_threads": 40
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "f4f07592-10e6-4edf-9fe0-1d82b16e361b",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4061839b-e7ae-462b-b799-d375051b2f9e",
+      "timestamp": "2024-01-15T17:24:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 90.4% — critical: OOM risk",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "e21c2c71-5037-4e97-b6a2-4055c54052ae",
+      "span_id": "47f597c4a1204056",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 90.4,
+        "memory_mb_used": 7405,
+        "memory_mb_total": 8192,
+        "gc_runs": 252,
+        "active_threads": 40
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "be40f023-a47e-416b-8c1c-55ebeeda23d9",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "a36f70b8-bca4-407f-a6d2-2bf15f4fc8b2",
+      "timestamp": "2024-01-15T17:25:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 91.0% — critical: OOM risk",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "2fc3bbb0-6f2b-453f-8677-cf23d20b86e9",
+      "span_id": "b7b27c0f60f8462f",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 91.0,
+        "memory_mb_used": 7454,
+        "memory_mb_total": 8192,
+        "gc_runs": 255,
+        "active_threads": 41
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "5bf66b5e-5189-45a3-9231-0508592ca400",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "32b152c4-71ae-412d-b200-40dca478b4ae",
+      "timestamp": "2024-01-15T17:26:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 91.6% — critical: OOM risk",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "0c331581-bc87-47e2-b6ea-fbd128984bd8",
+      "span_id": "bfe3866e086e4837",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 91.6,
+        "memory_mb_used": 7503,
+        "memory_mb_total": 8192,
+        "gc_runs": 258,
+        "active_threads": 41
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "a716493a-222b-439d-9467-a1206eccaa22",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "21f4c63a-502a-45a9-9d09-bbe562fea6b1",
+      "timestamp": "2024-01-15T17:27:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 92.2% — critical: OOM risk",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "2632d74a-8a15-4e60-a75d-3fa341e6dc35",
+      "span_id": "bf5900cb44014340",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 92.2,
+        "memory_mb_used": 7553,
+        "memory_mb_total": 8192,
+        "gc_runs": 261,
+        "active_threads": 41
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "3ebe2c32-ad2f-4c42-becc-ba6b36d969b4",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ab0c13a7-ce4a-4709-b363-6becd3ec7591",
+      "timestamp": "2024-01-15T17:28:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 92.8% — critical: OOM risk",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "95304bdb-46be-4c7b-9aeb-deeb3ccb41d1",
+      "span_id": "e31133a597bf4dcf",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 92.8,
+        "memory_mb_used": 7602,
+        "memory_mb_total": 8192,
+        "gc_runs": 264,
+        "active_threads": 41
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "1113b3ab-0ce9-4137-a181-72ef161f0efc",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2393c645-8e90-409e-b3c4-40822c7df691",
+      "timestamp": "2024-01-15T17:29:00.000Z",
+      "service": "worker-service",
+      "environment": "production",
+      "severity": "HIGH",
+      "severity_code": 3,
+      "event_type": "memory_leak",
+      "message": "Memory usage at 93.4% — critical: OOM risk",
+      "host": "worker-01.internal",
+      "region": "us-east-1",
+      "trace_id": "a0272804-d275-4269-bcc5-1b598e03140d",
+      "span_id": "4fd878d7708f4434",
+      "error_code": "ERR_INFRA_003",
+      "schema_version": "1.0",
+      "metadata": {
+        "memory_percent": 93.4,
+        "memory_mb_used": 7651,
+        "memory_mb_total": 8192,
+        "gc_runs": 267,
+        "active_threads": 41
+      },
+      "alert": {
+        "is_alert": true,
+        "alert_id": "de48d4b5-ede5-4b97-af13-ebe74d2c55f6",
+        "rule_name": "memory_leak_threshold",
+        "suppressed": false
+      }
+    }
+  ],
+  "alert_count": 15,
+  "log_count": 90
+}

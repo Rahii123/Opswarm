@@ -1,0 +1,53 @@
+# OpsSwarm — Development Environment Config
+# ===========================================
+
+app:
+  name: OpsSwarm
+  env: development
+  version: "0.1.0"
+  debug: true
+  log_level: DEBUG
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 1
+  reload: true
+
+database:
+  postgres:
+    host: localhost
+    port: 5432
+    db: opsswarm
+    user: opsswarm_user
+    pool_size: 5
+    max_overflow: 10
+  redis:
+    host: localhost
+    port: 6379
+    db: 0
+  qdrant:
+    host: localhost
+    port: 6333
+
+llm:
+  provider: groq
+  model: llama3-70b-8192
+
+embeddings:
+  provider: gemini
+  model: models/embedding-001
+  dimension: 768
+
+safety:
+  risk_score_approval_threshold: 6.0
+  max_auto_remediation_actions: 3
+  human_approval_timeout_seconds: 300
+
+simulation:
+  data_path: ./data
+  seed: 42
+  incidents_count: 5
+
+observability:
+  langfuse_enabled: false

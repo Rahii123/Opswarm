@@ -1,0 +1,1770 @@
+{
+  "incident_id": "INC-003",
+  "schema_version": "1.0",
+  "is_anomaly": true,
+  "title": "Payment gateway timeout cascade",
+  "description": "Payment processing latency escalating from 200ms to 30s+ over 5 minutes. Transactions failing and being retried, causing retry storm.",
+  "severity": "CRITICAL",
+  "error_code": "ERR_PAY_001",
+  "event_type": "payment_cascade",
+  "affected_service": "payment-gateway",
+  "affected_host": "payment-gw.internal",
+  "affected_region": "us-east-1",
+  "detected_at": "2024-01-15T14:01:40.000Z",
+  "duration_minutes": 5,
+  "expected_root_cause": "Upstream Stripe API degradation causing timeout cascade. Retry storm amplifying the impact.",
+  "expected_remediation": [
+    "enable_circuit_breaker",
+    "notify_on_call",
+    "create_incident_ticket"
+  ],
+  "ground_truth_labels": {
+    "is_security_incident": false,
+    "is_automated_attack": false,
+    "requires_human_approval": false
+  },
+  "logs": [
+    {
+      "log_id": "36df9b37-9c6d-4462-a0ff-03ad3b72738d",
+      "timestamp": "2024-01-15T14:00:00.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 200ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "c1f1ed86-2e1d-4f27-bf6c-f7e2ee730216",
+      "span_id": "bfe6225cba414866",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "aab6f156-ed81-4635-b4c9-bdbdfdd300a9",
+        "amount_usd": 43.71,
+        "latency_ms": 200,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6510cb9d-9898-495d-a1fa-cfc7f228cbc0",
+      "timestamp": "2024-01-15T14:00:05.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 250ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "a4d29513-95a7-4dbc-b0ee-20684f8f60e9",
+      "span_id": "250b2eff73d44dbe",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "6aa82830-cfb7-406c-a126-740a3af6615e",
+        "amount_usd": 129.7,
+        "latency_ms": 250,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "9b0a080b-afd4-44f8-81df-7cfb52d37307",
+      "timestamp": "2024-01-15T14:00:10.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 300ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "2d272fae-7eef-4af6-83c9-e31355068ec6",
+      "span_id": "6e7065c306954127",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "de5cb1bd-5228-45d9-83c1-9f78262a9d30",
+        "amount_usd": 149.64,
+        "latency_ms": 300,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "92ef888b-e661-445f-b3b8-26b320b26e30",
+      "timestamp": "2024-01-15T14:00:15.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 350ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "80f7c165-4653-48b7-a470-000bddf97c92",
+      "span_id": "9259b4655e664f57",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "2afa1039-112c-46b2-b414-ae2960fcbe49",
+        "amount_usd": 224.71,
+        "latency_ms": 350,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "89588dad-b17a-45f2-ba65-f050b45f618f",
+      "timestamp": "2024-01-15T14:00:20.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 400ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "f4d28f63-7036-404a-93b3-f26d42ed7f7e",
+      "span_id": "add200915e514975",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "1db9593a-ce65-4a53-b91d-46287519db20",
+        "amount_usd": 276.18,
+        "latency_ms": 400,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "6119c6f3-d94b-47ee-8e0a-12fd981f5375",
+      "timestamp": "2024-01-15T14:00:25.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 450ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "4bea82ff-7c1a-46c6-9f89-0ac4ef3ae10c",
+      "span_id": "6d7cb8bbf51543cf",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "8f1e2124-2bef-49aa-a0e8-24715c765a77",
+        "amount_usd": 158.23,
+        "latency_ms": 450,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "263cc34e-f16e-497e-a14d-8d9df1f5effa",
+      "timestamp": "2024-01-15T14:00:30.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 500ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "b7774949-896d-404f-a9b1-dc107e49d58d",
+      "span_id": "1ac0e07048a346d1",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "e398b082-3cec-4c0a-8960-058591d07778",
+        "amount_usd": 492.09,
+        "latency_ms": 500,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "268e92bb-d081-46a0-ad2b-ac7fa65478a9",
+      "timestamp": "2024-01-15T14:00:35.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 550ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "1a6324a0-4d86-4bed-b850-e2b82c141b04",
+      "span_id": "56e5665d799b46f5",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "38dbf64c-f035-4435-9367-66b8e872fb52",
+        "amount_usd": 405.48,
+        "latency_ms": 550,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ca106dd5-166f-4ffd-a29e-133a5e0cce11",
+      "timestamp": "2024-01-15T14:00:40.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 600ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "f404445b-a157-405f-8dbd-669bec947f33",
+      "span_id": "398b2f8f89584c17",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "7efde524-3a6b-4d9f-b5a3-5bb3ebe7221c",
+        "amount_usd": 269.18,
+        "latency_ms": 600,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "41921228-b4fb-4381-9f71-a390468ae49d",
+      "timestamp": "2024-01-15T14:00:45.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 650ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "d39cab64-be07-4809-90da-f0417aafcde5",
+      "span_id": "57253dbd247c4894",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "f8ee464a-8b6b-480b-a1a7-d92ccd03d1ec",
+        "amount_usd": 337.25,
+        "latency_ms": 650,
+        "upstream": "stripe-api",
+        "retry_count": 0
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e743ede8-4b7b-44ef-8bdd-4ff5a483e349",
+      "timestamp": "2024-01-15T14:00:50.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 700ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "6e70f93d-8d82-4018-988e-a9297136fe78",
+      "span_id": "3f29daaf1d554d50",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "e0c8973f-e8ab-4ea0-aaa7-7b67f5c87ebf",
+        "amount_usd": 281.76,
+        "latency_ms": 700,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "c1d235fc-7e28-4210-99ad-580b6c71fb3b",
+      "timestamp": "2024-01-15T14:00:55.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 750ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "602dcf6d-3cfc-47fb-a09f-5e4540e09666",
+      "span_id": "69764bee42ea40ba",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "0f72476f-0a46-41c0-90c8-ce6b328450c8",
+        "amount_usd": 466.56,
+        "latency_ms": 750,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "75d88fbd-7032-42c8-896c-b02c58b925b8",
+      "timestamp": "2024-01-15T14:01:00.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 800ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "8d3ef254-ce3f-488d-a1e4-377c34a8cb69",
+      "span_id": "1dc3f1a7dfda4678",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "1fad33ad-39d6-4866-9b9e-49b2c2520b01",
+        "amount_usd": 60.76,
+        "latency_ms": 800,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "520a4de2-1514-4704-a132-6fee0aca8f86",
+      "timestamp": "2024-01-15T14:01:05.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 850ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "d0114c87-849e-44b6-964c-2a49f7a636ab",
+      "span_id": "9d2762cea35f4dcf",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "0df3436d-4bc4-46c1-8383-803eb37746a5",
+        "amount_usd": 440.28,
+        "latency_ms": 850,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3c61d2af-44e8-4d53-b407-2029ae80cc72",
+      "timestamp": "2024-01-15T14:01:10.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 900ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "522de67d-13fc-45a4-91cf-7a71696f69de",
+      "span_id": "33b62ff12bef4aac",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "714f4c84-526a-4225-a58c-7c96bd015d42",
+        "amount_usd": 139.59,
+        "latency_ms": 900,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "641205d1-5161-4bf2-b5cf-6be24748e59e",
+      "timestamp": "2024-01-15T14:01:15.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 950ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "ddeb0989-2219-4694-9efa-6fe7c6288ebb",
+      "span_id": "b0ef6d1f6c434ff4",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "03fff1bb-b61e-449a-9cb8-d9ddba5ef0df",
+        "amount_usd": 445.96,
+        "latency_ms": 950,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7f2183dd-e65d-4d89-a7a3-7b2fe86094d4",
+      "timestamp": "2024-01-15T14:01:20.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1000ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "90bbf955-2331-4f15-a2c1-b2ba5e6c96bb",
+      "span_id": "4c009f451a184f70",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "57bb6a0f-0e75-44cf-8291-3ec3f99f8929",
+        "amount_usd": 373.78,
+        "latency_ms": 1000,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d595659b-57ea-4ee7-bbbb-9c2b6261ce1a",
+      "timestamp": "2024-01-15T14:01:25.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1050ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "369ed57b-486b-4d7d-9f7b-bb3c36f73fdc",
+      "span_id": "b223830406434786",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "514f4546-ed8a-46a4-9329-4fff855bb7f1",
+        "amount_usd": 86.17,
+        "latency_ms": 1050,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e8a56138-e76d-4596-b4ed-48e35a1d02d6",
+      "timestamp": "2024-01-15T14:01:30.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1100ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "15379498-cf10-4e28-ae30-dcc061743359",
+      "span_id": "4ad96ded8b0942c1",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "819240f6-722c-408e-9fc4-f2784bec9e7b",
+        "amount_usd": 148.06,
+        "latency_ms": 1100,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "db809e25-b68a-4f0b-b706-e0cfc97227bb",
+      "timestamp": "2024-01-15T14:01:35.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1150ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "a0c5f6f9-8e4b-4802-a4a6-47e470ed8f21",
+      "span_id": "f4531d78820a4769",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "dc03faa5-5b29-4a59-8807-a85ced436828",
+        "amount_usd": 113.21,
+        "latency_ms": 1150,
+        "upstream": "stripe-api",
+        "retry_count": 1
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4d61694b-5a89-4d65-a5b5-e86383e6b66c",
+      "timestamp": "2024-01-15T14:01:40.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1200ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "616cb649-6048-43d8-b077-393445fcd17e",
+      "span_id": "36b62790636c4c01",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "d0e4f686-873b-4056-873e-c232b047fa10",
+        "amount_usd": 178.01,
+        "latency_ms": 1200,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "12b11e7f-343b-4d4b-995d-3c7b42e39abd",
+      "timestamp": "2024-01-15T14:01:45.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1250ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "ba628fef-be02-4ca8-b642-6176901e1077",
+      "span_id": "fd1c867a08784e80",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "e4b20a34-9828-4f88-bb0c-bf2676a98824",
+        "amount_usd": 346.87,
+        "latency_ms": 1250,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "7b8d51d2-ff79-49ef-b804-3193be9fbdcc",
+      "timestamp": "2024-01-15T14:01:50.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1300ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "77822d5a-4d33-4e14-b6ed-2798a5e62840",
+      "span_id": "808878ea5c614588",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "09426932-906c-4322-915a-4d184ad5a8b9",
+        "amount_usd": 427.93,
+        "latency_ms": 1300,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8e44d08a-3584-434c-a2be-1c4533d9ff78",
+      "timestamp": "2024-01-15T14:01:55.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1350ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "ea7f1e63-0c8c-4d00-b59a-75e15fafe9e1",
+      "span_id": "0a71baaa622e4374",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "10dd1584-74b8-45aa-9307-4c152e9966dc",
+        "amount_usd": 257.65,
+        "latency_ms": 1350,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8ca4d4f1-937c-4ae6-b0f2-9cf4b7210138",
+      "timestamp": "2024-01-15T14:02:00.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1400ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "9eb5b59d-1007-4c49-9658-ab0fce474289",
+      "span_id": "fcf64357521545b5",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "aa0c767f-19c5-4a96-a5e6-8b0e507fbe1b",
+        "amount_usd": 133.05,
+        "latency_ms": 1400,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b108f06f-705c-4148-a2ab-74a634f029e7",
+      "timestamp": "2024-01-15T14:02:05.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1450ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "b7e61acf-1f40-4e5a-b45a-30f46eec044e",
+      "span_id": "e5aa45bff0ca42a9",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "36284cdb-993c-4651-8c3d-a71359db0afb",
+        "amount_usd": 455.0,
+        "latency_ms": 1450,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "19c1c04d-f81b-44f1-ab41-860bab8e4a18",
+      "timestamp": "2024-01-15T14:02:10.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1500ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "603a5e0f-00ea-44f0-bb77-6e5c3f793bda",
+      "span_id": "e340fb9908a74d27",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "20e43645-b264-4e29-8adc-7528628ec0ed",
+        "amount_usd": 34.89,
+        "latency_ms": 1500,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "a8988e9f-59fe-4c73-b14b-4ed1b83a4be1",
+      "timestamp": "2024-01-15T14:02:15.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1550ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "294f697f-25ea-4611-b9ff-2810c4bab9f8",
+      "span_id": "a0cd91626d6e404f",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "b0c8c946-9de9-48ce-ae71-763cd3aa8bc8",
+        "amount_usd": 320.8,
+        "latency_ms": 1550,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e38b6c8f-0b79-4460-bdc0-f6f04bd7bee2",
+      "timestamp": "2024-01-15T14:02:20.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1600ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "3ec83bb6-1e69-4623-9842-fbbd05e9f3c1",
+      "span_id": "d0b06ec604b3496c",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "6ac75056-7756-457f-b594-3747a5cd782e",
+        "amount_usd": 416.38,
+        "latency_ms": 1600,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "0ed828eb-2c45-47b8-be96-7696bae08a2e",
+      "timestamp": "2024-01-15T14:02:25.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1650ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "c83e3cc5-828e-4d2b-be60-42f3a7ed5683",
+      "span_id": "0a99a787948e401b",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "132c4e24-91eb-4b4c-9a15-edb67da03aa5",
+        "amount_usd": 31.6,
+        "latency_ms": 1650,
+        "upstream": "stripe-api",
+        "retry_count": 2
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "3c1b52fe-6908-40b0-bde7-77357fe5fae1",
+      "timestamp": "2024-01-15T14:02:30.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1700ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "7ef4b360-f84f-424f-986d-3066633eee62",
+      "span_id": "76642f1a31724cce",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "c43e46d1-af27-4e14-ab71-a6a44b06b9b4",
+        "amount_usd": 173.44,
+        "latency_ms": 1700,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2a495324-bb24-44e8-9c71-e7cb60135794",
+      "timestamp": "2024-01-15T14:02:35.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1750ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "9e1a6064-7f60-4713-9e70-2c0ef219666e",
+      "span_id": "6423d0d6433d44f2",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "45e1b66a-644d-4cc9-9f02-17347ba7d0dd",
+        "amount_usd": 74.1,
+        "latency_ms": 1750,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4961aa9e-5108-47e2-abeb-ae1fe695ef49",
+      "timestamp": "2024-01-15T14:02:40.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1800ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "3172036a-6760-421c-991f-1d6ad7343690",
+      "span_id": "9deb523860bd449d",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "84ac1d93-59e8-4caa-a664-3f64fac96ac8",
+        "amount_usd": 490.1,
+        "latency_ms": 1800,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "c79d8d26-2f76-4e52-9000-f2608503fbf9",
+      "timestamp": "2024-01-15T14:02:45.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1850ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "55a45c1c-23aa-4fb1-baa7-455555284131",
+      "span_id": "6cc9d6b161644a30",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "86a425a1-103b-4dd5-8f2f-c0c7e02b235c",
+        "amount_usd": 89.18,
+        "latency_ms": 1850,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8df22053-abff-4378-80f0-26f5d60d5632",
+      "timestamp": "2024-01-15T14:02:50.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1900ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "7a00c02d-ce82-423a-a595-a43eaa6cec1a",
+      "span_id": "b116f68c8ca6436e",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "07b4deec-2694-4724-b9be-6a57f132ed79",
+        "amount_usd": 226.5,
+        "latency_ms": 1900,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "56cb8db1-146d-4aff-9f62-cff152c87b0c",
+      "timestamp": "2024-01-15T14:02:55.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "INFO",
+      "severity_code": 0,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 1950ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "f51978d2-3162-497e-b099-fe982a77c34a",
+      "span_id": "3633ebf6ea9c441b",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "7439ae72-2200-4206-aec0-12fc68260d34",
+        "amount_usd": 355.78,
+        "latency_ms": 1950,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "39ecd5be-2bab-4fa2-8f7b-3b2d4fc8a1a8",
+      "timestamp": "2024-01-15T14:03:00.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2000ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "1b81934e-9a50-40bc-9a69-e3c6f8219c9d",
+      "span_id": "a88d8506e43b4a86",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "948cedc7-42c6-4aec-a58a-476ed766f4a4",
+        "amount_usd": 284.84,
+        "latency_ms": 2000,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "64d6b719-7998-4797-9c76-0e7a3a431f69",
+      "timestamp": "2024-01-15T14:03:05.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2050ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "a5520dae-405d-4b0c-b212-1a4a1c9ad51c",
+      "span_id": "2795cbd482be4c5f",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "ea863a73-39a1-4494-803e-5bc1fa541d7d",
+        "amount_usd": 64.82,
+        "latency_ms": 2050,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "ed8038ea-e285-4257-bdd3-f291f238ffc5",
+      "timestamp": "2024-01-15T14:03:10.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2100ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "0fbcd657-e172-49a7-98a2-28f072a5fc3a",
+      "span_id": "82fa0a25b48640da",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "92ebdb83-8bc4-4c74-b76e-82c4d5f2ab69",
+        "amount_usd": 473.07,
+        "latency_ms": 2100,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "82d5a086-7033-4aad-ab3a-a0c4673a6332",
+      "timestamp": "2024-01-15T14:03:15.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2150ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "1a08cee5-7681-47b7-a36b-b9ba98d024cb",
+      "span_id": "7c4465e5939e4ed7",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "cbf8e782-f86a-4751-ac41-44e65ad4dfde",
+        "amount_usd": 348.6,
+        "latency_ms": 2150,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "26c3b4eb-2e46-4675-8625-d2dd7b7c4ba9",
+      "timestamp": "2024-01-15T14:03:20.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2200ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "922fe171-a008-4769-81b4-7054d5a17e4b",
+      "span_id": "1b2a752cb8824e66",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "866ab3bf-cb1e-487b-a4d1-f6df71acb481",
+        "amount_usd": 83.04,
+        "latency_ms": 2200,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "8c4d551f-8147-40e4-8adc-0e072c76c5de",
+      "timestamp": "2024-01-15T14:03:25.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2250ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "77762ada-8241-4cd8-945a-82b1acc62149",
+      "span_id": "38b25ae320e54641",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "7d52b0bb-7951-45cf-9694-1d88afcb9531",
+        "amount_usd": 27.65,
+        "latency_ms": 2250,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "867abb34-331d-4508-8013-f8529f3fb1a0",
+      "timestamp": "2024-01-15T14:03:30.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2300ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "105fed7f-08ff-49d7-a0b2-9b6adae86322",
+      "span_id": "018ad12a87d845ed",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "5a9a00b7-8272-4188-b97b-a8c15cd2e2fb",
+        "amount_usd": 190.92,
+        "latency_ms": 2300,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2522cc38-b323-47a3-bdee-3db1083e8061",
+      "timestamp": "2024-01-15T14:03:35.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2350ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "5813e9af-73f7-4a4c-a357-87c926081f63",
+      "span_id": "cca103f0e1a544de",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "e669f4bf-9063-4d4e-a5d8-8896647268f0",
+        "amount_usd": 280.74,
+        "latency_ms": 2350,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "2de73d9f-06bb-4d95-96a7-cd57a2be3b63",
+      "timestamp": "2024-01-15T14:03:40.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2400ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "bdca08cc-8f24-4af9-9273-a19a6ba288d6",
+      "span_id": "81c3f96de8644f76",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "8dd03a87-7ffa-4494-ad9d-5501b44ee101",
+        "amount_usd": 220.6,
+        "latency_ms": 2400,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d2d84326-e44f-4d6e-aa99-fc5ed30b4462",
+      "timestamp": "2024-01-15T14:03:45.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2450ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "3383ece2-c3ed-493f-a7c3-57fbbb44b7b6",
+      "span_id": "7215bd965a3048f2",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "0f3fe80c-0b77-4615-a514-6eb600ba0397",
+        "amount_usd": 30.5,
+        "latency_ms": 2450,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "5482e19f-bbcb-44cc-98b2-4c639c6f8372",
+      "timestamp": "2024-01-15T14:03:50.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2500ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "3a1216cd-0073-4b1b-b567-71a25cc079bf",
+      "span_id": "a1fb4c2d478f4d9f",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "9b6fb147-aac4-4d5c-b0a0-1e2e1cf701e0",
+        "amount_usd": 188.68,
+        "latency_ms": 2500,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "e89eff94-cba1-4ae1-9e84-c5ea0e33e744",
+      "timestamp": "2024-01-15T14:03:55.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2550ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "1b5f9478-5c08-47ba-b50d-6eb244835aeb",
+      "span_id": "be0c7f06bf0b4c5f",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "ef6aa453-af89-4ce5-af22-ed1bb70a5447",
+        "amount_usd": 467.21,
+        "latency_ms": 2550,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "fa94b507-0e53-40df-9d89-c871896062e3",
+      "timestamp": "2024-01-15T14:04:00.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2600ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "e9287657-662c-4204-8f04-d6294a1e75cb",
+      "span_id": "2d2521570a2f411a",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "77babe49-15a0-470a-8dd0-e508fd72663c",
+        "amount_usd": 486.38,
+        "latency_ms": 2600,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "43ee564d-1c0a-453a-a4d9-022385bac414",
+      "timestamp": "2024-01-15T14:04:05.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2650ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "7e6d8a49-8179-41b7-a23c-f38bfdcaf274",
+      "span_id": "78d0fc7c3a7b4007",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "71786bab-b1fa-4a80-a90d-a2169c0877dc",
+        "amount_usd": 29.55,
+        "latency_ms": 2650,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4c6dc4c5-8156-43ca-9f68-d76b6cb013f6",
+      "timestamp": "2024-01-15T14:04:10.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2700ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "0be51cd6-03f6-4138-b4c0-559cff1ac632",
+      "span_id": "7449908d1a204846",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "15b7a568-5e32-4eb4-9832-1104c931a828",
+        "amount_usd": 185.33,
+        "latency_ms": 2700,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "0d1bb393-5a44-40f3-ae6e-c4168acb2350",
+      "timestamp": "2024-01-15T14:04:15.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2750ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "83033585-a30d-4a8a-9ea3-baa051aff251",
+      "span_id": "11c656bc25694839",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "a29529a6-cf56-419e-a3fb-6ba4e11a5fda",
+        "amount_usd": 344.21,
+        "latency_ms": 2750,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "b3401d6b-73f5-4db8-8b4c-84f2c5744c77",
+      "timestamp": "2024-01-15T14:04:20.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2800ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "08044ef0-190d-49f4-b0a0-7a64197c8c8c",
+      "span_id": "cfe3b9bb3b2f492b",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "d59ff1a9-6adb-477d-ae24-b38a8f2c1d91",
+        "amount_usd": 336.8,
+        "latency_ms": 2800,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "d1bc1936-a1d4-45a1-9b49-9bfc95e64c36",
+      "timestamp": "2024-01-15T14:04:25.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2850ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "988bdd92-ba80-46d5-9ab3-1d2058f2e53e",
+      "span_id": "89f90013ec194497",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "0aec56c7-4d22-4fa3-a808-d646af4d4726",
+        "amount_usd": 183.3,
+        "latency_ms": 2850,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "68ea1f98-5645-4a66-a19d-465d9a9d532c",
+      "timestamp": "2024-01-15T14:04:30.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2900ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "eda8b863-9f05-4d04-9a61-93370fb16057",
+      "span_id": "d8ac832868d84b89",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "df42cf58-c232-4d06-bdc5-316166d616b2",
+        "amount_usd": 284.34,
+        "latency_ms": 2900,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "1b278c4e-07cb-443c-afb5-23d1585b16c8",
+      "timestamp": "2024-01-15T14:04:35.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 2950ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "5d783fe8-02b0-4636-915a-3989e95d6339",
+      "span_id": "7a0b01e108dd4982",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "2572890d-1fbe-451f-8a11-118833ad7a34",
+        "amount_usd": 438.61,
+        "latency_ms": 2950,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "07655768-a3f8-4186-b8a6-96f99330ad43",
+      "timestamp": "2024-01-15T14:04:40.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 3000ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "c10af2e0-3467-4cd3-9bd4-bdfe77327622",
+      "span_id": "fbc54c32ca0f4a27",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "5f20410b-bedf-43fb-b6cb-0c98bba989d4",
+        "amount_usd": 487.18,
+        "latency_ms": 3000,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "96138a1b-5004-4864-852a-aafbb9692201",
+      "timestamp": "2024-01-15T14:04:45.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 3050ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "067eb362-55d6-4660-ada4-415acd19cb99",
+      "span_id": "53062ec2a0db427b",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "1c92dcd7-b8aa-4d8c-995f-7851edd77a36",
+        "amount_usd": 377.24,
+        "latency_ms": 3050,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4f79224d-2b1e-4760-acf9-c3b64544f940",
+      "timestamp": "2024-01-15T14:04:50.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 3100ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "b20b830a-63a7-459a-a3d0-6a445af4f430",
+      "span_id": "e07c0d6a663e4c5b",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "d78a3910-149b-4183-bd2b-db159178050a",
+        "amount_usd": 463.62,
+        "latency_ms": 3100,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    },
+    {
+      "log_id": "4a3bcf0c-bdd0-4e9f-afb0-142c8b483c6c",
+      "timestamp": "2024-01-15T14:04:55.000Z",
+      "service": "payment-gateway",
+      "environment": "production",
+      "severity": "MEDIUM",
+      "severity_code": 2,
+      "event_type": "api_latency_high",
+      "message": "Payment processing slow: 3150ms (threshold: 5000ms)",
+      "host": "payment-gw.internal",
+      "region": "us-east-1",
+      "trace_id": "c4503c6c-10bf-46c2-9708-f8b3cde5a0a9",
+      "span_id": "1cf782f85363462a",
+      "error_code": null,
+      "schema_version": "1.0",
+      "metadata": {
+        "transaction_id": "a8bde519-4382-4e7a-9acb-cd0643a5b308",
+        "amount_usd": 126.0,
+        "latency_ms": 3150,
+        "upstream": "stripe-api",
+        "retry_count": 3
+      },
+      "alert": {
+        "is_alert": false,
+        "alert_id": null,
+        "rule_name": null,
+        "suppressed": false
+      }
+    }
+  ],
+  "alert_count": 0,
+  "log_count": 60
+}
