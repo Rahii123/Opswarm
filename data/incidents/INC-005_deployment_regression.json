@@ -25,7 +25,7 @@
   },
   "logs": [
     {
-      "log_id": "eade0678-524c-414f-aabe-a22dbbec15c8",
+      "log_id": "1b8df5f3-8050-4293-aad1-847e63a0309c",
       "timestamp": "2024-01-15T18:00:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -35,8 +35,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "29f98d37-a06e-4938-98da-9ef0776a561f",
-      "span_id": "1044e8b960b648fd",
+      "trace_id": "0882c130-d9ff-4754-93f7-83d1faa72a8f",
+      "span_id": "7d0c6c62297e4809",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -52,7 +52,7 @@
       }
     },
     {
-      "log_id": "246e3f44-1713-4ae2-b390-fc639a4efd3e",
+      "log_id": "3a43362e-18b0-4ea7-b315-70900f49b930",
       "timestamp": "2024-01-15T18:00:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -62,8 +62,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "8758915e-e556-48e5-81bd-abcfbb3ce77f",
-      "span_id": "21ba86c59d224fa5",
+      "trace_id": "27fb1b69-855d-4470-a5c7-75d04c0d0dba",
+      "span_id": "3f07df1ac4e04565",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -79,7 +79,7 @@
       }
     },
     {
-      "log_id": "26903514-17eb-4f9b-b4ba-2a8b8fc69431",
+      "log_id": "9b2de189-c117-441d-a6d1-fca71f054160",
       "timestamp": "2024-01-15T18:00:20.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -89,8 +89,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "cabce394-764b-4c3d-bb34-640b1025e98d",
-      "span_id": "7dbb52235dfe4dc5",
+      "trace_id": "402022f1-733e-4a83-9866-d0af30284244",
+      "span_id": "76088e2faaa2491e",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -106,7 +106,7 @@
       }
     },
     {
-      "log_id": "20e7d5be-0707-4310-b8ca-f66fd09f006c",
+      "log_id": "4da009bb-ad41-4da5-9a84-f605a78b56c3",
       "timestamp": "2024-01-15T18:00:30.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -116,8 +116,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6529301f-a6bd-407c-8d0d-0bceacb90d6d",
-      "span_id": "b71490ebfaf744f0",
+      "trace_id": "8c135b8b-3f1a-4d82-9802-3dab2f7890f6",
+      "span_id": "4b1118a8cc234049",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -133,7 +133,7 @@
       }
     },
     {
-      "log_id": "bb3766da-10ee-460d-a5ab-d6bc55ca4f21",
+      "log_id": "f3ba7b63-140c-4a52-aaac-a686f503ff9b",
       "timestamp": "2024-01-15T18:00:40.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -143,8 +143,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "2dbfac4d-691b-44b2-97a2-805b6976fd33",
-      "span_id": "4da4d05798e648ec",
+      "trace_id": "0a9be6b0-ead9-416c-ad42-bfe59c9fe6ae",
+      "span_id": "757bf517d8524c07",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -160,7 +160,7 @@
       }
     },
     {
-      "log_id": "d9f70d1e-294e-4e0b-b8cc-bfd026d819d8",
+      "log_id": "1df4dc55-356f-4977-9538-b877b00b3c49",
       "timestamp": "2024-01-15T18:00:50.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -170,8 +170,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6f098a1c-a8e8-4a0a-ad1a-e43757f477fa",
-      "span_id": "8f6db30c4ab14546",
+      "trace_id": "b434699e-ba85-428d-8109-eecfc2187b67",
+      "span_id": "10911b9a4e384b21",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -187,7 +187,7 @@
       }
     },
     {
-      "log_id": "3df6f1bb-0465-45d7-8efa-8ef794f30426",
+      "log_id": "4000a08b-2848-4511-9630-c1f3a338b5bd",
       "timestamp": "2024-01-15T18:01:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -197,8 +197,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "36c3f9fc-799f-4255-9773-1b757223218d",
-      "span_id": "be831302c1d44e74",
+      "trace_id": "107f38f5-1908-432c-b70f-6c35d60ee653",
+      "span_id": "3769469d916848ed",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -214,7 +214,7 @@
       }
     },
     {
-      "log_id": "e7e3e221-934e-4cda-8e64-50ba8cde41e2",
+      "log_id": "d6082805-a8a5-4ee7-beb5-401284833050",
       "timestamp": "2024-01-15T18:01:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -224,8 +224,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "32bd818a-8d0e-4da9-90b1-1b4c53f5508f",
-      "span_id": "6ac30c9cbb28494d",
+      "trace_id": "c7a26e83-c0e5-43ae-87f1-0527186e4ba7",
+      "span_id": "8cac1953aa6e4219",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -241,7 +241,7 @@
       }
     },
     {
-      "log_id": "d463953e-8f0a-4f71-b727-1b2de2814998",
+      "log_id": "82af6544-c312-4e2a-b070-4a3a9fe8fb07",
       "timestamp": "2024-01-15T18:01:20.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -251,8 +251,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "701a4009-4594-4007-96f0-1ca710749c5c",
-      "span_id": "f0b7a6faf83f4085",
+      "trace_id": "9f75f761-8ef6-4328-b49c-7c2f3a06027a",
+      "span_id": "b299128bc8274517",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -268,7 +268,7 @@
       }
     },
     {
-      "log_id": "e834c79e-0ba6-4049-80a0-591d63bafd60",
+      "log_id": "f643d407-b2b3-4602-bd5f-4c4c4f10101c",
       "timestamp": "2024-01-15T18:01:30.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -278,8 +278,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "0fabcf5c-0230-406a-8552-46dcc7f4b088",
-      "span_id": "36348b44604f4391",
+      "trace_id": "3759417e-fb24-4729-ab7f-72dd29b2d71e",
+      "span_id": "4563338915ba47d2",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -295,7 +295,7 @@
       }
     },
     {
-      "log_id": "abf87921-6ccb-40a1-b6aa-26c4cfb9e3c9",
+      "log_id": "aa260c2f-4d66-4c0e-833a-53fa3d08136b",
       "timestamp": "2024-01-15T18:01:40.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -305,8 +305,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "987b6015-ae5d-441d-9bd8-14f0831b4824",
-      "span_id": "c3f57c5c49834eaf",
+      "trace_id": "51d3995b-5457-4080-9b98-8368df6d0896",
+      "span_id": "caf61bf63bf14b86",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -322,7 +322,7 @@
       }
     },
     {
-      "log_id": "3c56ac10-a2d2-4dae-a9f3-4896f548111b",
+      "log_id": "44dc8467-771b-46e6-b641-b53361efcf59",
       "timestamp": "2024-01-15T18:01:50.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -332,8 +332,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "94d5f9ac-0748-40b4-b516-e7511cf76aa1",
-      "span_id": "2a565ef2c9494378",
+      "trace_id": "8b4890e8-c2a5-4f2c-8d21-03bdd02f112f",
+      "span_id": "a36d97b1de354a91",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -349,7 +349,7 @@
       }
     },
     {
-      "log_id": "c3a92de3-bef6-4154-ae9a-e216930f9bc3",
+      "log_id": "e5350014-f29a-4e22-92b9-e1a8b982c73a",
       "timestamp": "2024-01-15T18:02:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -359,8 +359,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "90a67609-defe-4780-8adf-ca9ef47dfa1b",
-      "span_id": "bad9c9e5d58b41b4",
+      "trace_id": "e8cf2410-132b-413f-a269-c65011c0ea98",
+      "span_id": "27c268f742ef41f0",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -376,7 +376,7 @@
       }
     },
     {
-      "log_id": "b702e035-8f5d-4a1e-b3e3-d7e3086e44e0",
+      "log_id": "ed97ade4-0c2c-4b7e-9f41-f806d0525fdc",
       "timestamp": "2024-01-15T18:02:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -386,8 +386,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "fd52c1c2-e250-4b66-92a9-56c691e464b5",
-      "span_id": "6b390c8669364ad4",
+      "trace_id": "e03ea4b5-dfe4-48d6-be6a-e4b1599db29b",
+      "span_id": "12e604fdec434a3b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -403,7 +403,7 @@
       }
     },
     {
-      "log_id": "0b5af484-5628-490f-8362-b8f8c0eda857",
+      "log_id": "9319b752-d464-4cc0-8624-ab09071e9ea2",
       "timestamp": "2024-01-15T18:02:20.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -413,8 +413,8 @@
       "message": "Request processed successfully",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b5921d5b-9ec9-4e41-ac2a-3bcf571b9ac6",
-      "span_id": "0a48b792cdd843f5",
+      "trace_id": "3d17f51a-b91d-4a06-b199-2aa706b601ab",
+      "span_id": "c217a0b4e816440b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -430,7 +430,7 @@
       }
     },
     {
-      "log_id": "6b70a49d-c0d6-4fa1-b672-1f20d55e2d14",
+      "log_id": "37542ac8-e5e7-41f2-afb7-b1910c4b9d74",
       "timestamp": "2024-01-15T18:02:30.000Z",
       "service": "deployment-pipeline",
       "environment": "production",
@@ -440,8 +440,8 @@
       "message": "Deployment started: api-gateway v2.3.2 rolling update initiated",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "bd89a435-d708-4565-b91f-135ec6a7935b",
-      "span_id": "aa0731a2759b42ad",
+      "trace_id": "c441868c-2319-4b9b-95bf-04838c7c4631",
+      "span_id": "df35196b697047f1",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -457,7 +457,7 @@
       }
     },
     {
-      "log_id": "2661ff47-1df7-4f6b-b2fb-5a38e7d5c306",
+      "log_id": "9a5308b7-a4ad-494e-b052-3570a47e652d",
       "timestamp": "2024-01-15T18:03:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -467,8 +467,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "41c312cf-73bf-4a72-b857-97f17682cce5",
-      "span_id": "b866fd57a8584a3d",
+      "trace_id": "dfddc63f-1343-412f-ae39-54bb04ff8004",
+      "span_id": "2e70f8019961423b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -486,7 +486,7 @@
       }
     },
     {
-      "log_id": "7b47124c-5009-43b0-8738-8b8cfcf2022e",
+      "log_id": "900292d5-b322-447a-98e9-5f1e1cbf2117",
       "timestamp": "2024-01-15T18:03:05.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -496,8 +496,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c80c3ef1-5f13-4c14-94cd-61bf8a1db259",
-      "span_id": "83cf6225191f4c8e",
+      "trace_id": "343d4ce5-777d-4b43-9f4a-619843fc5d51",
+      "span_id": "b53c0fb49532437c",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -515,7 +515,7 @@
       }
     },
     {
-      "log_id": "5d7dfb84-3e5f-48b4-b309-f422fa38b671",
+      "log_id": "c545119a-7632-4a1f-843f-d06ccd5f1c5f",
       "timestamp": "2024-01-15T18:03:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -525,8 +525,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "617ca529-1218-4583-973c-008e80d1a6ab",
-      "span_id": "8fd9ede0531040bc",
+      "trace_id": "11bf63a7-3c67-433e-803d-5f3939dbecb6",
+      "span_id": "898286d476964926",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -538,13 +538,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "0df91e3c-6bf4-4306-8c7a-d8a38271733d",
+        "alert_id": "45608b91-09ff-449f-aad4-395f9274ae51",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "7913b241-b436-47ed-8786-21947d790e9f",
+      "log_id": "193c2eeb-3b5d-4de5-917e-d994dac4c8a7",
       "timestamp": "2024-01-15T18:03:15.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -554,8 +554,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b1aa82f2-b31c-46d4-b88b-5e0ac196203d",
-      "span_id": "664d445e8be34850",
+      "trace_id": "369dc007-223b-414d-a755-50d19a912562",
+      "span_id": "5dc96f98cd1e4e84",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -573,7 +573,7 @@
       }
     },
     {
-      "log_id": "6e4398dc-d242-4736-b3c2-74588b20ed4a",
+      "log_id": "c38ccf34-801c-42fe-bfa1-06c6d31f5d30",
       "timestamp": "2024-01-15T18:03:20.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -583,8 +583,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a3a1cc42-e8c3-453a-9d9a-bba83c300432",
-      "span_id": "00484e8cb1c7421c",
+      "trace_id": "7740e2a5-081f-49a8-a7ac-3cf1443a3443",
+      "span_id": "c19d73e84601420f",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -596,13 +596,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5aed6ac5-6b22-4c0e-9989-a946d4b414d5",
+        "alert_id": "fccd0b24-dbb1-466f-af17-b4b02256cc1c",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "1678d4e7-e075-4e32-a02d-bcf5c0f8e28c",
+      "log_id": "d96cb5cc-06f5-4f48-a93f-c46de32e337d",
       "timestamp": "2024-01-15T18:03:25.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -612,8 +612,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "41b7126e-6ec4-4e34-a0dc-fa519e57fdb9",
-      "span_id": "821a1c7113d94eda",
+      "trace_id": "871dba96-1dfd-428c-9e52-d9fa3095c5c5",
+      "span_id": "389bb02de19346cf",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -631,7 +631,7 @@
       }
     },
     {
-      "log_id": "9a88430c-539b-43be-8ceb-31e1bce57ccf",
+      "log_id": "d701e732-3192-4734-91e4-a57898c2a56d",
       "timestamp": "2024-01-15T18:03:30.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -641,8 +641,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c6461610-a2c0-479b-bcfb-2ab65dd72bd1",
-      "span_id": "c9b69e8bdcb74e5f",
+      "trace_id": "52bed52d-7ffe-4b57-ac37-fe7f0f71eb8e",
+      "span_id": "978539e6abbc4834",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -654,13 +654,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ad7fd69b-f0ca-4127-be3b-5233d066686f",
+        "alert_id": "62cccc0b-a394-45d7-9f81-6b7214fb8c9e",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "0967f151-e300-4f1f-9789-94ce666802ea",
+      "log_id": "199f2ada-4595-4f79-b407-e1751d5f15e2",
       "timestamp": "2024-01-15T18:03:35.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -670,8 +670,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ce015183-9a09-4357-b8c2-3137b6a3db41",
-      "span_id": "0901ca5150134a94",
+      "trace_id": "47b2163c-5e16-4eec-8112-083d3f579065",
+      "span_id": "cce9b584f61b4788",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -689,7 +689,7 @@
       }
     },
     {
-      "log_id": "7f68a28d-baad-40c8-9a7b-7809f107273a",
+      "log_id": "603d4080-d920-48b7-ad56-6ff8e7954494",
       "timestamp": "2024-01-15T18:03:40.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -699,8 +699,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "20b162a8-088f-4331-909e-e4de21b0f07e",
-      "span_id": "bf3dbc7e61ce41f3",
+      "trace_id": "97e85eb6-69c9-4b7e-9bb2-0947d6d34433",
+      "span_id": "a37fed1c98384db4",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -718,7 +718,7 @@
       }
     },
     {
-      "log_id": "57fd4109-9cb4-48dd-b8b6-ff5c99534a02",
+      "log_id": "89d97a83-55cd-4842-8c90-f2c12c9e9539",
       "timestamp": "2024-01-15T18:03:45.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -728,8 +728,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "4c929fce-21c9-41e9-a291-a6580d898b0f",
-      "span_id": "041dc048a2954629",
+      "trace_id": "837c754f-ac2e-4f37-b9b6-66b04234642f",
+      "span_id": "474808c4941b47a2",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -741,13 +741,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "381d892e-d447-4a45-a30f-e056b95f5658",
+        "alert_id": "5f6ec90d-ae81-4847-a3c4-c829f3b4fae8",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e59e2ccd-6f4a-4792-9994-d56675b18018",
+      "log_id": "27d75489-ea9d-4efd-afab-ea675d0444c3",
       "timestamp": "2024-01-15T18:03:50.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -757,8 +757,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a2f50bb8-6053-4b42-a7b5-fb4bbb69a627",
-      "span_id": "11b198b894b04db7",
+      "trace_id": "a418a234-a7d4-4d88-9aff-46353037b71f",
+      "span_id": "bf8e197946dd49f9",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -776,7 +776,7 @@
       }
     },
     {
-      "log_id": "a5dc3617-353b-4b91-bb64-aac18cc8e4cb",
+      "log_id": "178ea772-e8ef-44e0-bd98-54407e8dc139",
       "timestamp": "2024-01-15T18:03:55.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -786,8 +786,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c4cf4eff-cd73-4ce5-acc0-7c3fad562ae9",
-      "span_id": "d0f1d61f646d4a30",
+      "trace_id": "6d09712e-2d59-4c40-a65d-91be58a182e0",
+      "span_id": "91d6012e9b3a49e7",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -805,7 +805,7 @@
       }
     },
     {
-      "log_id": "560216d8-6c3f-48a7-b614-b655a1499af9",
+      "log_id": "3b65c2bd-305c-486e-a4c2-56c45a3317aa",
       "timestamp": "2024-01-15T18:04:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -815,8 +815,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "05fc25cc-5a42-496a-acc5-65ccd728b91a",
-      "span_id": "d9111219ea3f457f",
+      "trace_id": "c56c8388-cca1-42ab-b4c0-c5afebea375f",
+      "span_id": "a137a7330db74122",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -828,13 +828,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "325aa690-7688-4e8a-871e-50c35b3a15ab",
+        "alert_id": "92deb334-ce7c-4400-9841-2679096ed6ab",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "2325ae4d-d340-4758-9919-997b0cd92767",
+      "log_id": "d4b8848b-2204-446b-99a4-3b215d7479a5",
       "timestamp": "2024-01-15T18:04:05.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -844,8 +844,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "9368d008-4f1b-49fe-9e91-d84a73a23d6c",
-      "span_id": "ab723fbbcd654e9d",
+      "trace_id": "1d6ea2db-ec4b-4ef4-a704-69419b1259ec",
+      "span_id": "92411946813248a4",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -857,13 +857,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "3767852a-b5df-40e7-8b10-f4f0db57493f",
+        "alert_id": "fb07ecb3-90ae-45e8-91d0-85ef2921b678",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e914523a-1e6a-4e93-a5f0-e8238fc0bf05",
+      "log_id": "9d27cd10-cbc1-40b7-a300-6cc7d46308cf",
       "timestamp": "2024-01-15T18:04:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -873,8 +873,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "2c2f8460-c42d-420d-84cf-2954dfba4703",
-      "span_id": "fcf9be5169954c80",
+      "trace_id": "4e83189b-8cc6-4565-97ba-5e3f05d738f9",
+      "span_id": "26d3e3e987dd4250",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -886,13 +886,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "31dd506e-d136-44ff-9059-ac731045ca19",
+        "alert_id": "692926f1-7624-4e6f-91a3-97bc4b12910d",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "ee028a2c-10f7-4058-a188-7ccb7e33c21a",
+      "log_id": "7ec1f674-e513-45d5-9eca-2c25c8459ca2",
       "timestamp": "2024-01-15T18:04:15.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -902,8 +902,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a8b427ba-4580-4630-8d72-3e1af9b970a9",
-      "span_id": "6c5a06fcec9749f5",
+      "trace_id": "876229db-a105-42ae-a308-71341406db01",
+      "span_id": "f7c16040391c45ad",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -921,7 +921,7 @@
       }
     },
     {
-      "log_id": "48328b27-0464-4f92-af07-27b8142807a7",
+      "log_id": "4472296d-786a-4359-b106-ab69910e2ea4",
       "timestamp": "2024-01-15T18:04:20.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -931,8 +931,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "4659219e-64ff-46ab-9c3f-3e32f9b09292",
-      "span_id": "66fb9dd8463b4c90",
+      "trace_id": "e9d49b32-277e-42ee-b171-0302e9d9ced3",
+      "span_id": "d48e5a7958ff4d31",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -944,13 +944,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a410635c-ab7e-4396-b315-55833554465a",
+        "alert_id": "9177e31a-6a2f-4b8a-ad5f-d68353a0e2de",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "083b7cdf-44a7-4022-a6f7-9bae702f69a4",
+      "log_id": "54e8fa67-fdfa-47af-9077-c6e0a0abfd81",
       "timestamp": "2024-01-15T18:04:25.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -960,8 +960,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ab9c8f7d-322b-4a4e-8285-b8b250cf3db1",
-      "span_id": "664f661866e843cf",
+      "trace_id": "947e1dd8-472a-450a-9c18-2bb2e852e9e1",
+      "span_id": "ea913e3f2a8a4b22",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -979,7 +979,7 @@
       }
     },
     {
-      "log_id": "a546b505-84a5-4b87-a880-bb8db47bc4f9",
+      "log_id": "a5229d12-6af6-4557-83ca-c78b83ddf137",
       "timestamp": "2024-01-15T18:04:30.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -989,8 +989,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "8090a302-d64a-4cfd-a525-667b740fead6",
-      "span_id": "2abf6c976f80442a",
+      "trace_id": "b7d16a46-ad89-49b7-a76d-bcdbe0c2124b",
+      "span_id": "fea4a0aac19543be",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1008,7 +1008,7 @@
       }
     },
     {
-      "log_id": "44f1e485-a070-4aa8-b838-adfd71fee108",
+      "log_id": "e50b1a03-db57-41fe-9dcc-a8b9ab85b6af",
       "timestamp": "2024-01-15T18:04:35.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1018,8 +1018,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "92d63359-d96c-496d-a4c5-92bf061255d1",
-      "span_id": "3581576f415a44b7",
+      "trace_id": "338d087f-c861-404a-a29d-ea5a5a8ca149",
+      "span_id": "e0d8c6060fe94f42",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1037,7 +1037,7 @@
       }
     },
     {
-      "log_id": "866f3efe-769e-45c6-a8d2-eb984a500e15",
+      "log_id": "8aafa466-fbbb-4a92-8090-44c855c08006",
       "timestamp": "2024-01-15T18:04:40.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1047,8 +1047,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f69c814f-f6fc-443d-a47c-aa89f406c99e",
-      "span_id": "74f3da31c1d340db",
+      "trace_id": "fc59338a-4dd5-4264-96b4-058cc6c42e93",
+      "span_id": "28ea66f872ee4155",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1060,13 +1060,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "05f1b10d-8617-4d54-a6d7-42e0142ec9b8",
+        "alert_id": "8216d9e9-2ad2-46c7-a07e-617943487d9d",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "76f2741d-781e-488d-81cc-bf34791ef68b",
+      "log_id": "e2808925-a4c4-47ac-a1b4-883c48204ab6",
       "timestamp": "2024-01-15T18:04:45.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1076,8 +1076,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "1cb0be72-405e-48be-85ee-6e01c28fa903",
-      "span_id": "0b11e922b71945a6",
+      "trace_id": "ad8f5fd6-19a0-4c88-ad81-cf8b1b62fe36",
+      "span_id": "ea2e3be7b2eb4845",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1095,7 +1095,7 @@
       }
     },
     {
-      "log_id": "ad976e31-2bff-44a4-81ad-1dc6648e1201",
+      "log_id": "84574a3b-8a39-4b00-9aaa-d174a26b440a",
       "timestamp": "2024-01-15T18:04:50.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1105,8 +1105,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "43f5f364-6e2e-425e-b1f4-7ca998abb50d",
-      "span_id": "c99512d622a44eef",
+      "trace_id": "5e9b64af-980b-483c-a0ea-43cb34f09ebc",
+      "span_id": "eb518f0d2fa44490",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1118,13 +1118,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "7b4deea1-0dd2-48f1-bd7f-1ead62ccc2ed",
+        "alert_id": "30c36db0-0450-4b34-8356-e74522f46e8b",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "14b56ad5-f085-4706-91a9-9975a244dc33",
+      "log_id": "33629871-0c05-4d48-b1a1-cc27ac39a56d",
       "timestamp": "2024-01-15T18:04:55.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1134,8 +1134,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "221029c4-1cb3-4510-b4a6-b6307ebde314",
-      "span_id": "280a3120b76f48ea",
+      "trace_id": "4391e2ea-dd72-46cf-b90c-9cedc899f20d",
+      "span_id": "f4668e7c0c02401e",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1147,13 +1147,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "9457e4a5-9dae-4f8b-9b70-c95786dbea18",
+        "alert_id": "507ea1f0-6d35-41a3-9ccc-295750c2ad8c",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "0d391e16-a115-47e8-9208-41f6d0488f4c",
+      "log_id": "460527aa-a3d0-4566-8d1d-4846c7478153",
       "timestamp": "2024-01-15T18:05:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1163,8 +1163,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6deaba86-5a4f-4b10-bd00-fe3390d1991f",
-      "span_id": "7d183fd985c04979",
+      "trace_id": "fcc9f183-0217-4f09-b811-59cba4032fe7",
+      "span_id": "ddfed0d951a14341",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1182,7 +1182,7 @@
       }
     },
     {
-      "log_id": "5b489f20-c159-46fc-b011-120ccc969571",
+      "log_id": "422dc031-fb74-4fb0-9761-cf316f4b4241",
       "timestamp": "2024-01-15T18:05:05.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1192,8 +1192,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "4c67395f-45ee-44ef-a7f0-7fa9df5cc7bb",
-      "span_id": "9e3a505cafee46c9",
+      "trace_id": "b64e48bb-d4c5-4046-b03c-f604617873de",
+      "span_id": "9fc31a73a0fd476b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1211,7 +1211,7 @@
       }
     },
     {
-      "log_id": "b99d0522-a0dd-406a-b717-a1bc986e329f",
+      "log_id": "48fb391e-9609-4bfa-a73d-5a5166717f1d",
       "timestamp": "2024-01-15T18:05:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1221,8 +1221,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e76b0226-6d58-4a07-bc9e-a65dde1fee32",
-      "span_id": "59a7d6bb47674a1d",
+      "trace_id": "1fceec8e-9923-4a8c-97c9-2082de8c2787",
+      "span_id": "5eb1e4ed3d334dbe",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1240,7 +1240,7 @@
       }
     },
     {
-      "log_id": "394ae783-58c7-4b98-a8f7-a32777b62c27",
+      "log_id": "193e7f45-af1a-47e9-a597-c8068c1930c0",
       "timestamp": "2024-01-15T18:05:15.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1250,8 +1250,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "85589179-68b8-4ba6-a23b-ecc88432b012",
-      "span_id": "56fef1810b034a80",
+      "trace_id": "0e436433-d1ae-421e-a914-27a07f4d6d98",
+      "span_id": "1e10ac3625bc4761",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1269,7 +1269,7 @@
       }
     },
     {
-      "log_id": "b4ff042b-69ba-421e-95c5-df7d86c1a649",
+      "log_id": "b3349c24-5637-425c-b847-10f4d4ca9aa2",
       "timestamp": "2024-01-15T18:05:20.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1279,8 +1279,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "962246b4-9c44-466d-bb8f-9f6a6dda655b",
-      "span_id": "16c2e12988874fbe",
+      "trace_id": "40974809-1b01-44d2-9225-74144edff4a8",
+      "span_id": "dd6686bae512426e",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1298,7 +1298,7 @@
       }
     },
     {
-      "log_id": "15f8f841-1633-4cf3-813e-e2a390dc4870",
+      "log_id": "2eecc3bf-3592-4b80-b0ee-2cf981d24725",
       "timestamp": "2024-01-15T18:05:25.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1308,8 +1308,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "480f2480-9cbb-49a1-9206-aece613064ff",
-      "span_id": "00853ffa4a5a43b9",
+      "trace_id": "eb97a4f6-8525-42fc-b58e-032634271ed0",
+      "span_id": "04707b5c739a4546",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1327,7 +1327,7 @@
       }
     },
     {
-      "log_id": "9b787d18-27e1-46ad-a040-2f1f9ab7538b",
+      "log_id": "a447ec0c-db1d-47b7-b8a2-163ad1cddf16",
       "timestamp": "2024-01-15T18:05:30.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1337,8 +1337,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "186ee506-7623-4dcd-81ea-4f98c60e0963",
-      "span_id": "292f072818e64e75",
+      "trace_id": "08d44376-b71c-4b29-b032-df98078c168c",
+      "span_id": "442325f769a44e2f",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1356,7 +1356,7 @@
       }
     },
     {
-      "log_id": "a022480f-9b3e-4f27-a739-ebc52256bbdd",
+      "log_id": "3b2bfa48-8889-4db5-88f4-1660cc74f85e",
       "timestamp": "2024-01-15T18:05:35.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1366,8 +1366,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b6010f69-9a8b-4672-a943-0dc144ebfadd",
-      "span_id": "744bb36d40bc46d4",
+      "trace_id": "578bed3b-e338-4d9a-8386-81672c3298ff",
+      "span_id": "c00148f0968b4588",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1385,7 +1385,7 @@
       }
     },
     {
-      "log_id": "244081b6-5a8c-4654-bdb3-a38396304cfa",
+      "log_id": "8f873f9d-58c4-4f2e-9e56-ef40d18cc619",
       "timestamp": "2024-01-15T18:05:40.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1395,8 +1395,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "674930ad-d259-4927-9aac-1250ee893b5c",
-      "span_id": "375da88199614549",
+      "trace_id": "a42c0eed-8c1a-46f2-9c00-553ea6aa52f4",
+      "span_id": "edecdb141a5b4602",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1408,13 +1408,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "04042754-4128-4403-bbf9-1b63fc47ff63",
+        "alert_id": "8696727f-9b27-49ea-a1ce-b366f1fd6de3",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "842cf816-4647-4d6f-9a21-c4bf5eae299f",
+      "log_id": "2b955c08-de7b-48b3-bc02-f21845b0d1af",
       "timestamp": "2024-01-15T18:05:45.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1424,8 +1424,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "be5455eb-412b-4547-b1f0-8af6bc86bd25",
-      "span_id": "eb1c74de43944430",
+      "trace_id": "469a4026-2ea4-4f7e-9ccd-3d83f9962c19",
+      "span_id": "b1605fc17cc346b9",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1437,13 +1437,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "19e8d228-a61e-47e9-be53-e950beb0d795",
+        "alert_id": "db04e81a-674e-438d-ae39-ff63a1449ed1",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "85b5199c-942e-45ba-b084-d446ed22e573",
+      "log_id": "96b03803-d26a-4036-82ba-95f81da7abba",
       "timestamp": "2024-01-15T18:05:50.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1453,8 +1453,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "d44f5096-c120-4265-9256-84b36e323105",
-      "span_id": "e6da06a4efe24664",
+      "trace_id": "88504f36-790b-4d44-8685-671a742c916c",
+      "span_id": "ba5e92c1f3fb49f9",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1466,13 +1466,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "6e8697d1-3e5d-4dbb-9042-138612f162fa",
+        "alert_id": "d6aa7f6e-e428-4bc0-99e1-031e64f181ea",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "d73472e4-46cc-49ba-b5fb-f69e67a059a3",
+      "log_id": "bf180f59-dc69-4932-bde0-5194010f198e",
       "timestamp": "2024-01-15T18:05:55.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1482,8 +1482,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e7384743-18d2-44a3-9bb2-dd9ea575b1db",
-      "span_id": "9bd1752a87464537",
+      "trace_id": "50735a56-38df-4cc4-86dc-1e63420377b4",
+      "span_id": "8661915a8a594feb",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1495,13 +1495,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a72bd46d-24aa-4dd2-b3a7-57f81b3a2034",
+        "alert_id": "59b8bad9-38e5-401d-9c36-505814b0ff7a",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "fefd331b-8fd7-4f76-ae11-b598cfff0f6d",
+      "log_id": "6b6e006c-8601-4684-be18-9b1ef129e0bd",
       "timestamp": "2024-01-15T18:06:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1511,8 +1511,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "dada8d9e-41b3-421d-abb9-c21d4fab0189",
-      "span_id": "830fd8ce9ca34d5b",
+      "trace_id": "edbe8c95-422c-41cd-9122-74a3a7cbc206",
+      "span_id": "4b0c7b8a4f284428",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1530,7 +1530,7 @@
       }
     },
     {
-      "log_id": "7baad02b-8f9b-451d-84b5-33859633f80d",
+      "log_id": "cce7b590-7da5-4105-af36-ec5c473a0d9d",
       "timestamp": "2024-01-15T18:06:05.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1540,8 +1540,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "2ab115b9-ae12-4514-998c-3d5b3fd657ff",
-      "span_id": "421e9e6972be4024",
+      "trace_id": "af11cc2e-d1ce-403c-b6bd-7ae25183c459",
+      "span_id": "f29abd828785496b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1559,7 +1559,7 @@
       }
     },
     {
-      "log_id": "08770e16-ffd2-4bc4-9ac1-aad5c25e32ee",
+      "log_id": "6cb6881a-4b1d-4936-91c2-a210cf80729f",
       "timestamp": "2024-01-15T18:06:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1569,8 +1569,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c5d23ff2-0dc2-42f2-a7f0-49f6e385b4aa",
-      "span_id": "efd49028648f43bb",
+      "trace_id": "54ef00f4-0c48-49bf-b52a-9d34b7716411",
+      "span_id": "a471d8ad7eb64f91",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1588,7 +1588,7 @@
       }
     },
     {
-      "log_id": "e0074f4c-6fba-4150-817e-8c861fb1c995",
+      "log_id": "68b735ac-442e-471f-991b-f408d0d56ef0",
       "timestamp": "2024-01-15T18:06:15.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1598,8 +1598,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "bbd5af39-2612-4c0a-8862-c50095d31855",
-      "span_id": "1a66b661e06d48b7",
+      "trace_id": "1e0d3abb-b8fb-4ec3-be30-dc85027719ee",
+      "span_id": "83afab7fe89648d9",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1617,7 +1617,7 @@
       }
     },
     {
-      "log_id": "0bac3e4c-9a20-4934-b857-22437016f8b6",
+      "log_id": "5b6cf32e-e9d3-41b2-b4e9-a833070eee11",
       "timestamp": "2024-01-15T18:06:20.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1627,8 +1627,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ed27876f-1ee4-4f51-8b07-79951e38f342",
-      "span_id": "cc84395c2ede4ffb",
+      "trace_id": "80692209-20d4-481d-9557-fb67dabfe6df",
+      "span_id": "b57db0c6b6ef4611",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1640,13 +1640,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "6a4544a0-dc13-4563-9d03-ac2d57468a68",
+        "alert_id": "5b71fb8c-45d2-40be-92a0-f733485160d7",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4320301a-b957-4982-8332-55fd3a5f052a",
+      "log_id": "789ee2a3-dbc1-4575-9871-43d90fc6cc8c",
       "timestamp": "2024-01-15T18:06:25.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1656,8 +1656,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f387ef09-4dfd-49db-ae3f-07d2bf78603e",
-      "span_id": "183f46e2b12d42ea",
+      "trace_id": "e39ff940-8fea-43e8-8cf8-dbabe58e9b05",
+      "span_id": "66897842783c4400",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1675,7 +1675,7 @@
       }
     },
     {
-      "log_id": "c715f214-6530-4211-b926-e5d475752ad4",
+      "log_id": "90e5242e-c618-49a2-93a5-0dc1135be758",
       "timestamp": "2024-01-15T18:06:30.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1685,8 +1685,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "1980615f-bdc5-4f08-9612-da625f175487",
-      "span_id": "0246181a35d94db4",
+      "trace_id": "0a652e5f-5a51-4334-aae8-301ba64ad6e5",
+      "span_id": "bbc8e3ce4f944855",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1704,7 +1704,7 @@
       }
     },
     {
-      "log_id": "32003fc9-0420-4e80-bfc4-0697c3500f79",
+      "log_id": "4ec13d00-2eb9-437f-be20-43f00b27befb",
       "timestamp": "2024-01-15T18:06:35.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1714,8 +1714,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "974b8a83-f528-488f-908c-c2b9af388967",
-      "span_id": "d029c2fc0e074a2b",
+      "trace_id": "f3ea3e3c-d621-419a-8e59-d428c472dc55",
+      "span_id": "f419fb4bd7914d35",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1733,7 +1733,7 @@
       }
     },
     {
-      "log_id": "8cd82d78-c169-47d4-8d7f-91fe5f079158",
+      "log_id": "74fc4d6c-1a28-482a-9fc4-c5ee74a42cd2",
       "timestamp": "2024-01-15T18:06:40.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1743,8 +1743,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "810b6105-80c1-4715-9009-1b0d506f71b5",
-      "span_id": "6197b9914ce647ec",
+      "trace_id": "032a4979-85db-4f99-af8a-424953bca474",
+      "span_id": "d0cdea37e19449d8",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1762,7 +1762,7 @@
       }
     },
     {
-      "log_id": "897a49d4-f297-4a22-811b-01b211be596e",
+      "log_id": "9acc7448-ab63-45b3-872f-8206acc94cf4",
       "timestamp": "2024-01-15T18:06:45.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1772,8 +1772,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "8093a35b-2da1-439e-85f1-a7c4d1862507",
-      "span_id": "e04b9f67f1c545d8",
+      "trace_id": "ce843622-36c3-4e28-aa88-58dfdf7b8fca",
+      "span_id": "30cf9096a0ab4ed8",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1791,7 +1791,7 @@
       }
     },
     {
-      "log_id": "07dd348e-771d-4945-bd9a-2d566a9b8c07",
+      "log_id": "270ea38f-cdcc-4a64-a590-1dd11db2f7b3",
       "timestamp": "2024-01-15T18:06:50.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1801,8 +1801,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "fd31238b-cf03-410f-b1b2-04ac69dbadda",
-      "span_id": "4ae43439e52d4d2e",
+      "trace_id": "c89edb75-50d3-4c9a-bfb9-c9ebf45aaf93",
+      "span_id": "cd93ca51ea92446e",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1814,13 +1814,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "52c00477-915c-480e-9726-014569fcfdf2",
+        "alert_id": "b42cefd8-e231-41ce-b354-e154fe780196",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "2cd7ab83-03ae-4d72-be15-e499d95d4964",
+      "log_id": "12ca6b3a-0f21-4fd4-99e3-3a7afe99a614",
       "timestamp": "2024-01-15T18:06:55.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1830,8 +1830,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "7d415bea-1191-47f8-83a9-19aca029fe33",
-      "span_id": "aff8a00c339f4ce1",
+      "trace_id": "47cd16cf-f5b7-4690-8b68-5fab40f2ee20",
+      "span_id": "5e7be92de3594f6e",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1843,13 +1843,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "e1531203-8ee8-4014-b846-278cfd43cc7a",
+        "alert_id": "adca7366-1d26-49f9-912a-9f9d5f45689f",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "b8a19be2-0a2a-4cce-b66b-241797c75ed6",
+      "log_id": "28376b8a-0db7-4960-9eea-3f1f7d569b9b",
       "timestamp": "2024-01-15T18:07:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1859,8 +1859,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "581aafbb-a004-4cf4-9494-7943b7cd99c9",
-      "span_id": "a93ee7c07a844d9c",
+      "trace_id": "54b55a24-8826-402a-bda0-800af7a2f0e9",
+      "span_id": "c6a2a45d6b954904",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1878,7 +1878,7 @@
       }
     },
     {
-      "log_id": "7c790c54-4330-4703-ae72-9368d2c00342",
+      "log_id": "f96c26b0-b355-4ffa-9fd0-b5168cfaf0d4",
       "timestamp": "2024-01-15T18:07:05.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1888,8 +1888,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3c55c77c-1c45-4112-9d74-742356be2c33",
-      "span_id": "2e61b845b7fe421c",
+      "trace_id": "a3a99258-4504-47cb-b9ef-9eb2629adbe3",
+      "span_id": "006f606399d14c85",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1901,13 +1901,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "e2c656b3-9801-439f-b66c-a6cdac209507",
+        "alert_id": "aa1867c6-4d67-40a3-bb51-1fea2499e076",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "a5da5991-487d-4f27-b117-3cf9339bc8f6",
+      "log_id": "5a427454-dc2e-40cb-af68-a041bdb0627d",
       "timestamp": "2024-01-15T18:07:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1917,8 +1917,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c572f660-6e02-4875-adcf-da87feb194af",
-      "span_id": "e55460206e8b41e0",
+      "trace_id": "c8499487-65dc-478f-998d-ddfe991e7fd6",
+      "span_id": "d43a904927254473",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1936,7 +1936,7 @@
       }
     },
     {
-      "log_id": "abf5480a-5c23-48c5-9258-9409028f50ba",
+      "log_id": "e7ffd650-7817-4421-8eb8-9daf5e6e1e7c",
       "timestamp": "2024-01-15T18:07:15.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1946,8 +1946,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ac9cbad3-eb3c-4b4b-8de5-e553f4776ea4",
-      "span_id": "bb1a22526c3b44ae",
+      "trace_id": "5a80384b-2826-4d40-98ff-0bc4a9204f71",
+      "span_id": "57c1f60e7ff74d1a",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1959,13 +1959,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "e338ad77-5286-4bd9-bdb6-5faf32f09d37",
+        "alert_id": "eb9a0bf0-b956-484a-91f9-f8512560ea4a",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "c300d41e-36e2-46bc-9991-7771ee1e8fde",
+      "log_id": "ce1ea54b-a2b0-44b9-9e87-5e38502835f8",
       "timestamp": "2024-01-15T18:07:20.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1975,8 +1975,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "fc7fd8e5-2a1e-4f2d-b0d7-a2ca2826e1e8",
-      "span_id": "00e7ff41704644c9",
+      "trace_id": "86c3ae23-c394-44bd-b48c-ff24989cd774",
+      "span_id": "ff5cad11c5d346be",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1988,13 +1988,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "b74b4538-74a5-4779-bb31-43453a3ed8fc",
+        "alert_id": "34d70a1a-0dd2-4162-a376-b6ea0eaaddb8",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "99f43d1d-165c-4699-8d9d-069445197946",
+      "log_id": "5d8f15be-3037-47d9-8092-7cd15af21fa0",
       "timestamp": "2024-01-15T18:07:25.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -2004,8 +2004,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ecc452a1-0732-40f2-8b5c-dc52aede9b61",
-      "span_id": "6f74fbda9b8242a3",
+      "trace_id": "cd9d8aa2-c40f-47d0-a3c6-fd3c2aa94c3a",
+      "span_id": "e730f5305c2e42b6",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2017,13 +2017,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "de45a0ca-cead-4eeb-9677-b106ad19074d",
+        "alert_id": "db1ed913-2f9f-4bb1-8f9d-8821263ee9e7",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4280f233-ad4f-4690-aff7-82001801c08f",
+      "log_id": "81b939dd-d46e-482e-b1db-880620587d52",
       "timestamp": "2024-01-15T18:07:30.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -2033,8 +2033,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c250af68-0493-4768-9b41-b9fb29198dd9",
-      "span_id": "b7296f3e349c4cf7",
+      "trace_id": "77ed3431-7dfd-4157-87b0-c44f5c068f04",
+      "span_id": "f8fd781162e4401b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -2052,7 +2052,7 @@
       }
     },
     {
-      "log_id": "d86da288-38fd-4cba-b675-b8ff0d82768b",
+      "log_id": "b4bb0eee-1828-4823-a0e5-435856cd4602",
       "timestamp": "2024-01-15T18:07:35.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -2062,8 +2062,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "7ddd3d26-9afc-4b77-a53e-46dee9f0c1ba",
-      "span_id": "e41168bb46dc4ca1",
+      "trace_id": "0c74c4dc-8d44-4cdf-9bc4-ea1bc127f20a",
+      "span_id": "ba95683095b9413a",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2075,13 +2075,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "6b6d784f-f849-41ad-a5fe-04b6045e5870",
+        "alert_id": "4fb3c456-a421-48ba-a4b0-3abac0ac1d24",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "aa4ed16a-db4a-4471-8c14-02b78b45c770",
+      "log_id": "bf80b174-cdcc-4724-80d9-e9d15a472836",
       "timestamp": "2024-01-15T18:07:40.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -2091,8 +2091,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "73c697fb-a318-4e43-af39-08de6bfb95f3",
-      "span_id": "ed9bc3266f9f422e",
+      "trace_id": "aec8fe50-7eaf-4e9b-b6da-fd2d3e7ca5ba",
+      "span_id": "e7aa06499d8f4b16",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -2110,7 +2110,7 @@
       }
     },
     {
-      "log_id": "1c631b43-63e9-474d-bef8-5df55af4e551",
+      "log_id": "264de138-4c31-4248-a728-90661337ba32",
       "timestamp": "2024-01-15T18:07:45.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -2120,8 +2120,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a5010594-9c6a-4a83-bf80-28ba4578f5f2",
-      "span_id": "cb4f6cb616014539",
+      "trace_id": "5a47c92f-9e66-48a6-b2af-24e39a67a6ef",
+      "span_id": "9f32f823baf84a77",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2133,13 +2133,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "80bf9c8e-e713-4b94-b378-79c1f22af4bf",
+        "alert_id": "c9264f65-c95e-4f2d-ac2e-42b99a286277",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "947e38ad-63e1-4f64-8f16-25cf0e57d0cf",
+      "log_id": "537ae80b-031e-4068-bb1d-b350a69bad4d",
       "timestamp": "2024-01-15T18:07:50.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -2149,8 +2149,8 @@
       "message": "Request OK",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "2f36de5f-d5ff-4095-a0f9-e3ab3665a349",
-      "span_id": "651fd31a166f4696",
+      "trace_id": "4cd71fa3-f6e9-479c-8dc4-96adeed9a416",
+      "span_id": "6dd5dd04d39d444b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -2168,7 +2168,7 @@
       }
     },
     {
-      "log_id": "29bec788-fca9-4a08-a738-b48b4ee69588",
+      "log_id": "83a74b4c-545c-4300-9a52-fe3031e2680f",
       "timestamp": "2024-01-15T18:07:55.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -2178,8 +2178,8 @@
       "message": "500 Internal Server Error: NullPointerException in UserController.getProfile()",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "d638deee-5ad9-4678-a89d-5a5886f443e0",
-      "span_id": "0ee323a73faa41e5",
+      "trace_id": "69b330df-754d-4080-8662-c39b7713ad3c",
+      "span_id": "2d6bbaf1245842df",
       "error_code": "ERR_DEPLOY_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2191,7 +2191,7 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ebddb17d-ce4b-4ad1-a676-d27541cc2891",
+        "alert_id": "a1aef0ff-3264-42e0-837b-1b9bf00a6772",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }

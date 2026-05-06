@@ -25,7 +25,7 @@
   },
   "logs": [
     {
-      "log_id": "347061c6-7cb4-493a-99d8-00ab25e5377e",
+      "log_id": "43b02e53-5302-4f5f-b2ab-1f13b0259247",
       "timestamp": "2024-01-15T10:00:00.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -35,8 +35,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "8e5d2573-505a-49dc-8859-f2ca764ea7d8",
-      "span_id": "2dc0222866b1472f",
+      "trace_id": "72fda982-93ac-43cb-9660-f6e634c748d2",
+      "span_id": "2300c07499b04a13",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -51,7 +51,7 @@
       }
     },
     {
-      "log_id": "0daac5da-2c15-42b9-9a2f-a67829d43540",
+      "log_id": "028a6850-0ebf-436c-bf3b-2ab7b5d4ad64",
       "timestamp": "2024-01-15T10:00:09.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -61,8 +61,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b18b954c-082c-4ef8-b7f2-5a1b1b8a63ea",
-      "span_id": "0e33dc94995f43cf",
+      "trace_id": "6ff25808-9b28-43b9-b998-4f5568f72ace",
+      "span_id": "911e267dca5344cf",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -77,7 +77,7 @@
       }
     },
     {
-      "log_id": "28b4ef25-af15-4c6a-a76d-f49eaecd4b50",
+      "log_id": "e17804b9-800e-42e1-befa-198bd15cb14f",
       "timestamp": "2024-01-15T10:00:18.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -87,8 +87,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "d56bd75b-cdd6-4993-934c-bffd25762e27",
-      "span_id": "007760da259343e1",
+      "trace_id": "f697267d-cd41-478c-910c-4f3308ce22d6",
+      "span_id": "325c721041f448af",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -103,7 +103,7 @@
       }
     },
     {
-      "log_id": "163baf26-d779-4865-87ee-42b936ea0860",
+      "log_id": "28679f33-6ca6-4540-870e-78abaf8cc088",
       "timestamp": "2024-01-15T10:00:27.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -113,8 +113,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b448cec2-6f5a-49d3-a8b1-262274509cfd",
-      "span_id": "dfde824653ab4926",
+      "trace_id": "a10877a1-ed4a-4d9b-a498-9611f8801a4c",
+      "span_id": "5113c6a8a71a4d2d",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -129,7 +129,7 @@
       }
     },
     {
-      "log_id": "651ef1a3-9b4c-42df-ab7e-832b92f9a9d4",
+      "log_id": "b6fd78e1-263b-429e-ab63-59841d3b6b7c",
       "timestamp": "2024-01-15T10:00:36.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -139,8 +139,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "fb730c45-74de-4488-a477-ff85084f94ee",
-      "span_id": "cad7f8eeb94048f5",
+      "trace_id": "1ad1c45f-0f02-4b7e-a4b3-b9d0f1dd11a9",
+      "span_id": "c0bd294efb284fe5",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -155,7 +155,7 @@
       }
     },
     {
-      "log_id": "36d03e4e-069d-4a61-bdc4-052c48da3a45",
+      "log_id": "74c5658e-7f05-4398-98c3-6947f55adc8c",
       "timestamp": "2024-01-15T10:00:45.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -165,8 +165,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "12d760ff-9e64-4555-80ef-a139caf900bb",
-      "span_id": "0e60c5dd8da043bb",
+      "trace_id": "4f870d10-10cc-4eaa-8dfb-7f7d061cf75f",
+      "span_id": "6337f2f8523e4f60",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -181,7 +181,7 @@
       }
     },
     {
-      "log_id": "226d89b7-3d52-4b12-8f52-eaa6bba6ab58",
+      "log_id": "886233f1-ea8b-4e56-a5ee-d1eb9bee8687",
       "timestamp": "2024-01-15T10:00:54.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -191,8 +191,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "79c2cafa-f7a0-4cf9-a431-d8b1482de525",
-      "span_id": "cd8b26c7e5304ed9",
+      "trace_id": "ea449459-50e5-4eb8-a8f4-8092cbedf8ab",
+      "span_id": "0d67a61b40ad43bd",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -207,7 +207,7 @@
       }
     },
     {
-      "log_id": "7e6cba95-c126-40f6-a576-06122557ccc1",
+      "log_id": "7c14bd05-ea6f-4d1e-8614-d330d3891362",
       "timestamp": "2024-01-15T10:01:03.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -217,8 +217,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a45afbfa-2f3e-4d9a-8b6e-894339fa93e0",
-      "span_id": "fc82379f113544e3",
+      "trace_id": "80e48a87-774d-419d-8fcd-e03201bddb07",
+      "span_id": "67ae59418f34482c",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -233,7 +233,7 @@
       }
     },
     {
-      "log_id": "c009dddc-09df-4a16-a448-7a4886c049af",
+      "log_id": "11508088-1449-4db4-8701-37a3b9ead866",
       "timestamp": "2024-01-15T10:01:12.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -243,8 +243,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "65698bbb-96a1-4174-bfac-39f2d8e8be47",
-      "span_id": "a718578d0eb3492c",
+      "trace_id": "cfb23bde-f50c-4e49-83e6-c192c3c244fc",
+      "span_id": "cedad85c25384f0c",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -259,7 +259,7 @@
       }
     },
     {
-      "log_id": "f731852f-2dc8-4229-9364-3b37f9acade7",
+      "log_id": "6e708662-0745-4cda-a67a-48d65ca7065d",
       "timestamp": "2024-01-15T10:01:21.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -269,8 +269,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b5d67ac0-7dbc-4f00-b75a-48e06115b617",
-      "span_id": "e414041a7fe94ba9",
+      "trace_id": "97ee4c1a-ed63-4ef1-971a-8b09cd4acc4f",
+      "span_id": "aca900f60a224b64",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -285,7 +285,7 @@
       }
     },
     {
-      "log_id": "64a24ae3-f6e0-4438-aec6-a9f57b56a74e",
+      "log_id": "64f23ddc-8a6f-47d8-af0e-5bef1e38ee3c",
       "timestamp": "2024-01-15T10:01:30.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -295,8 +295,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "89d6bfe7-dc81-4b81-8e9a-13a99803b91b",
-      "span_id": "0ae3f2af90c54fba",
+      "trace_id": "f71389fe-948b-42b9-b650-90ed1a15582c",
+      "span_id": "06b5032eb6744660",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -311,7 +311,7 @@
       }
     },
     {
-      "log_id": "18cba6f8-a6dc-4f76-b748-d666876dace5",
+      "log_id": "2c717e5b-6892-4c30-b3ca-4890525ebdb1",
       "timestamp": "2024-01-15T10:01:39.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -321,8 +321,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "cda55fcf-2112-479e-a67d-7a21a4eccef5",
-      "span_id": "ea65adae7d1c4507",
+      "trace_id": "faac2f5b-385d-4218-b6a9-c8095f63d640",
+      "span_id": "00053d9a89744634",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -337,7 +337,7 @@
       }
     },
     {
-      "log_id": "b7c3c4de-3a11-4d2e-ae02-8f55b1b0ceae",
+      "log_id": "f2f2bb08-3346-409d-a833-fad6f99cf9b0",
       "timestamp": "2024-01-15T10:01:48.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -347,8 +347,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f0828cf6-b74a-4748-a370-99f442617b36",
-      "span_id": "d4460d97ee814e2b",
+      "trace_id": "0b8ee049-1d32-4ef8-802e-de8273f9d70a",
+      "span_id": "69cc11ea4f204cd1",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -363,7 +363,7 @@
       }
     },
     {
-      "log_id": "3af7f506-35ec-416e-9842-6eaecdfe2a0b",
+      "log_id": "f8ea7603-6534-448d-a9e3-3f22feeb73a4",
       "timestamp": "2024-01-15T10:01:57.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -373,8 +373,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a85c3cbe-a278-47de-b1ac-61e54ce74a89",
-      "span_id": "5f608c31500e44d9",
+      "trace_id": "3f17fb97-4d10-4cf9-bc20-ec93fb64cbbe",
+      "span_id": "fbc6fc9ca260434e",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -389,7 +389,7 @@
       }
     },
     {
-      "log_id": "847e5f67-b154-4929-bb28-61d2c92ad9ff",
+      "log_id": "74ec8c67-20b1-467f-bea0-b86c481355a3",
       "timestamp": "2024-01-15T10:02:06.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -399,8 +399,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "5a355505-c392-47b4-8cd1-ba026b93f609",
-      "span_id": "6e231671d1f24d27",
+      "trace_id": "154ea38c-b2f6-4e54-b710-a41609e02e6e",
+      "span_id": "5107c1fca65d4c34",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -415,7 +415,7 @@
       }
     },
     {
-      "log_id": "0ee47765-f7ae-4f81-9ffe-115cc1d7fed0",
+      "log_id": "92d766a1-f581-4d91-aa20-11e02ad1f630",
       "timestamp": "2024-01-15T10:02:15.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -425,8 +425,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "90c7a551-890b-45ef-843c-4c86ab65e24d",
-      "span_id": "9e75de65e50d41da",
+      "trace_id": "83601608-553b-41a4-9920-35a64c8bc9d2",
+      "span_id": "f0fc3197512240b4",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -441,7 +441,7 @@
       }
     },
     {
-      "log_id": "088467fd-9417-4247-8b76-92c5b91eb621",
+      "log_id": "9723a38a-48b6-4cae-b235-840621e35508",
       "timestamp": "2024-01-15T10:02:24.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -451,8 +451,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c131070b-510c-411e-adeb-80de2bf03740",
-      "span_id": "171ac03de04f4021",
+      "trace_id": "cd587d2d-b7c4-45b3-981e-b6daff7548b3",
+      "span_id": "a7b04781e0774a7a",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -467,7 +467,7 @@
       }
     },
     {
-      "log_id": "ca2c06b3-38e0-4695-a962-f1ffad5945e4",
+      "log_id": "7e57a4c9-f77b-42e9-a19a-8c8828198b0d",
       "timestamp": "2024-01-15T10:02:33.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -477,8 +477,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c158cde4-637b-4121-933a-183f4080a1fd",
-      "span_id": "8c8f713b096e49a7",
+      "trace_id": "ebbd8b4e-54f7-45b1-92b5-1178d562a092",
+      "span_id": "7893ec8f7df0469e",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -493,7 +493,7 @@
       }
     },
     {
-      "log_id": "9d85454e-9def-4796-8caf-dc9ce358f086",
+      "log_id": "7e7e1144-2395-4363-83ec-caaec11fc5ca",
       "timestamp": "2024-01-15T10:02:42.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -503,8 +503,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "25c6a773-0d38-4b0d-a0ce-a77e5d106bbe",
-      "span_id": "85ac0bdaed5b4ecf",
+      "trace_id": "1c968eb4-ca97-4a31-9309-7bc809d63d19",
+      "span_id": "e979d2cf392c401d",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -519,7 +519,7 @@
       }
     },
     {
-      "log_id": "a3a4c681-3c9e-4e73-811a-6ed33aaeee48",
+      "log_id": "e2570c1c-71c4-42b2-9ffb-7bc2394a848e",
       "timestamp": "2024-01-15T10:02:51.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -529,8 +529,8 @@
       "message": "User login successful",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3b6e9e60-d2e8-4205-a4ab-0d4bc8c92692",
-      "span_id": "7be674142f074a54",
+      "trace_id": "53a43686-6b76-4d3e-8be6-ed8e2c4dcfca",
+      "span_id": "ae564b6b7e1e4ea2",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -545,7 +545,7 @@
       }
     },
     {
-      "log_id": "afd4f5b7-9fa0-444b-b0b1-1df5d3774e6d",
+      "log_id": "31efb2fc-efe0-41e8-af0e-06d2d1a77791",
       "timestamp": "2024-01-15T10:03:00.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -555,8 +555,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "5ca60e2f-0cd6-49c8-b3b0-1a7eae23d964",
-      "span_id": "204e29dd98ca4ab6",
+      "trace_id": "32b384fd-e626-4947-aa29-104ceb1ed10b",
+      "span_id": "33084049c2694870",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -569,13 +569,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5e43f9c1-0ef0-4241-a589-a99f58aba63b",
+        "alert_id": "0308806f-87e1-4833-8ff2-8afd85d04e97",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "21d74d41-f6fb-404d-a997-e9eef8ec8417",
+      "log_id": "b5c0cb84-505a-45a5-93f0-41b2ca5b6ee5",
       "timestamp": "2024-01-15T10:03:01.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -585,8 +585,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "291d4f6d-6e92-4406-a8b4-e8d5ef623d5e",
-      "span_id": "81a8c13a98714fdc",
+      "trace_id": "31e1f860-9c77-4573-9a49-04ae44467fa9",
+      "span_id": "82fc7df51c9b47f4",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -599,13 +599,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "01a70dd7-6d35-4ec3-b987-86e2866b3021",
+        "alert_id": "7f5dee2f-0289-4e80-bcb5-8c3ce01b2d56",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f7f329a7-2faf-4096-a939-b2ae216cd6b8",
+      "log_id": "b22f27a9-1491-4637-8f19-8a7430bfcec2",
       "timestamp": "2024-01-15T10:03:02.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -615,8 +615,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ca53e5af-d627-4d5b-a49b-9c0d31e707f0",
-      "span_id": "bcc28d6a30c640b9",
+      "trace_id": "df3769ae-6e13-4bf8-b6ca-d3a9cfda46b9",
+      "span_id": "31e32558ddac4375",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -629,13 +629,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5332c525-c0cf-43a5-850a-d9f4f261ec02",
+        "alert_id": "96edcbba-a906-45c2-ba0f-331520e3d0c7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "077eff39-c39d-4d5b-ad7f-d750e850da96",
+      "log_id": "c54020ab-511b-4464-920b-7a5cd61c856f",
       "timestamp": "2024-01-15T10:03:03.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -645,8 +645,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3ee9d547-d52a-4abe-bb9f-6d02025837b1",
-      "span_id": "f81c66e0395045f2",
+      "trace_id": "6f6a62f4-ad0b-4193-9db9-281cf72d7306",
+      "span_id": "32f6e394705e44a1",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -659,13 +659,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "f81997a7-36a4-4a58-aaf7-527dc9bd1466",
+        "alert_id": "a2ccebc2-36d9-41ef-9962-f33fb648e1d6",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e0d38416-edf2-464c-a9ab-54a39dd491f0",
+      "log_id": "1e4f48c1-7395-4cad-8bb1-03cc3cb8f8d2",
       "timestamp": "2024-01-15T10:03:04.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -675,8 +675,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c9ca0a4c-626d-45ea-9033-2d20d3326111",
-      "span_id": "1e798ba963834ba1",
+      "trace_id": "04042575-e7f3-49f6-9974-f18e7ed5bd55",
+      "span_id": "78346d8950ec45d2",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -689,13 +689,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ff8d6a71-d000-4459-bd7f-cf005d9576f4",
+        "alert_id": "57d96d4f-65b1-4c02-a975-211ab4b41c91",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "2fff8cbc-e36a-4e8d-bed7-e11fbd53f66b",
+      "log_id": "ef148092-4ad1-4db0-bae6-d6cdc9a12576",
       "timestamp": "2024-01-15T10:03:05.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -705,8 +705,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b8dc59bc-7e6b-40dd-bef0-3f6578856fd3",
-      "span_id": "6cc4db07c03b4879",
+      "trace_id": "f9704499-b35a-4151-8927-2bc2af7048cc",
+      "span_id": "565cbb4a311847ca",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -719,13 +719,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "179238f6-e39e-4ce2-b6a4-edb2c1897b90",
+        "alert_id": "08a011e8-60e6-468e-a9e2-2da35e750a19",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4c5571c4-35f8-4347-b1f2-3bd83c20b1ce",
+      "log_id": "8aff19a0-90dd-481d-a367-8003ebb1e141",
       "timestamp": "2024-01-15T10:03:06.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -735,8 +735,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "bc70a0fb-ff51-4cf4-a8d0-ce403c4eb5cf",
-      "span_id": "638a33d4a3ac440e",
+      "trace_id": "cc235726-5624-43e4-8b0f-42cc37d702ca",
+      "span_id": "282ea2d2fe564495",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -749,13 +749,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "59ddd82d-301b-4eac-80f0-3e3eee8209d6",
+        "alert_id": "1812f6ec-aa65-42c0-87f5-b6730dbf02a4",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f7b620d1-500b-4ca6-be3d-e240350da82c",
+      "log_id": "94ae90fc-c0cb-4ea5-9f7f-bda84a384cb4",
       "timestamp": "2024-01-15T10:03:07.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -765,8 +765,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "abea6e73-9370-4b0f-b6eb-6705c73aefa9",
-      "span_id": "1c4ff786d2ea4304",
+      "trace_id": "d40af513-3064-40ff-87f7-39634f77f86d",
+      "span_id": "69bee60915f14161",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -779,13 +779,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "cbb5d14b-72f1-48c8-a2e7-00f1a595cd74",
+        "alert_id": "cfecfd58-4177-4c6f-ad08-6636ee5c6d5b",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "0505da46-5bcc-41df-9488-42a236691d29",
+      "log_id": "081f5062-67b6-4144-9144-14a023efa630",
       "timestamp": "2024-01-15T10:03:08.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -795,8 +795,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e6184da0-ab69-4706-a644-504c07fdb44b",
-      "span_id": "2f6e21f1e24d43d1",
+      "trace_id": "6d3a2221-7be1-4d6f-ac7e-a9e0e76eee24",
+      "span_id": "03739bb62634471e",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -809,13 +809,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "fee53315-6f3c-481b-ba55-3fbd7fd25623",
+        "alert_id": "18fc693d-8b6f-4b5c-ba69-2b498bc0636a",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "7e704a8c-2f62-4999-85f0-a93929cb0368",
+      "log_id": "54d7ad5a-f673-45e2-a55f-5aa54ff8971c",
       "timestamp": "2024-01-15T10:03:09.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -825,8 +825,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "83340213-7b92-4ef2-9b92-68efd59fb90c",
-      "span_id": "7a6351cc5757488d",
+      "trace_id": "e1940b2c-6f5b-490b-89cb-718548dec529",
+      "span_id": "10b048d2dec74e7d",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -839,13 +839,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "25ec7b2f-f069-4006-95f0-29d4823be9da",
+        "alert_id": "9796456f-eb20-4042-8e71-0a28ef6fe4e5",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "ada186c3-5e75-4ee5-9435-ce1cf43d9f73",
+      "log_id": "28ae6f70-836e-4fe6-832a-a7e41f35b6d5",
       "timestamp": "2024-01-15T10:03:10.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -855,8 +855,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "5c3e3463-0186-431f-a3cc-298e70ac9c12",
-      "span_id": "6f6a4580f5e64846",
+      "trace_id": "cdce1f33-d6f8-4248-a371-1e4a425f1531",
+      "span_id": "7f69d020028c4e14",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -869,13 +869,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "cb4002dd-69cc-462f-a942-2d11e484dedc",
+        "alert_id": "6408f1db-ccc5-48a6-aaaf-9f3fe0aefb4a",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "fe968ef1-042d-49b4-8ad6-e5f9eff896ca",
+      "log_id": "13ef6a46-1878-4fa0-a5fa-c1e548de51fb",
       "timestamp": "2024-01-15T10:03:11.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -885,8 +885,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "d09baa0a-7bee-49c7-af21-8d0fd9aaf216",
-      "span_id": "b6b273986bce4bbd",
+      "trace_id": "2a2d4fd4-8517-447c-b98a-55f77b7908d2",
+      "span_id": "a235ff943d244312",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -899,13 +899,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "2aa367ae-3a9c-49c2-84e2-513a5d452a23",
+        "alert_id": "019db634-5600-4862-8f94-13302fd86147",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "1775b045-e9a3-41c9-a8b3-d3673d88cbe2",
+      "log_id": "d8a3e964-34af-485a-b889-8ed3e22464f4",
       "timestamp": "2024-01-15T10:03:12.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -915,8 +915,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ca0fc648-86ef-49e0-9bb3-f78562025918",
-      "span_id": "f14691bc410a453e",
+      "trace_id": "0280795e-b9da-4c94-89aa-aaccb9afedcc",
+      "span_id": "06438e86a8814a17",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -929,13 +929,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "82b5d1ed-27c7-4a30-b0ba-37e63fce1388",
+        "alert_id": "39c18bd1-cc2f-42ba-b878-47fb5c58d7b5",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "191e3f9b-e947-4a06-9186-b0a4d642a243",
+      "log_id": "3c9c8c86-8dc3-4298-becc-28e201c98019",
       "timestamp": "2024-01-15T10:03:13.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -945,8 +945,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "7b546f18-3749-48d3-8fd1-5ed8997526ea",
-      "span_id": "22fa9f00b6884d01",
+      "trace_id": "1e148beb-9130-443b-89aa-d67088ae8b32",
+      "span_id": "9a56f5d577fa4eed",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -959,13 +959,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "2486d8e1-fbe3-49d3-891d-f870aee5b363",
+        "alert_id": "6f981bbe-abce-4621-a8ba-d5ef5d7c0734",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "5e2c6cd4-f4bd-402e-a932-b9ea8b63e274",
+      "log_id": "e70b5484-c4e6-4326-abf3-d531b3282a92",
       "timestamp": "2024-01-15T10:03:14.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -975,8 +975,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a99b469a-e4a8-4713-9fe3-2df7a701b965",
-      "span_id": "0d8d7bbb08244cc1",
+      "trace_id": "5d8d8f94-eb26-461c-8f30-5e1ca394e97b",
+      "span_id": "4b02730b31bd4716",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -989,13 +989,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "2f844092-7f84-4edb-9e55-ad5c172c934a",
+        "alert_id": "36dd3f7e-3470-471a-8c41-894c8b5d7afd",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "98997ff4-2c0c-475a-80b7-104f1b4cee52",
+      "log_id": "95258ec6-ad1d-45f1-ba8c-458b79d72eef",
       "timestamp": "2024-01-15T10:03:15.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1005,8 +1005,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "5f97b9d1-5f56-4baf-93a2-9fe89caa24da",
-      "span_id": "ad0db73df4cb432a",
+      "trace_id": "374d6779-40b9-4438-8b43-099fcb8c65e1",
+      "span_id": "61acfb24a85d4459",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1019,13 +1019,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "7577a8a4-f185-4976-8d99-ab82d93ab7f2",
+        "alert_id": "883e2c5e-5abe-40b6-af59-091840731bd0",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "6d06f3da-3bef-4c7d-a698-0592b89f17d4",
+      "log_id": "708e3600-8dc9-4ef4-b8d6-f20e5ce273db",
       "timestamp": "2024-01-15T10:03:16.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1035,8 +1035,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ac343674-b93c-4f3e-9182-7dee9326f56e",
-      "span_id": "9a2f96e63375478b",
+      "trace_id": "f2c9e704-c773-48c1-9ed6-1d9182b93b9c",
+      "span_id": "2a27683289dc48f3",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1049,13 +1049,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "fa9e539a-a0b9-43cb-81b3-b8e7fc96afce",
+        "alert_id": "7ed8e03b-3b3d-45a7-9a0f-b0dbcf9f481c",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "01145434-e83f-446f-8dbc-105e86943918",
+      "log_id": "27e135ec-dfec-46da-ae98-402643850e3f",
       "timestamp": "2024-01-15T10:03:17.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1065,8 +1065,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f89e9167-acea-425d-8550-503f84730afb",
-      "span_id": "1a76d694f3aa495a",
+      "trace_id": "90752639-8d27-4a18-9bcd-4c07de377921",
+      "span_id": "0e29917b66784d57",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1079,13 +1079,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "595d8ad3-5613-4900-8ab3-7273fb3bb0b6",
+        "alert_id": "f271d749-ab52-4d10-8e91-c2f7e28d2559",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "9a5e409c-6528-4e45-a202-06607525c8a5",
+      "log_id": "18096d8e-a63d-4877-a95a-f825d4e70d67",
       "timestamp": "2024-01-15T10:03:18.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1095,8 +1095,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "866a4017-9c88-4c8d-8735-82ce8c4672dc",
-      "span_id": "cb01dd861e7d4e8a",
+      "trace_id": "8849e202-154b-4401-9066-ecb603269d12",
+      "span_id": "2d47823379924387",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1109,13 +1109,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "67c97970-f4a3-4b0d-99fb-81c687ad88ca",
+        "alert_id": "953bd53e-f808-49fa-bd00-eeebf7543f67",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "a528117f-548c-4500-b28d-a71b4008084f",
+      "log_id": "28dd74da-f016-448c-ac1e-b1e68dc84697",
       "timestamp": "2024-01-15T10:03:19.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1125,8 +1125,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b27cbd53-30af-479e-9239-514079c59633",
-      "span_id": "60bde5d102344eda",
+      "trace_id": "e1f981c1-74ba-447e-b318-e457ea0f6f0d",
+      "span_id": "c0c9f74bd2164997",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1139,13 +1139,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "658bb8da-eb79-4b4d-82b1-bb9463fc8f6c",
+        "alert_id": "973340fb-2a47-4cbc-9838-9ea8b93ad6a1",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "0dee6e7c-b325-40c2-8b66-b74e75cb6385",
+      "log_id": "9d38a3ac-66f2-41cb-9738-6688820ea7c5",
       "timestamp": "2024-01-15T10:03:20.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1155,8 +1155,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "075862ce-6721-4ea3-948a-afe704b7039a",
-      "span_id": "92e7a10143f34f2e",
+      "trace_id": "c7dee480-13f5-4c43-96f2-13c673fadbfa",
+      "span_id": "396eb395639c46fa",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1169,13 +1169,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "399551af-80dd-4962-b84e-ed36e92c34c7",
+        "alert_id": "f8d37e9f-6a69-4aa3-a4bc-378945194c68",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "1718b6df-315a-4808-a611-fb2f4fc47da5",
+      "log_id": "4e5f3106-3fde-46d6-ab26-797eba7ad015",
       "timestamp": "2024-01-15T10:03:21.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1185,8 +1185,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "303d2996-594b-496d-99ed-37402e87d7f3",
-      "span_id": "ff3bbb8b277e4110",
+      "trace_id": "89a6f804-e055-4595-9b9c-ef8d265c8eb1",
+      "span_id": "9629e242907149d7",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1199,13 +1199,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "51643d77-c794-40c9-89df-40df38a66696",
+        "alert_id": "93a720bb-5b7f-4044-94ea-66f31226bf39",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "667f884a-203b-4745-8b9d-dc850306fa65",
+      "log_id": "70312b65-2db4-47d0-9249-da6ca2494274",
       "timestamp": "2024-01-15T10:03:22.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1215,8 +1215,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "35bcd3ca-c246-48e9-9e74-729df72211bf",
-      "span_id": "b09f913ded444b01",
+      "trace_id": "db47ae65-fd6e-45ee-baca-1dd1e796a95a",
+      "span_id": "cedf2528733849f7",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1229,13 +1229,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "0f3c99c5-b5c8-475e-a062-215d2105962f",
+        "alert_id": "614b1084-4496-47c9-a81c-a11966883fd5",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e616abc7-6f94-4591-a1f5-02db56f10949",
+      "log_id": "e0649a10-9613-4286-bd34-89e9b079f9d9",
       "timestamp": "2024-01-15T10:03:23.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1245,8 +1245,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c1b23d9e-ed69-4882-bec4-7ea98fdc5cb1",
-      "span_id": "6ce137e32f8f446c",
+      "trace_id": "be785cf9-e95a-4747-b613-81612ae83011",
+      "span_id": "d43f0487a13e4ebc",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1259,13 +1259,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "3cff8fe5-1035-478f-9256-bb6b7b017872",
+        "alert_id": "1c6f6dc5-f5e9-47a2-968e-e06a35a17771",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "b0e96e86-6f94-4774-ad8f-2bffea67391e",
+      "log_id": "046f0441-84e8-4302-8115-393a2afdb8cd",
       "timestamp": "2024-01-15T10:03:24.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1275,8 +1275,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "487534c3-90b0-4562-8574-f7b992d088d7",
-      "span_id": "d27b46b00fa64e5d",
+      "trace_id": "28bb44eb-0db9-4c3f-9df3-f7e6e6cf2784",
+      "span_id": "37162d2bebe54124",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1289,13 +1289,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "7fde1fbd-eff7-404a-b149-44b64d91b91a",
+        "alert_id": "a4e1f7f7-1c1c-4391-baa6-39680dd58b17",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "027f5979-1ee9-4639-8174-5ad92fff6eb3",
+      "log_id": "b28a1997-f3d0-4a15-ad66-83532432f850",
       "timestamp": "2024-01-15T10:03:25.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1305,8 +1305,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "8156ed89-eec9-4bf2-98f5-823e09541d17",
-      "span_id": "ee4e298d885c4492",
+      "trace_id": "35ff9698-a750-400f-b550-33b4f4f124ec",
+      "span_id": "4ac6e623115246b2",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1319,13 +1319,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "f1c753d3-51fd-45ad-a053-7b21fa9a6d38",
+        "alert_id": "ea314ad2-3447-4596-b150-497fc24c5894",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "eef7cd5e-52eb-4cc2-b6dd-d6874fb4b8ac",
+      "log_id": "3ea5c959-f92a-4d72-8a15-b3520960f1ff",
       "timestamp": "2024-01-15T10:03:26.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1335,8 +1335,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6df9debf-97b0-4741-9dd8-94b20bcfe0a4",
-      "span_id": "9d658fbf309a4fae",
+      "trace_id": "17ef94e0-c999-46ce-8ea5-eef69a2e6543",
+      "span_id": "864cd206030d4567",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1349,13 +1349,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "6ae4db51-65b3-461b-8f94-becfd3337932",
+        "alert_id": "30e651a0-e8ad-46bc-80a1-c32e67f02356",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "0bbe7dd3-75b9-4db7-a974-95652593003c",
+      "log_id": "b98bc912-39d8-4b54-9867-1ce23ef0ec9e",
       "timestamp": "2024-01-15T10:03:27.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1365,8 +1365,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "7a217af5-3fa1-419a-b2f5-56a5c257de3c",
-      "span_id": "dec1b15194e7443a",
+      "trace_id": "5b27c7d0-e034-4281-8467-53a63b960167",
+      "span_id": "80cd1ce4a5dd4cb7",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1379,13 +1379,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "205813a4-1a6c-442b-b2ea-840448cc0ebf",
+        "alert_id": "f09c8427-7a34-4fe0-b12a-60360305ee1a",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "b736ee47-9f83-4412-86a9-9fc5d5480242",
+      "log_id": "4fcfb3ea-c25a-4eeb-ab7a-9127484307e0",
       "timestamp": "2024-01-15T10:03:28.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1395,8 +1395,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "4ede4dd4-5673-4216-af76-4bc4d17dd35b",
-      "span_id": "1fd018bcfee04a95",
+      "trace_id": "b85a6f51-69e6-4ebd-b0cc-ab6d5f9caace",
+      "span_id": "4a5f4e4dd8c84a0d",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1409,13 +1409,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "6c983279-3289-455e-b050-030d3f616fc9",
+        "alert_id": "309a1a09-22de-4cb1-91bc-49418bf707f6",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "765702a9-c458-4b3e-a35a-7fde909e60df",
+      "log_id": "cd53a56f-477f-41f2-908c-5a13219bf424",
       "timestamp": "2024-01-15T10:03:29.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1425,8 +1425,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "71865c2e-c1ab-403c-8a9f-8c0df84ee0ec",
-      "span_id": "67fadd7baa0e45ed",
+      "trace_id": "04668b41-dbf4-42c0-81a5-076c760e4ae8",
+      "span_id": "c3427d4b95ca4186",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1439,13 +1439,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "fbf8d084-6cc7-4a9a-abb6-21022ecf6b1a",
+        "alert_id": "0d52a6c3-4a91-46f4-ad19-f10c97c72f48",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "23ed07de-f35f-491d-a9c5-aedf4268a248",
+      "log_id": "3d2cfeee-5c39-4062-a2c6-0c6ede6a800a",
       "timestamp": "2024-01-15T10:03:30.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1455,8 +1455,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "9f746bae-7296-4b50-a498-e51ff8562db1",
-      "span_id": "0851d06169884a56",
+      "trace_id": "62bd689a-a096-43c2-b418-ab515748adef",
+      "span_id": "83cdcde3e27c450d",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1469,13 +1469,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "93b0944f-85ee-46f4-a92c-d99dc154d59d",
+        "alert_id": "4aa1bb47-8d6e-467d-a850-d8003da4b7fa",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "72f883a7-cbce-4328-898c-09e2513801b2",
+      "log_id": "5672b207-78e0-4bb2-be93-60ef5b8ba1f6",
       "timestamp": "2024-01-15T10:03:31.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1485,8 +1485,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "d241c130-33b4-45f5-b69d-d5b1b64825aa",
-      "span_id": "39492b801d1f414a",
+      "trace_id": "e186c6c3-6cbe-40b7-8615-f7a66c159027",
+      "span_id": "bc72d9226d1d48b9",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1499,13 +1499,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "eb7280fa-7260-4146-befa-6722f36bad1a",
+        "alert_id": "e876867f-a6c1-47f8-accd-7ae7ecf04c0f",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4a6e7483-6fc9-490a-bc1b-99f5e848e8a9",
+      "log_id": "913802a8-900e-41e4-aa1a-a400e542a66e",
       "timestamp": "2024-01-15T10:03:32.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1515,8 +1515,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c161aa56-a4fe-4916-9aab-f1429c64e060",
-      "span_id": "dbcd9b028acb41b3",
+      "trace_id": "7309d2a4-d8a5-4608-8ff6-0db5d94ae360",
+      "span_id": "de15419e9ce54096",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1529,13 +1529,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a2e34ee2-26a1-433f-a481-8e48f5025da0",
+        "alert_id": "cf5e90ed-0b05-4993-92eb-26bc3b447edf",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "c4c068ac-1034-4062-b71a-855291d7f11b",
+      "log_id": "e99c492d-0259-4fd5-922c-b7334f26b2af",
       "timestamp": "2024-01-15T10:03:33.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1545,8 +1545,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "5a742816-09a2-4a39-9a53-ca840df67878",
-      "span_id": "2fd30d8a3a444188",
+      "trace_id": "28fc6c0a-3d23-4166-a434-a84dc3f4758c",
+      "span_id": "a518018e39774b45",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1559,13 +1559,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "f7dc52cd-91e0-41f6-a0ce-f585a85f129f",
+        "alert_id": "8e84b192-5b88-4f99-bff2-1b2068429bcc",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "754bc097-868e-49e1-a98d-818cf06ea100",
+      "log_id": "4ff248fb-fb63-40e4-a74e-4b5806bd0a9b",
       "timestamp": "2024-01-15T10:03:34.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1575,8 +1575,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "2091979a-7399-4d79-bb6b-5e0d18963c63",
-      "span_id": "b3df7fad087a4456",
+      "trace_id": "d834692c-87a6-4c05-8a0d-0225f2b39775",
+      "span_id": "156426214a474532",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1589,13 +1589,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "560408f6-f897-4480-87be-74daa8cd2595",
+        "alert_id": "d47dc8f1-a698-41f3-8632-005a8bb15c5e",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "616d4357-970d-4f4a-9ce7-17e6de66629c",
+      "log_id": "c9d68a99-cf21-49c8-ac09-4becf0964b2c",
       "timestamp": "2024-01-15T10:03:35.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1605,8 +1605,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "eaf8446a-8d21-4f98-9093-277cd786ff95",
-      "span_id": "7ec651f83fe14f9a",
+      "trace_id": "686282ed-65dd-4ce2-9bc9-a8e0c8daafa8",
+      "span_id": "227551ada67e43b6",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1619,13 +1619,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "6d2653bd-a899-4a0d-994a-00eb67af9d10",
+        "alert_id": "2ab348ed-d3df-4788-82fd-f0947842d8d0",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "d8ee5f97-9d8c-452e-96fe-409c8525a460",
+      "log_id": "5e94b7e0-82c8-45f7-9950-3c75e4fa3664",
       "timestamp": "2024-01-15T10:03:36.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1635,8 +1635,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "72c04e18-399e-466a-a852-1e905b7a5656",
-      "span_id": "36090ee017c542e5",
+      "trace_id": "43e8cc68-d61b-4868-a911-2da884c13530",
+      "span_id": "9118d69ec2654a71",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1649,13 +1649,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "bdc1ec5b-5ed8-4175-84f9-77c3254085fc",
+        "alert_id": "3454ce1e-431a-4d83-a4be-27933655a808",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "d6d93a20-730e-493e-a6a0-c0b948759435",
+      "log_id": "969a7444-1c00-44a7-a70f-825cfecf330d",
       "timestamp": "2024-01-15T10:03:37.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1665,8 +1665,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3b315694-8425-4ef7-9a69-473e85144a6d",
-      "span_id": "560d0cec24764e16",
+      "trace_id": "a8813e52-f0a7-4316-9fb7-22321dc47d7d",
+      "span_id": "c4f7b3c4e0854d8a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1679,13 +1679,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "942d0e9a-5dc4-412e-874a-0425d717f293",
+        "alert_id": "afc733d7-b112-487b-8d8b-e273ad729ca9",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "aab6a187-1d7f-4269-abfb-35e317842519",
+      "log_id": "bac32edd-edfb-4a46-9f60-5a6a72dc19d2",
       "timestamp": "2024-01-15T10:03:38.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1695,8 +1695,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "06ae2643-bd92-49c7-86d6-25e5b91dd848",
-      "span_id": "ab7a7a8ded1c4fef",
+      "trace_id": "2d8c4d06-020c-43c9-9bf7-ae63dd1e319f",
+      "span_id": "fa396ca9be0648a8",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1709,13 +1709,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "2404fb20-297a-4f9f-a9fc-8baa34620d49",
+        "alert_id": "0defa8a2-5ff0-4386-bc8e-261404984858",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "7b836d1f-f72e-465b-9583-a471098605a0",
+      "log_id": "7043bd9d-4b87-42e1-8547-6fd0738a0600",
       "timestamp": "2024-01-15T10:03:39.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1725,8 +1725,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "22d61edc-09e9-4f88-9242-a2f97b306e56",
-      "span_id": "ebda0a3a14c24b10",
+      "trace_id": "ec991d9e-3973-459c-bde5-f349196b55aa",
+      "span_id": "95eeca710ee943a7",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1739,13 +1739,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "bd3d7ffb-64ed-407c-a3f4-ee84a33667c8",
+        "alert_id": "c81bacd4-ca42-4ae3-ac77-7467fce589a8",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "a14aca2d-86c0-487c-a2b5-f1da776f58f8",
+      "log_id": "803d73ca-5acc-415e-b1cf-b604c95a6c73",
       "timestamp": "2024-01-15T10:03:40.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1755,8 +1755,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6a4d5a05-2c48-4e0a-ba36-416731779858",
-      "span_id": "4ebde048b9564ba7",
+      "trace_id": "da1265b8-fbc3-481d-9552-8d26c20e46c9",
+      "span_id": "d015e50be9314b4e",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1769,13 +1769,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "1cba92d9-9920-446a-b8da-b9e8d2ca62eb",
+        "alert_id": "e36bbd30-533a-4dac-b736-e9e8ebb0216f",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "13743b05-06c9-44c4-a8b9-3f612b99d216",
+      "log_id": "db81afd7-4e27-4adf-a074-2e825ea3f9c3",
       "timestamp": "2024-01-15T10:03:41.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1785,8 +1785,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "8d737d82-fdc8-40c4-8d12-c6252c8e6a8a",
-      "span_id": "1623dab37f154941",
+      "trace_id": "0e16e2d3-45b6-4f7c-b91b-dc203767b66c",
+      "span_id": "0823fd67d02944b6",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1799,13 +1799,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "3db559c8-9b5e-4234-867a-4843fc9c385c",
+        "alert_id": "a2067a16-d6ad-4228-a7ca-eceac487579c",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e13d143b-546e-4648-b217-f795c176ba66",
+      "log_id": "bf96f693-5aa4-4685-b3eb-48e5ef148ae8",
       "timestamp": "2024-01-15T10:03:42.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1815,8 +1815,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "97e61467-bdc7-45f6-80d3-b62a5d726f52",
-      "span_id": "9a8ab71553c24418",
+      "trace_id": "11ca5491-ce8b-4c56-84cd-b7471fc9e54d",
+      "span_id": "b4a506b99e674bd7",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1829,13 +1829,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ac4cda9b-4a4e-4da0-b857-2775c6e4da2b",
+        "alert_id": "a1fe73b4-f686-4d38-8428-69d970620f5c",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "c79b5faf-0196-4dd5-af9d-383221f13a4b",
+      "log_id": "b7fe51aa-0d9e-4c15-91a6-a71ff6f497a2",
       "timestamp": "2024-01-15T10:03:43.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1845,8 +1845,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "7a229a6a-43f9-4f54-86d4-10c9a9591f5e",
-      "span_id": "cea3cd5341164f76",
+      "trace_id": "a3c2f8cf-69e1-4d6c-a7b3-03a0593a3ba4",
+      "span_id": "d6fa536f491d420e",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1859,13 +1859,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5df1a3c4-ff96-40ab-b499-7ca577a2627d",
+        "alert_id": "763ebf9a-033c-422c-a1b2-5281d76c520e",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "6c489c33-810a-446f-a11f-cfa250845665",
+      "log_id": "7da5e7c2-f603-4db4-8934-662733e3aa81",
       "timestamp": "2024-01-15T10:03:44.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1875,8 +1875,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "cb348327-699f-467b-acb5-e7d3e9ca4ffb",
-      "span_id": "b1bd3527d0eb4777",
+      "trace_id": "ead11618-3ebd-4f1b-8a1b-e76a204ab9ca",
+      "span_id": "a85195839aa24014",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1889,13 +1889,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "797106ee-56c5-4d58-ab3d-d86a5deabaf8",
+        "alert_id": "1c7e5ceb-1653-454f-929c-30427bc8929b",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "626ce684-67e4-4063-ba3d-5debb4a0b80f",
+      "log_id": "88e3d88e-3fcd-4c1e-933f-a92f898c2427",
       "timestamp": "2024-01-15T10:03:45.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1905,8 +1905,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "52247146-6473-4501-adfa-c674081ffe19",
-      "span_id": "3bc02c9463564803",
+      "trace_id": "f687ffd4-514c-4393-bf0c-d3655b277a0c",
+      "span_id": "134e710ce9ec45b1",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1919,13 +1919,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "f8ed14ea-42e3-4f31-85c7-5d1380d28984",
+        "alert_id": "2345c8e8-e54f-4f9c-96eb-63cd94119539",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "15d8258b-246b-4829-98c8-430894cec83e",
+      "log_id": "516e9c19-1420-4fcc-919b-233287dbc69a",
       "timestamp": "2024-01-15T10:03:46.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1935,8 +1935,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "261e4831-e50a-4fbf-96fe-8d9831625191",
-      "span_id": "1d3b5455921a4c1c",
+      "trace_id": "91a219f8-8eb0-466e-8ea3-1ccf386aa77f",
+      "span_id": "9249a984491747ca",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1949,13 +1949,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a875c1c5-510f-4d00-b1f1-62ca14a133ea",
+        "alert_id": "3fbcf384-aa56-4bff-aad1-4bc6cc001ae2",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "ebe26279-7125-4fe4-a704-a3b47ccb88c9",
+      "log_id": "b066c486-dca3-4858-8bac-6f6480d94381",
       "timestamp": "2024-01-15T10:03:47.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1965,8 +1965,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f2533667-391e-4c93-9311-9b750773afcd",
-      "span_id": "49574ae0f0ad4f7c",
+      "trace_id": "1df3a4ed-2634-4b69-9e39-5585dc7e7ff9",
+      "span_id": "ee2e74b39baf4baf",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1979,13 +1979,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "bf2b97d9-a44b-480a-b3ed-201b9a78854f",
+        "alert_id": "78d77a4d-883f-47c1-8ffe-e11308967468",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e95a5244-a013-4b83-b55f-67c8939fa3d8",
+      "log_id": "3233afc1-997d-43d1-a2c7-4461094775c2",
       "timestamp": "2024-01-15T10:03:48.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -1995,8 +1995,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f8f536c2-1752-4539-b2ba-f31cfdc9dd46",
-      "span_id": "1c25cb9a0f4c43a1",
+      "trace_id": "b569cf6f-1e1b-4804-b62c-ce8cad6cec5f",
+      "span_id": "fec651bca83d4aba",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2009,13 +2009,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "d9a83515-3973-4906-9fe3-9b5ff570112d",
+        "alert_id": "9a3d4c5c-3d93-4dd0-89bf-15c9e0a1a144",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "54404a5c-b483-4d4c-86a9-6e6967cfe5cc",
+      "log_id": "578aad4d-fbcd-4735-8459-527ebc7f89d4",
       "timestamp": "2024-01-15T10:03:49.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2025,8 +2025,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3d7e8f02-14e2-45e0-8e24-64959eb03db3",
-      "span_id": "4ea70ddae1c84e0c",
+      "trace_id": "6205a5a2-c1b4-4957-aa73-0e3f60f56bdf",
+      "span_id": "f74f7099c81046a5",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2039,13 +2039,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "398e5948-4020-4403-8649-d4da72b45f7a",
+        "alert_id": "7713ef5c-a4f5-468b-bf64-eb0fc1f148a7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "44c73abf-c77c-49eb-acf9-a7de7836d0da",
+      "log_id": "ffda0ec1-94c0-4a8c-b543-7504fd210b28",
       "timestamp": "2024-01-15T10:03:50.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2055,8 +2055,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "314008ed-d405-4315-91c4-c4638e373316",
-      "span_id": "1d4df21fc4d9403d",
+      "trace_id": "e2a88dd8-963a-4842-8868-c21f4430120d",
+      "span_id": "58a070187f6242c9",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2069,13 +2069,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ba8da764-8749-4e17-84b0-12a70f836179",
+        "alert_id": "3ec29973-886c-4ce9-8858-e109e48da68a",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "2f635bcf-1886-4199-b9e0-b554e9569cf8",
+      "log_id": "081c2b90-f515-412f-bd03-6ffe791ba9fb",
       "timestamp": "2024-01-15T10:03:51.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2085,8 +2085,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "673a58ee-e366-499e-8858-d8bf1f57be3d",
-      "span_id": "16458d670e31436e",
+      "trace_id": "b6674a7f-ca49-4952-a001-f7536257d66c",
+      "span_id": "80b4b1b9404b4229",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2099,13 +2099,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "26371bd0-2498-4cd1-b9cc-a7e88ce14a99",
+        "alert_id": "ad3b2868-d6e0-4d3c-947a-991525c9c4db",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "47ddfe53-c657-42f9-923c-c6109e7ec568",
+      "log_id": "eb035ec3-cfa0-48e4-84fb-a022379f17a0",
       "timestamp": "2024-01-15T10:03:52.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2115,8 +2115,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "9adbb8af-62d3-45da-aef7-81615677d178",
-      "span_id": "b26bd9634be0413d",
+      "trace_id": "4b703b59-e4e9-4d6a-927b-37e70e9be9c1",
+      "span_id": "32a49d6ef3c44324",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2129,13 +2129,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a94664cf-c81c-4f05-a967-3baf0d2b4807",
+        "alert_id": "36e318ca-2a82-4464-9fdd-e0eb9bcea3f9",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f4b930ac-13eb-4349-94c5-7dff766e1295",
+      "log_id": "8343c30d-bc07-4af4-b3f0-0fb57bffa82d",
       "timestamp": "2024-01-15T10:03:53.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2145,8 +2145,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "87801ef0-5edd-43ae-862a-bb684d8a461e",
-      "span_id": "3b3759b967844d84",
+      "trace_id": "211d1208-4faa-4473-a385-14fbc041df83",
+      "span_id": "50db5dc01e574117",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2159,13 +2159,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "3ab4014b-e065-447d-a85c-b172be490b21",
+        "alert_id": "bb82b65d-ffa4-49b5-afbb-554e861a3119",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "fc821308-8bcc-4d16-957e-6460b8fd7542",
+      "log_id": "3b6533a6-5872-45ab-bdb5-a5acf8819864",
       "timestamp": "2024-01-15T10:03:54.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2175,8 +2175,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "2242ce38-d0fe-4730-8f67-d2eb27ec148b",
-      "span_id": "7f676a803cf84374",
+      "trace_id": "7a679841-416c-446e-b5ce-e058f43a9fd9",
+      "span_id": "b2fe0a416b46418e",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2189,13 +2189,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "adc095a9-ea2e-495d-978b-7a10e2686913",
+        "alert_id": "07a11c2a-80f6-4c2f-b973-1bb93f6a970b",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "64120f79-0cc8-4bce-a5b9-f365fad0e4f5",
+      "log_id": "c6a369ea-d126-46eb-9dae-3e152272e8f6",
       "timestamp": "2024-01-15T10:03:55.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2205,8 +2205,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "4e2efe41-e078-4751-9753-d7718afbe1cf",
-      "span_id": "b751dde218794474",
+      "trace_id": "3388e1f2-b1eb-49a0-9e1a-4a4a1f8f54f4",
+      "span_id": "e85d8d4881d64394",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2219,13 +2219,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "4f3a57aa-8884-4fb2-947a-6eecbfa8bcef",
+        "alert_id": "b8a51866-048f-40d0-ad91-fb0b39c2aa8f",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "faa997cb-8435-4a47-8ded-b02aeabcac8a",
+      "log_id": "7776c39a-1a32-4e29-8210-65853d1cf37d",
       "timestamp": "2024-01-15T10:03:56.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2235,8 +2235,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "0c6c61ce-846f-4b1a-9acd-1e4c81a92d93",
-      "span_id": "ba4e6728a0dd4db7",
+      "trace_id": "09faec3a-6ecc-4e41-b2c7-3b22d46a879e",
+      "span_id": "463a5966402b4565",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2249,13 +2249,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "7925eaed-83c0-4144-9dfa-321c88040a6c",
+        "alert_id": "bb148b71-04b6-4c15-8b73-5a4eed17a35b",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "5067e754-2705-414b-a54f-40f5d96b3157",
+      "log_id": "3b94a6d6-d2ff-48a2-95d4-685c5f198324",
       "timestamp": "2024-01-15T10:03:57.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2265,8 +2265,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "bc290175-00a0-4fc2-bbc5-988e10e49140",
-      "span_id": "57bdf207d2104e37",
+      "trace_id": "311d9060-b481-4c46-b4df-b869d14d3257",
+      "span_id": "e75c0a0f18174e3a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2279,13 +2279,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "c0e88515-df3c-4a14-957f-8a574aeb92b7",
+        "alert_id": "6adb749f-3f51-42e8-af59-003bc5e8a7e0",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "623ebf38-030a-419a-b81b-240db559246f",
+      "log_id": "b3821b6b-e09d-4c0d-8833-328b0f2fdf3b",
       "timestamp": "2024-01-15T10:03:58.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2295,8 +2295,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ed4d47a9-9b55-4a4c-9566-25cc71cb5a8c",
-      "span_id": "42fde6300a394703",
+      "trace_id": "5486c5ad-d569-4ed5-8b00-97dfa00ed4dd",
+      "span_id": "9159b47a590c49dc",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2309,13 +2309,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "54dc762e-b699-4b98-9e04-9b46fbccade3",
+        "alert_id": "5e6760c8-b342-4da9-a7fc-c4404861336e",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "7a47676e-a006-4e93-8095-115956c61113",
+      "log_id": "b3e25496-3af3-4f30-972a-7ee1407748a6",
       "timestamp": "2024-01-15T10:03:59.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2325,8 +2325,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ef5fec53-aa4f-401d-9c3d-bf59d08c044d",
-      "span_id": "78578fc7edf642e8",
+      "trace_id": "46317a29-e8a9-467b-9853-4ff0b68b479c",
+      "span_id": "eaa3125c9fbe4179",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2339,13 +2339,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "11625d23-6486-4b0b-8275-923c48b3df97",
+        "alert_id": "1e7826b1-dc9a-41de-9ebc-7739bc048b60",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "a0ff2cf4-ead5-47d9-af14-2f89d6997ac0",
+      "log_id": "5caefeaa-7bf5-45ba-8761-5e1e73daa219",
       "timestamp": "2024-01-15T10:04:00.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2355,8 +2355,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "aae02724-4784-449f-87f0-be3cd7198864",
-      "span_id": "a642a29574bc4cd5",
+      "trace_id": "6d010f37-2222-48d7-a7a6-e53d90242f5f",
+      "span_id": "4597ece764d84d12",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2369,13 +2369,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ba7edb1e-755b-4d78-9df8-8cef317559b7",
+        "alert_id": "e9c3467c-2e00-4a07-9e86-60e3e042b5e4",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f8275d30-1404-4990-ae7d-f679ff8166c9",
+      "log_id": "0ec8c72d-87a7-458d-a51e-1034cfde8e67",
       "timestamp": "2024-01-15T10:04:01.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2385,8 +2385,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e9117448-b408-49ac-b6c5-5a9449b6bf25",
-      "span_id": "02de13c4ea1c4ba6",
+      "trace_id": "b4ef3fcc-8fd3-4f51-9cb7-bf18d7850564",
+      "span_id": "a285227d8e664b6d",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2399,13 +2399,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "2c42e0c7-35ce-4bf7-8e4d-e566ea349762",
+        "alert_id": "3e11f29b-98de-453f-9820-727d19bb8f08",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "9ac289a0-80af-41a5-bb93-b478883b1f4e",
+      "log_id": "ab4d0621-ded8-46cb-ac33-aaa8ce7c5f57",
       "timestamp": "2024-01-15T10:04:02.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2415,8 +2415,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "581c0079-00f2-4519-a524-7e3bbe216a56",
-      "span_id": "b0e551a41cfd4b25",
+      "trace_id": "a2cdf039-82d9-404b-bf50-30d50169ce32",
+      "span_id": "ba14ebaa4ce24eaf",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2429,13 +2429,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "8f23dcb3-39b7-4d53-bdd4-6f7389b4f3a1",
+        "alert_id": "d10f125f-bfb2-41bd-9302-922690d485ed",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "6733e42f-03e8-47f7-ac20-5f5a4ecb3116",
+      "log_id": "32f6f18f-8ce4-481c-bd1d-a7908e241557",
       "timestamp": "2024-01-15T10:04:03.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2445,8 +2445,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3e40182d-316e-4246-bbf6-8ec3277e7677",
-      "span_id": "fda04370b7834b96",
+      "trace_id": "84876e36-8bb1-4410-984b-e7d785930d1b",
+      "span_id": "9f38652f309f444e",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2459,13 +2459,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "974a8aac-96b8-4800-975b-d51e4618113c",
+        "alert_id": "73a4a123-b042-4124-be11-6fefcb8f14b1",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "ad4ba018-94cb-440a-927b-61c07e97db57",
+      "log_id": "e572410f-dc9d-4773-8f7d-3939fafb4d79",
       "timestamp": "2024-01-15T10:04:04.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2475,8 +2475,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "bcd768b5-a2c9-436b-8b5e-ff298fb3c80e",
-      "span_id": "469e107c7ba745cf",
+      "trace_id": "c61ca288-ae37-4024-9118-6472438fbe07",
+      "span_id": "0cbb72af35b542e7",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2489,13 +2489,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "2f91304f-4b48-4788-a2c0-46d425677e79",
+        "alert_id": "64d89966-dd3b-4ef9-8c76-d6d16ae2e54a",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "d3e5dc5b-3693-452c-9634-039e7c946a06",
+      "log_id": "757d8dc3-b515-48f3-93b0-4ba92696a95e",
       "timestamp": "2024-01-15T10:04:05.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2505,8 +2505,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "5480687a-82c7-469d-98b5-9bab98e15c93",
-      "span_id": "32df9f7e65234bfc",
+      "trace_id": "3f4c6cca-1474-4ceb-b804-e9a9565bb537",
+      "span_id": "f27bcadf6ad64aa8",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2519,13 +2519,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "fe3e0244-79c1-4e3e-bd94-c97e49b56a0a",
+        "alert_id": "ab7f70fa-31c4-4c11-b387-6f1f9a598d1f",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "8bacf326-2394-4a82-8869-201f2306e088",
+      "log_id": "20bce9ff-3388-4999-8024-864d90d461eb",
       "timestamp": "2024-01-15T10:04:06.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2535,8 +2535,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "d376774e-20e9-48e1-9514-8d4e9ab02612",
-      "span_id": "1fd0488f24374845",
+      "trace_id": "ef53c321-865f-44b0-8174-178e819da8d6",
+      "span_id": "3f37d1de2bed4b99",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2549,13 +2549,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "7a040ff0-aed4-4ddb-ba25-d17b8cd25062",
+        "alert_id": "f6cdb985-a509-45d7-a315-dddb05dc1850",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "6e2562b4-e571-4446-a2b3-397ac1d07e2f",
+      "log_id": "133c6004-eeb3-4fed-a6bc-e835f6a2369b",
       "timestamp": "2024-01-15T10:04:07.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2565,8 +2565,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "55842725-3415-4931-8fb7-b1f92b48d2e9",
-      "span_id": "be98ab87a7604205",
+      "trace_id": "14d3998b-7a15-46f3-880a-030aea5f8863",
+      "span_id": "fbb6c254f7e34e57",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2579,13 +2579,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "3f535140-10f2-4963-88dd-38fa89b8c99e",
+        "alert_id": "e549e1ff-5754-44d9-85c7-3f119a138901",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "46b893e4-270a-4cb3-bbc8-050671462861",
+      "log_id": "8467252c-cbdb-4139-92d2-328f7b0a4016",
       "timestamp": "2024-01-15T10:04:08.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2595,8 +2595,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b06dc78e-3cdf-4d9b-bcc0-94d01d767d64",
-      "span_id": "b5c77d27e8a54a08",
+      "trace_id": "83490bab-cdfd-4532-895f-1703452c238f",
+      "span_id": "cc630603ddc14e1c",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2609,13 +2609,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "b8465bdc-e8b8-48b4-b960-28fd2569f916",
+        "alert_id": "070b7eac-7106-4e07-b0ad-60145817b9d0",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "8b6800f5-4f91-4215-b3c6-f3c7812183ce",
+      "log_id": "17b93a0f-54bc-44bb-83fc-00991ac8882d",
       "timestamp": "2024-01-15T10:04:09.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2625,8 +2625,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "1484118a-9917-48b4-947b-cc272a59c35f",
-      "span_id": "e057d69da10a444c",
+      "trace_id": "b17a1684-96ef-4969-b7fd-8b6b245f2f3c",
+      "span_id": "02ea3c9a2e944093",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2639,13 +2639,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "021ba759-710b-423c-816f-4f43154fc879",
+        "alert_id": "b2b64313-b5c8-4832-8196-37af23213099",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "cb6871ef-06b2-4197-9c2b-f3aa32134f11",
+      "log_id": "d686eefc-65d2-48b2-8b8d-b511f2a19d1f",
       "timestamp": "2024-01-15T10:04:10.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2655,8 +2655,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a295e045-7395-4398-8b37-4a8300055dbb",
-      "span_id": "889a0040e3784ec4",
+      "trace_id": "64ca81ec-3e99-4119-88be-d653e04874a4",
+      "span_id": "332b33ad321f4935",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2669,13 +2669,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "511ec840-fe53-4a2e-b381-1060dfcf25ed",
+        "alert_id": "082a3c9d-0dd1-44a5-a6f9-9cd92b01b9f6",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f5fc0d29-d0ef-4e63-bc09-095e41c8fb15",
+      "log_id": "72a3dc7d-3b96-49a1-8473-a634dd84291d",
       "timestamp": "2024-01-15T10:04:11.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2685,8 +2685,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e73a3566-97bd-470a-9109-d7ffafd68587",
-      "span_id": "adc6d3cf109d4eb5",
+      "trace_id": "388ebeb9-9aa8-4bf1-85ac-0b6c3318f534",
+      "span_id": "227862f9b0ad47d5",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2699,13 +2699,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "80e50615-3186-4cc9-82ab-aeb83d77e7ff",
+        "alert_id": "26cf2a53-572c-46fc-b111-a8b876e39d46",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "ffc4622b-f280-4c15-8ffb-a32f1b010fb0",
+      "log_id": "7afa6b1b-e0c8-4ee4-a7bc-e07b7f19c36a",
       "timestamp": "2024-01-15T10:04:12.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2715,8 +2715,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "aa804484-271a-4238-84d6-2e20db37647c",
-      "span_id": "a4db265403f84e12",
+      "trace_id": "13ecce38-36be-44c9-88d0-2bd509b93a0d",
+      "span_id": "700d7da9ca4d4363",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2729,13 +2729,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "f7ffa338-efbc-41f5-b430-2d2d9d4c2a33",
+        "alert_id": "57b25db2-553c-444a-924f-617ae8d31ff7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "5cc577f4-5b35-4db8-bf77-8d0b2bd72da0",
+      "log_id": "2b27457a-2095-4909-88d7-d00e547791a1",
       "timestamp": "2024-01-15T10:04:13.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2745,8 +2745,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "cbc2c782-0f67-4f8f-aea3-a3c20ee4456b",
-      "span_id": "c199518c9cc9491c",
+      "trace_id": "3c62b45f-b61a-4332-97f2-5101cae244ab",
+      "span_id": "eed8fbcbf37a46ea",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2759,13 +2759,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "30e6457e-24ea-480e-b2ea-0e39bc03c376",
+        "alert_id": "e7eac040-0fb4-43f1-b1ea-1ebafa9a4b50",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "534ac1f5-55ad-4442-b98f-331a1e7c3124",
+      "log_id": "590885a5-7f4c-437d-8061-34943b9b5d16",
       "timestamp": "2024-01-15T10:04:14.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2775,8 +2775,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6eb9517c-8273-42ac-a0d2-22f811e7ccd9",
-      "span_id": "ae01b05c848b4f44",
+      "trace_id": "d965a192-8e44-4ceb-b323-ecc3aa3d061b",
+      "span_id": "f996c22d44df416e",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2789,13 +2789,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "dd8cd3e5-833f-46a3-9a0a-576f2273afb9",
+        "alert_id": "1125f43b-d808-4f99-b996-3912d4502bb1",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "108bab42-2841-48b9-babe-83bd1997735d",
+      "log_id": "a14cddeb-df5b-4252-94ca-4278878ef7fc",
       "timestamp": "2024-01-15T10:04:15.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2805,8 +2805,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ed0cd47c-f74b-4b67-90bb-9d96e46333b8",
-      "span_id": "d03afc716aae46a5",
+      "trace_id": "3c958846-919a-465c-8c2d-934fd83d0c2f",
+      "span_id": "46b6e9d343104a2d",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2819,13 +2819,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "baead61d-f925-4a1c-b585-3f14b9b48032",
+        "alert_id": "82f80b50-feee-4fcc-bb2a-d381abadb4f1",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "16e11390-cdea-4524-94e5-dee59e9fec6f",
+      "log_id": "28da8687-2ec5-4327-896e-40f38964dfd4",
       "timestamp": "2024-01-15T10:04:16.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2835,8 +2835,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "aa30fafb-ae20-4aa8-9327-31b2f075657d",
-      "span_id": "8635bbf2037f4ee4",
+      "trace_id": "f9a9a8de-d66f-4fe7-a4f6-d7593437c4ca",
+      "span_id": "9e099e45032842ff",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2849,13 +2849,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "e2900c10-c81c-48ba-a45c-7ad48e0b8b0f",
+        "alert_id": "09e61031-2f06-4345-a2cf-2d462c864ca7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "ad67455f-a484-4a0a-bcd5-153136f850f4",
+      "log_id": "d84f4052-381b-421b-a7a9-33a0a6897802",
       "timestamp": "2024-01-15T10:04:17.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2865,8 +2865,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e2ed1874-73fa-4ed8-ac32-d96bd2b32fe7",
-      "span_id": "16a8d60408344a76",
+      "trace_id": "7be17012-7f0c-405f-8b66-5a22d01a26c3",
+      "span_id": "482ba1ec84e34bed",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2879,13 +2879,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "b1612a4a-5d99-4093-bbe0-4f46d1b8884d",
+        "alert_id": "74adb978-115c-4bdf-b183-5c032492c944",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "efeecba7-405b-4a79-aa35-42af6a405f83",
+      "log_id": "9e30848a-4778-4689-90f7-4d0ef681202e",
       "timestamp": "2024-01-15T10:04:18.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2895,8 +2895,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "83769002-27a1-473b-9020-6f8691018db9",
-      "span_id": "792c7835f29944ce",
+      "trace_id": "5b4a325a-cbb3-42d7-b1cd-57c5418850d1",
+      "span_id": "85f1d7dc12a04127",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2909,13 +2909,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "f64f8fb8-be30-4251-b5c2-6f96b95e6eb4",
+        "alert_id": "0c3a6c62-4710-422e-96e8-07f24869f1eb",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "8dd3dbe8-0f05-4a60-a68d-8afecf5c325f",
+      "log_id": "f9bc60a8-a7ba-44e1-8b6a-112d7624f38f",
       "timestamp": "2024-01-15T10:04:19.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2925,8 +2925,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "d1fd86e2-cbbc-49b3-8644-d588ee457442",
-      "span_id": "adf12c800b1d42df",
+      "trace_id": "919b2b27-ab99-40ea-a9de-865348a875eb",
+      "span_id": "3fb71094300044de",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2939,13 +2939,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "1cef38a2-1cbd-4460-b5a6-3f1e2bf75c00",
+        "alert_id": "ed8cffa5-9575-42ff-94f1-28cf06f0d11d",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "1c4bbc10-dfc3-4228-8606-80128cfb58c4",
+      "log_id": "fe7f2afc-67fb-490c-b274-178af4dd4976",
       "timestamp": "2024-01-15T10:04:20.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2955,8 +2955,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "790fbc95-7cac-470b-a847-115af5cb20c5",
-      "span_id": "caa33baac3654329",
+      "trace_id": "78ffdcf2-45cf-49fd-a56c-a7d1047900e4",
+      "span_id": "d4ed76b6286f4289",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2969,13 +2969,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "35e707d8-3a09-4c25-b004-05e14455e35e",
+        "alert_id": "84afe6e0-9c29-4137-ad14-e1c44fa0b959",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "9e740eb6-412a-444f-b909-925e8ff09726",
+      "log_id": "e1144a12-b800-45e1-a03e-755dffcc9fd8",
       "timestamp": "2024-01-15T10:04:21.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -2985,8 +2985,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c2f824ec-be4b-4d64-89e5-a3caa2d6b1cb",
-      "span_id": "22ffcfa367e3463c",
+      "trace_id": "0d6c2310-c990-4d2b-b000-dad5c3937768",
+      "span_id": "ee8ff908392d4f19",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -2999,13 +2999,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "e3f642a2-fe61-4cf0-8b76-687089db8655",
+        "alert_id": "842f250e-7f74-4580-bb2c-80d654034e07",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "48c7b80f-e813-44a1-a3cc-74802ae7c414",
+      "log_id": "3164b787-d7d3-40e1-9184-fd0569300347",
       "timestamp": "2024-01-15T10:04:22.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3015,8 +3015,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "bf6ed99b-c199-4f05-bde3-e4bed19db790",
-      "span_id": "820e288506fd41bb",
+      "trace_id": "97ceb6ea-bb23-4c98-8f95-5fbc8aaba4fe",
+      "span_id": "6b62bfdfbaaf4a32",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3029,13 +3029,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "d09a17c2-106d-4e84-87d3-4f9bd6b21fe8",
+        "alert_id": "af911005-53db-4220-aece-41ae99c1c270",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "404cd431-19e7-4642-acd5-0a868fa706f8",
+      "log_id": "bfd3c8fa-ff44-497a-99b6-d3f3e42a1d44",
       "timestamp": "2024-01-15T10:04:23.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3045,8 +3045,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c3ae2d2c-5b57-43b5-8697-9044b27e9b7e",
-      "span_id": "0e3dd2236cb540ae",
+      "trace_id": "58475dac-e1bf-4180-b6df-84e96fadedf2",
+      "span_id": "db86c7cb878f429a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3059,13 +3059,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "0821eba2-cf77-4f91-9fcb-430d0fa9dfe0",
+        "alert_id": "e6a50ef0-e327-4abb-b944-570a41cfcf86",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "191b566d-7310-4bd3-bbd4-bd7be5db0719",
+      "log_id": "7e2be45e-952a-42ee-b220-d4b509bd71f9",
       "timestamp": "2024-01-15T10:04:24.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3075,8 +3075,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "54a5a482-4708-48f4-ba2c-e481bd2534f9",
-      "span_id": "5166f5637d214b38",
+      "trace_id": "efbaa3d9-4d95-49a7-8353-5c62f31b8bd7",
+      "span_id": "9201c9cb5aca4b1a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3089,13 +3089,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "808fcb30-a5ab-42fb-a1a4-9b4978394251",
+        "alert_id": "c2cb8bd4-d107-4b5d-a435-3a6cdd7ee1c7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "7a198dfc-2e2b-4f36-8d0a-011e8d79ed99",
+      "log_id": "2124fe1a-653c-481e-8767-d286fa345f90",
       "timestamp": "2024-01-15T10:04:25.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3105,8 +3105,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "00dd2a6b-6049-4b02-920f-a85311f129d2",
-      "span_id": "0d49e2da29a24430",
+      "trace_id": "1877f17a-3279-4dd3-901b-ac023e70bee1",
+      "span_id": "29e37ce7bff941e4",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3119,13 +3119,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "64f7ff07-f7cb-4863-8194-876fad9c05e6",
+        "alert_id": "f8428733-7948-41de-bf85-68e28f48058d",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f0ae7e45-70c9-48c9-9271-e11e4b06fecd",
+      "log_id": "c703c959-4ebd-49b7-a306-67568323b7f0",
       "timestamp": "2024-01-15T10:04:26.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3135,8 +3135,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "4a05468a-608b-4cea-90f8-18adefdf5768",
-      "span_id": "24636eb117df4075",
+      "trace_id": "1057a42d-e287-4db8-84d3-8b48d153d057",
+      "span_id": "42dcdd100a1e4baa",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3149,13 +3149,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "d48efce6-b211-4d62-ae04-fb61f7086bfa",
+        "alert_id": "f7864444-b29e-464a-86e1-dbf0e5a82db7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "b4359ccd-6a49-46f7-bec3-cb070a20d927",
+      "log_id": "62b00bf3-e2b1-492e-b816-ba29ce79c9e8",
       "timestamp": "2024-01-15T10:04:27.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3165,8 +3165,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e8689d30-5046-4aa7-bff3-197addab24d3",
-      "span_id": "9fc0031438df449c",
+      "trace_id": "8668f2f0-e6e1-4b98-95af-1b357de90b65",
+      "span_id": "6217f13d4a7a4121",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3179,13 +3179,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5a4343dc-5a4f-4a3d-9e95-70bb9a52e0a8",
+        "alert_id": "723c2fec-014b-46a2-a019-3db9322a7cd7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "c2710ed2-d96e-4534-9fd6-90686dfa6a95",
+      "log_id": "11dc8080-febd-4104-a324-b0de21b34f86",
       "timestamp": "2024-01-15T10:04:28.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3195,8 +3195,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f229a213-41ea-4a2d-887f-34de3755cc5f",
-      "span_id": "0b39ecbda47c4748",
+      "trace_id": "bd17deb0-b4ce-4646-8e52-de1ae045022a",
+      "span_id": "807846622c58457a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3209,13 +3209,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "eb2f5ab5-9cec-4b20-b617-3c3878835bc8",
+        "alert_id": "e1012efa-726f-439c-af1b-19d6f76e276d",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f3781b0d-67d1-42e0-9a6f-7b9413718fe1",
+      "log_id": "1b341e14-a4e8-4a8c-b51c-cbbf4c8bf612",
       "timestamp": "2024-01-15T10:04:29.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3225,8 +3225,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e2213e56-a56f-4952-94eb-9f2ac035d20e",
-      "span_id": "9823b0a511d04877",
+      "trace_id": "0d433fae-d04b-4b28-9b12-d6c4031d9fec",
+      "span_id": "60cc4e867aea4d95",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3239,13 +3239,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "85df4047-015b-439d-a33c-08c3754c2fc0",
+        "alert_id": "287cc016-79cf-44a8-a536-977db330a98d",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "c7fe4062-5cdf-49bd-b041-59b2f01a3eea",
+      "log_id": "b7233fc6-6846-4e48-8335-9c9a4cdbac87",
       "timestamp": "2024-01-15T10:04:30.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3255,8 +3255,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a855f721-ad21-4a2e-b67d-d19ae4329800",
-      "span_id": "32fb302ba54b4088",
+      "trace_id": "cf1cc986-22fa-48a2-8760-3e962e6923fb",
+      "span_id": "57cf6156b3a94a71",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3269,13 +3269,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ef2f1a2a-6ec2-4c24-a6fa-c9e751044d7e",
+        "alert_id": "2f61c010-07bc-4184-84bd-23bc458a9c6b",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f3ca6764-b760-4f3b-8ac6-d5ff79a6da49",
+      "log_id": "c55ebe9e-d0d7-41a2-964f-03dc1f5d26d7",
       "timestamp": "2024-01-15T10:04:31.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3285,8 +3285,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "81090228-1b32-468b-8692-4ce34ad7c5fb",
-      "span_id": "53180b2685f64a15",
+      "trace_id": "188f4da2-85a8-4b1d-8ca2-a8d98e747b03",
+      "span_id": "242a8139180d49e5",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3299,13 +3299,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "4c416253-b4df-4d10-98c7-5c3c258cb50a",
+        "alert_id": "d35c2d0a-bff6-4dc7-aedd-3e79fda66890",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e1558cc3-5b80-40fa-a76e-cfd46ba28490",
+      "log_id": "6cee9e3a-981a-4c2e-923f-efc286cc0565",
       "timestamp": "2024-01-15T10:04:32.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3315,8 +3315,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3c4c266a-752c-4db7-856f-463635fd7f23",
-      "span_id": "38628054372c4e05",
+      "trace_id": "1eb5d9ec-70a3-4eec-99de-a14fd17fbf72",
+      "span_id": "71ba688ed1954bf8",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3329,13 +3329,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "4330ce6e-1f16-4913-8c9f-3b26b0b63007",
+        "alert_id": "0cc3cc81-b326-4612-a9c1-cdd7df22496f",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "fc3c2c28-8c37-4daf-81b1-c7d185657df9",
+      "log_id": "0f406fe1-8070-4cf9-9536-f6666a322436",
       "timestamp": "2024-01-15T10:04:33.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3345,8 +3345,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "bfa0d3ee-7571-466c-a769-7d11be24c215",
-      "span_id": "b3a6e9a5d3904d86",
+      "trace_id": "cbe45bfb-d1d6-4b59-9b19-4772f95c2700",
+      "span_id": "1d046f0b6bcd438d",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3359,13 +3359,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "55436d8d-e6c5-4236-bffc-69e374bba2f5",
+        "alert_id": "b3d3b369-d1a5-4e7e-847f-35340e6bcf9d",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "d4aa4f89-0f49-49eb-b76b-1148b3fb0c41",
+      "log_id": "6685ab5c-a025-4e86-bf06-c8ade3075bdd",
       "timestamp": "2024-01-15T10:04:34.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3375,8 +3375,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a330a768-46c5-4fc8-95c9-1acac976bdb7",
-      "span_id": "683ec211843f42b3",
+      "trace_id": "1941cec0-4a36-4135-8d82-d980037e73ff",
+      "span_id": "35e72829285349e9",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3389,13 +3389,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "293298da-5a3e-4638-a636-0d857a9dae62",
+        "alert_id": "3606fc16-281d-4420-aef5-726a0f87591c",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "d473bbb7-9826-4b11-9d21-085b5fa2ed1c",
+      "log_id": "9a3753cc-82b5-4d4b-a33c-6b740c8dfb67",
       "timestamp": "2024-01-15T10:04:35.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3405,8 +3405,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "5df344f5-ebbe-4d3b-9d8e-296378aa4ad8",
-      "span_id": "f3a900a79ac54d01",
+      "trace_id": "70b37e50-bc63-4ca0-b966-a6430e4118e5",
+      "span_id": "f77c222726a24ac0",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3419,13 +3419,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "7da795e7-db9b-4209-a73f-ddadeca18617",
+        "alert_id": "98276b56-f8fc-43ae-82c0-70c3a3ea2f69",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "2cf87cb3-aada-4b13-b7c7-5d8a51aec996",
+      "log_id": "b15c365a-d320-4b8d-ace1-9d65c4d11f38",
       "timestamp": "2024-01-15T10:04:36.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3435,8 +3435,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "dc2dc666-e324-4d7d-8359-23931b4e9ed0",
-      "span_id": "8731eed1e0e449f9",
+      "trace_id": "fc18bb10-c709-4713-b2c5-b74bc59b203b",
+      "span_id": "4469501e76c44845",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3449,13 +3449,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "8b6494c3-ebfd-452b-ae98-51506b0ae5d4",
+        "alert_id": "5a3fefd9-1f53-49fc-8456-07e3fc01fd94",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "89a48c53-3759-4a06-8028-bca549ecbd7d",
+      "log_id": "2b400a8a-3ac3-4e8b-892b-8781f5f24e6a",
       "timestamp": "2024-01-15T10:04:37.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3465,8 +3465,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "d5ff5ceb-af3d-4d70-8e65-d463788b44cd",
-      "span_id": "481f9cb6a9a84db5",
+      "trace_id": "785dcbd9-9c7e-4397-a44f-f9f3c19b9e7b",
+      "span_id": "c633bff52abd4366",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3479,13 +3479,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "50c1e5be-8276-4d1d-a9a9-8975192db239",
+        "alert_id": "96de2a02-ab8b-4ce0-8e41-7510e1863776",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "beb52baf-b653-4749-8963-a34de9bdeccb",
+      "log_id": "3914c49e-f6ee-485e-9815-4a429ddf91b5",
       "timestamp": "2024-01-15T10:04:38.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3495,8 +3495,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "37f37e21-5636-4b25-9555-7616792f6e7a",
-      "span_id": "edd62e24043c46cd",
+      "trace_id": "0404f66f-6ce6-4feb-b3c4-4357ca8d4b13",
+      "span_id": "de9cfe3360ed40d0",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3509,13 +3509,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "134d1f8e-e97d-45d6-8305-8da09c6a2a67",
+        "alert_id": "bc6764da-f680-4a50-86f8-8a46f0bc9a55",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "2729c887-1da9-446d-a1dc-a069d2461cfc",
+      "log_id": "c3a1e95c-6425-4e4a-8601-220f2d74ad3a",
       "timestamp": "2024-01-15T10:04:39.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3525,8 +3525,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "d44d15a6-7041-4dc2-a0ee-566dfba4649a",
-      "span_id": "e927a77993d94584",
+      "trace_id": "ef0ebd70-7659-488d-aba4-15275005d888",
+      "span_id": "aa3559a385284d0c",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3539,13 +3539,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "17042c8a-d2c3-4e83-acc5-6fe4dd13fa48",
+        "alert_id": "694014e0-0f58-4ae4-9236-581726b9205f",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "60815845-8662-4b0c-b356-685cc084df14",
+      "log_id": "0335e483-aea3-46e1-9238-1cf43b41f7e3",
       "timestamp": "2024-01-15T10:04:40.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3555,8 +3555,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "84d235a6-e518-4dc2-9bb6-17d3c7370d9a",
-      "span_id": "47f87a6b4bbf41d4",
+      "trace_id": "58667634-d93b-4ab7-beec-ac685f655272",
+      "span_id": "b08413da9eff4106",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3569,13 +3569,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "4edd5574-e92b-4b2c-9ef7-c2d219cbea18",
+        "alert_id": "bb8e9a24-47e3-4dfe-a287-33a1c4a55d27",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "8f9c331d-17ce-483a-ae4b-d1d5c3ce35e1",
+      "log_id": "7cd69634-ad93-4915-bda5-6ee793f8e349",
       "timestamp": "2024-01-15T10:04:41.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3585,8 +3585,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c9d5ec3b-3ccb-4f62-8fcd-92f2947093b3",
-      "span_id": "5f95ba2cf9434846",
+      "trace_id": "56c25203-747f-475c-a7e7-a503a275b297",
+      "span_id": "6ba7db1480384860",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3599,13 +3599,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "542d8fae-88c6-45de-9d28-ac8f09474855",
+        "alert_id": "c00daee8-0cad-4ab3-94b6-f6cc12d38bcd",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "dd4098b4-8765-4099-99a2-aa10dca22ca7",
+      "log_id": "b86ab342-fe61-4a19-8089-8f42896e8197",
       "timestamp": "2024-01-15T10:04:42.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3615,8 +3615,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "28cdf142-c71f-43d6-9742-b885b8bf28be",
-      "span_id": "4f25189391ac44b7",
+      "trace_id": "8907387b-47d7-4a92-bc6c-85a40e4e8403",
+      "span_id": "9d262cd778be47ad",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3629,13 +3629,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "77716089-c9e6-4493-bab4-43ecec402e52",
+        "alert_id": "85cd271c-a1b7-4eb5-a0b9-722a60443387",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f17b4ac1-a352-421d-9036-872fb3e2f5ea",
+      "log_id": "3d8ab8c8-54c4-4690-b2db-1e7c5e469ced",
       "timestamp": "2024-01-15T10:04:43.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3645,8 +3645,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "90fe2411-f986-4f6e-a397-daf805ea4ef5",
-      "span_id": "d805e62ca1044ed5",
+      "trace_id": "9d4c5f86-2239-41a1-9878-1910d1493a9b",
+      "span_id": "e162b6d11c1c47ab",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3659,13 +3659,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a38a52c5-12f0-47ef-a1a9-0bee68a1199b",
+        "alert_id": "dee53cc5-bdaf-449a-9f09-7a74134fccb7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "6209c87c-2600-4dc6-8bc2-5f6dc5074cf0",
+      "log_id": "10d9540a-4032-47d3-bc15-6b756f6eb3e4",
       "timestamp": "2024-01-15T10:04:44.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3675,8 +3675,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "045784b0-f059-4974-94e9-d138476fdb1a",
-      "span_id": "85e6ff8eceef4a34",
+      "trace_id": "96059f0c-74f1-4822-865d-e4d636eaeefc",
+      "span_id": "a0edcf5403b34982",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3689,13 +3689,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a7b8a519-31a2-48a2-82c3-8aec5704cd79",
+        "alert_id": "c9d0380a-8aa4-4ece-a4c6-f06025b04856",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "b460d39b-87b4-41a7-a754-759a99a0e31c",
+      "log_id": "e114de03-5ee1-4cc5-b8d5-e7fdfef47c61",
       "timestamp": "2024-01-15T10:04:45.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3705,8 +3705,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "2fc22adb-0179-490d-85f3-35d88a89cf23",
-      "span_id": "04ab5eef1dd54eeb",
+      "trace_id": "4448db35-d4ba-4d3c-86ce-09c9b8ba735a",
+      "span_id": "daf7f4a599d74d86",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3719,13 +3719,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "c405fa39-569e-4a2e-be2e-65a9d32bd5be",
+        "alert_id": "ad1eff5e-b5d2-4249-a526-666d4138c0e4",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "999c52b1-c858-4c8f-9fa8-b6ad8f9ad340",
+      "log_id": "d541978e-6eaf-49cd-a20a-08dc4e9011b8",
       "timestamp": "2024-01-15T10:04:46.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3735,8 +3735,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "7f2cba3d-de21-4de9-a3e4-0559a2613b04",
-      "span_id": "501d529b23f44aa5",
+      "trace_id": "7eb30fe0-2220-40df-883f-c58a289a5473",
+      "span_id": "f412026e827b4ef5",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3749,13 +3749,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "6e0393fe-46bf-444b-9a5f-7beb8e25b57a",
+        "alert_id": "ec5792c9-322d-4e52-8308-ecc87f80713e",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "b7c18fe8-b048-4fe2-975a-21b22fc99beb",
+      "log_id": "249dfdfd-35e7-48fd-9fcd-15a71cd046a0",
       "timestamp": "2024-01-15T10:04:47.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3765,8 +3765,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "978dfad7-44b2-42b8-b0b0-cec4c320a956",
-      "span_id": "ad7684d11dc54b2b",
+      "trace_id": "30df3ed2-a336-469d-b391-c82d7426a86f",
+      "span_id": "143923ad83554eff",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3779,13 +3779,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "15f711d3-5383-45c4-8756-5faf4504d11f",
+        "alert_id": "ee05dfdd-ad4a-4bc5-867d-1374e1320b64",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4fd365f6-e406-47c4-879e-3fd2fb94e244",
+      "log_id": "ab0dcd9d-bb25-49dd-aa94-5896d9430608",
       "timestamp": "2024-01-15T10:04:48.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3795,8 +3795,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "53bae6fa-716a-4774-bb7d-55ac427c5eb6",
-      "span_id": "0a914484754d47d3",
+      "trace_id": "2eba8631-f18b-45d9-9798-6db002a0e00a",
+      "span_id": "e469d9d6ba8a49d1",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3809,13 +3809,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "77db9778-6901-4fef-8f0e-181bef394c78",
+        "alert_id": "78f4019c-0c5b-4b0c-aba6-aabb35f2ca77",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f1a0e048-0005-4231-af71-504677e729b5",
+      "log_id": "3d92be1b-7052-4286-91ab-ed5f8f0fd95f",
       "timestamp": "2024-01-15T10:04:49.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3825,8 +3825,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "590da414-afb5-4906-ae5c-f3308a2b94f2",
-      "span_id": "446c7c555dfe4f90",
+      "trace_id": "d1874368-637a-41f7-84b5-95427bd1fae5",
+      "span_id": "02b3c4b62a7b425a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3839,13 +3839,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "4c7b7485-897d-4ef5-87e3-ffaf88a36395",
+        "alert_id": "514dca15-b524-42ab-b974-eacfd4cd5556",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "1ca3393f-4d29-4899-9363-2ff7dcf6a136",
+      "log_id": "51bd6270-1168-4fd2-b757-206ad1a5e42e",
       "timestamp": "2024-01-15T10:04:50.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3855,8 +3855,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "9ffcfc43-687e-480a-b6d0-87bb84bf8931",
-      "span_id": "fcffa6caf2924a15",
+      "trace_id": "7fda4a3a-8899-44a8-84b3-4c37bac76b21",
+      "span_id": "e714ebe2b50145eb",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3869,13 +3869,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "cd914386-ce9b-489a-96fc-c51e6e0a3c5c",
+        "alert_id": "261bd241-14e2-4bef-b64f-5aeaa662958c",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "999e1bb7-20da-42ac-9149-f2e00e1d01f6",
+      "log_id": "4d9dba97-f58e-47b8-940f-01b04550df97",
       "timestamp": "2024-01-15T10:04:51.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3885,8 +3885,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "96f1eed8-da94-4ff3-a8b2-96eefb27c39e",
-      "span_id": "a5cc112be4744fbe",
+      "trace_id": "2731afb5-c9a7-4a16-bba8-c09628e2207d",
+      "span_id": "0b679fe6f9c24e7a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3899,13 +3899,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "c6408f08-de1d-42df-baaf-0e159dadcdfa",
+        "alert_id": "2b7552eb-d4cf-4537-8a5b-e5469cac1e10",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "1caabe94-db6e-404b-a220-332ba2ba17c1",
+      "log_id": "5241145c-b222-4929-9598-41edadfe85b3",
       "timestamp": "2024-01-15T10:04:52.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3915,8 +3915,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "1972547b-fad1-42ac-ab06-fafe65bf0ff9",
-      "span_id": "38894199e857441e",
+      "trace_id": "ddef5cc7-20ea-4273-ac7f-3c99d18ab7b9",
+      "span_id": "ee9de3d0685c46a9",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3929,13 +3929,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "e3fe8865-9766-4ebd-abe0-82408c86ea13",
+        "alert_id": "f7bac5ae-666a-4a11-b703-56a87070af2a",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "5ea6a955-5cc3-4e45-90c5-a3a471dd5721",
+      "log_id": "d8568355-b3c9-4a01-b2e3-73e53eff7a83",
       "timestamp": "2024-01-15T10:04:53.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3945,8 +3945,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6d1e45e0-9cb3-4293-971f-a47315192e94",
-      "span_id": "2c65387d2ce34834",
+      "trace_id": "ef406ab6-e0bb-401a-973a-a0cee8edb21a",
+      "span_id": "fee091eb27304fb1",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3959,13 +3959,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "bba47efc-f3c2-494b-b8d8-590f6ac18e64",
+        "alert_id": "815355ef-36fa-42bf-a465-62924c11362c",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "bf8a7d4f-7bd8-40a2-96be-a5bbceb98ec6",
+      "log_id": "b97c554b-068b-4746-a1e3-d188b62a8654",
       "timestamp": "2024-01-15T10:04:54.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -3975,8 +3975,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "14672bfc-7ea0-415f-b26d-e21ac4f67362",
-      "span_id": "08aad49093664744",
+      "trace_id": "194e0098-f403-47a5-b7a6-5f7ecd46aa18",
+      "span_id": "9ab802c456534d09",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -3989,13 +3989,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a85951f3-384f-4e5f-a462-b45da58b2f75",
+        "alert_id": "271aa8ed-3c98-4af5-afdb-c2c96292f144",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "03f2189c-38f6-43b0-ab1e-1f6d89dc41f0",
+      "log_id": "73c87b24-14f2-47b3-9a40-147a13d904b4",
       "timestamp": "2024-01-15T10:04:55.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4005,8 +4005,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "aa48cef3-b23f-495b-880f-3e2625a920f6",
-      "span_id": "aefc84f99c8e4398",
+      "trace_id": "2008b78b-0d71-49e7-a8b6-8c0de72338b2",
+      "span_id": "be52dbb9533f49ac",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4019,13 +4019,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "b8b85f34-1e18-49d8-b918-fb8aba897c18",
+        "alert_id": "dfd3ae84-8a7e-4c0b-bc08-e496ad2add3a",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e688694a-2927-4d81-93f4-620094871e2a",
+      "log_id": "03d684d8-835e-41a9-a5df-8afb259dee58",
       "timestamp": "2024-01-15T10:04:56.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4035,8 +4035,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "dcb02dde-c8b1-4ada-8a62-8dbb972a4674",
-      "span_id": "178e3e26236f444e",
+      "trace_id": "f8841bdd-4f7d-4849-83af-ef6a32808ea1",
+      "span_id": "52868c3d505d4ccf",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4049,13 +4049,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "948dc803-68db-4213-b9d3-fd515554304a",
+        "alert_id": "870ec7e9-4b2a-45fd-af96-8457db255d90",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "5c92a5f6-0af4-467f-b291-2077b7d99894",
+      "log_id": "78be72f3-4a50-463b-b2df-ba88e556782d",
       "timestamp": "2024-01-15T10:04:57.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4065,8 +4065,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f44daacd-6846-4135-a857-1e0bfd08433d",
-      "span_id": "d2e446144a7146cf",
+      "trace_id": "9bfb6660-d26c-4b1d-9bce-6b2e91cfdb52",
+      "span_id": "888e9bdd9bca4cce",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4079,13 +4079,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5ede207b-412c-4a27-bedf-361b7518912b",
+        "alert_id": "dfd9ef18-eb6a-4642-8204-bb98a7ae2e49",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "bb7270e7-c928-4c15-9311-4dea2c8339c1",
+      "log_id": "78f5eaf7-bc8a-4e53-a05a-6367444155c3",
       "timestamp": "2024-01-15T10:04:58.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4095,8 +4095,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c50c5ee5-a08e-4461-92ca-b33204038e23",
-      "span_id": "64de326f58094f51",
+      "trace_id": "6f2b94fd-216a-45bc-9600-ef38627351f8",
+      "span_id": "de60635193cd40e7",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4109,13 +4109,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "d904ab18-b8b9-4a66-98fb-d3121eafe010",
+        "alert_id": "41d0acbd-4a4f-4aa3-aba9-f8c361dac52b",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "bb7c1b88-ab8e-4625-84ef-7d6dfec2f54f",
+      "log_id": "2ae27159-5fab-438a-bff1-68225601938d",
       "timestamp": "2024-01-15T10:04:59.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4125,8 +4125,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "9a3a6447-1654-4b7a-939e-be6b17458644",
-      "span_id": "473322b3b854402b",
+      "trace_id": "c179aa01-af79-4a74-9143-1baf67c743da",
+      "span_id": "9015cefcd38c4b57",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4139,13 +4139,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "e7795149-8984-4b69-9df8-d824b0aca1f0",
+        "alert_id": "3eed4ddd-1a34-4caa-a246-0cb60c94f3a8",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "cf9d5e31-4264-43b7-907a-4ce6bf617b2c",
+      "log_id": "dc281ed9-76fe-43a9-8771-cde5c26d63f8",
       "timestamp": "2024-01-15T10:05:00.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4155,8 +4155,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "92374fff-e691-44b9-872f-fc887515e8ad",
-      "span_id": "49d279ff36904a44",
+      "trace_id": "f7c81df8-48c2-4f5f-bd4c-945eac684b01",
+      "span_id": "17391a5e8cb04d4a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4169,13 +4169,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "d7d944ab-1e43-457a-a358-19de23637e62",
+        "alert_id": "9321214c-644b-42b1-931d-3800999073b4",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "0ba699f2-7498-4f48-bb42-b600442c34cc",
+      "log_id": "65ee7948-798d-450f-abce-64d60df9b3ba",
       "timestamp": "2024-01-15T10:05:01.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4185,8 +4185,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "5635ebd5-1b77-4b1b-8442-464dde314a7c",
-      "span_id": "5e9706b3afd343e7",
+      "trace_id": "84110a89-e971-406f-b637-5e4e18d392e8",
+      "span_id": "fbed03b3d82e4a53",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4199,13 +4199,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5a7389d4-50ee-4c93-97cd-df53d3657b04",
+        "alert_id": "1ba31983-6020-4cee-85d5-d450091ec791",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "d9338eb9-55b4-4bc1-83f6-be6b3e5101ad",
+      "log_id": "b7fbe90f-9e6d-4ac3-8875-84d858d5674c",
       "timestamp": "2024-01-15T10:05:02.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4215,8 +4215,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "493e8620-7981-4935-898b-c37033beaf6a",
-      "span_id": "1deaa72d8e2c49ab",
+      "trace_id": "f8f3d681-cd5b-4a22-9871-f8c0378c2e6e",
+      "span_id": "446dac8bde054d70",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4229,13 +4229,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "0af85605-463c-4251-8704-b8db0afbae2a",
+        "alert_id": "531ec976-1210-408e-9950-b928e5f6789a",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "a2bd1d05-5c7a-4c60-853b-181f1223161a",
+      "log_id": "c6c4c265-0b72-4736-8011-1cdaa4d464f9",
       "timestamp": "2024-01-15T10:05:03.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4245,8 +4245,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "0ba5b7f2-3ea5-4447-b45b-cffc595b33a7",
-      "span_id": "82eea660db0a4c54",
+      "trace_id": "5171a44e-98bb-443f-8e79-c1e495ce98ed",
+      "span_id": "42210d4465a449b9",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4259,13 +4259,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "f0124288-482f-4d25-b7c7-ad8d2098a87f",
+        "alert_id": "bbc9365d-e265-4241-8476-0e8a84a3bcba",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "23955f42-c433-4243-a94b-876502e26311",
+      "log_id": "fbd06a07-a67f-4f27-88dd-f60dc9c174a3",
       "timestamp": "2024-01-15T10:05:04.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4275,8 +4275,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "dec84df3-8e65-43db-85e3-039189e63e67",
-      "span_id": "49109206ec5649dd",
+      "trace_id": "c7b52df1-d6fd-4d30-afd0-faa373f1c27e",
+      "span_id": "514b7b4392ba4bd8",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4289,13 +4289,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "af3c121a-8436-4359-82b2-5d9ea5cd009e",
+        "alert_id": "d8fc0de9-c6b6-40fe-a91c-7bc099e7a5cd",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "3d692318-736b-47db-a223-5aa463d7e124",
+      "log_id": "4d170c40-2efb-42f5-8927-56fe0d3d18c2",
       "timestamp": "2024-01-15T10:05:05.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4305,8 +4305,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a31ea7a1-efe4-4e1c-b9eb-505eaabe1b26",
-      "span_id": "8e7b014cd5eb41aa",
+      "trace_id": "8bbb17a7-d417-43cd-baac-91fde3d00fb2",
+      "span_id": "34daf41e9ebf4050",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4319,13 +4319,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "9f02fcc3-39e4-4f25-8432-264bf217d1b0",
+        "alert_id": "e4c2417a-aee2-417d-a5bd-335c2f814a75",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "56e9524b-32dd-4ac2-980f-4f8bcd56c896",
+      "log_id": "7b3004cd-4b2c-4c03-a072-6c39f4fde816",
       "timestamp": "2024-01-15T10:05:06.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4335,8 +4335,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6f41999d-bc63-48e5-9c6e-12450311e241",
-      "span_id": "dd4818c880e946b3",
+      "trace_id": "ad12e887-f9c6-4996-a432-03f1c1fb9906",
+      "span_id": "e5881c12630044a8",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4349,13 +4349,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5bdf6ea8-2df6-4d14-8d9b-3f1c44c1b5e8",
+        "alert_id": "44db5fb6-b568-4811-bf4b-92331c1d2844",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "b019ef7c-d6e2-41dd-87e3-07f4f98a22a1",
+      "log_id": "25246a5c-b930-4d3d-ab06-d795b037c7ee",
       "timestamp": "2024-01-15T10:05:07.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4365,8 +4365,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "05fa1302-2d5d-4f42-b4c6-cb42effdd914",
-      "span_id": "b9a583b344434a20",
+      "trace_id": "248eb386-60aa-4fef-8240-59dfd7f778e4",
+      "span_id": "f4041dd99a464c88",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4379,13 +4379,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "844f7d95-5612-4e95-982d-ff8e850d8966",
+        "alert_id": "0a1077f4-b546-4478-a121-69ef89860780",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "c9673adf-5687-4714-856c-90be7c3d7980",
+      "log_id": "4d46e418-bcd8-46e5-befe-7efe6b3a3024",
       "timestamp": "2024-01-15T10:05:08.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4395,8 +4395,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b505c8c0-89cb-430d-8ecb-e3b8458b4d4b",
-      "span_id": "4db11f8fe51e404a",
+      "trace_id": "894a21b2-0e9a-4c53-9acf-9b9d0caf7794",
+      "span_id": "a632b63ef3954529",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4409,13 +4409,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "34e45659-09c9-4fae-ad25-c47d5035b4cc",
+        "alert_id": "3ed9173d-6800-4a6e-9fc2-5ca7a6ab1499",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "bccaf42d-686e-4f92-a8ea-1f281dde3885",
+      "log_id": "f2e71a72-6f76-4cc0-a2eb-83f39ad4e0e7",
       "timestamp": "2024-01-15T10:05:09.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4425,8 +4425,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "fd210fa1-26bb-42a2-9330-e3cc277bc611",
-      "span_id": "75b2b07f56c94e8a",
+      "trace_id": "34802f2d-768f-40ca-8844-6175398823c4",
+      "span_id": "eb582b5d4be54784",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4439,13 +4439,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a2c6fa1a-cb51-4fed-bbed-552d5280b8cf",
+        "alert_id": "17773195-8a7f-4f3b-b1bc-2a2d32a86bb4",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "019773f8-9bf6-4d04-be50-30d561fd7f2d",
+      "log_id": "df44f8b0-d966-4889-8d02-23d90e2c0176",
       "timestamp": "2024-01-15T10:05:10.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4455,8 +4455,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "819f8faa-05c7-482c-9253-140210cdd901",
-      "span_id": "90d8fbf346884b72",
+      "trace_id": "f1138715-7c54-4474-b9c0-8c0566a483f9",
+      "span_id": "40e9baa6cbab4227",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4469,13 +4469,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "d87615f3-7b5c-4dc0-aa0c-430d89e78d51",
+        "alert_id": "a80b2179-3764-4ada-b0be-676b900b8654",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "be80d055-dc5a-467e-ac33-4ce49801814a",
+      "log_id": "39f5f3ec-9dce-4cf6-9dae-284e968ef3f1",
       "timestamp": "2024-01-15T10:05:11.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4485,8 +4485,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "304b6fbc-69ca-4d20-bb58-1d204d1b591d",
-      "span_id": "41d4a18fe6ca4eaa",
+      "trace_id": "f42975cb-185c-490e-a3e5-1a95456ea372",
+      "span_id": "6687775f18cc46a7",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4499,13 +4499,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a74b5274-2a97-4fa7-ad81-85013ea244d5",
+        "alert_id": "717393b0-aba9-4cd7-8cda-7ccea8c3c402",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "501c84e3-b181-4f8e-9584-5feb30fe63b5",
+      "log_id": "b72f1513-b69a-467f-959f-25bf02e57e35",
       "timestamp": "2024-01-15T10:05:12.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4515,8 +4515,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "9caf6498-d09c-4947-a510-efbcbae5817a",
-      "span_id": "726ec78c3e154825",
+      "trace_id": "5f3303ab-5279-4204-ae4f-c6908c6af43e",
+      "span_id": "9f409c726eaf4d1d",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4529,13 +4529,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "addb8af6-dec6-4a61-9487-53f8ed08bad7",
+        "alert_id": "f6419993-3937-46b0-8993-82fb79683f0c",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "54826f8e-2fb2-4ab5-bac4-b8380612619c",
+      "log_id": "62219d26-8b91-4d26-848c-d0d4e9a8bde9",
       "timestamp": "2024-01-15T10:05:13.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4545,8 +4545,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "9315a2e5-6b12-401e-aa91-237baa328cdf",
-      "span_id": "d9996355fccc46d2",
+      "trace_id": "5e3bca4b-3696-43c5-8b63-40fbf3d570c6",
+      "span_id": "4092cb3d4b5e4fbc",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4559,13 +4559,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "f05bc03e-3930-4dfe-b2d1-ce747031ede5",
+        "alert_id": "43646a5e-81e5-4220-9887-d28e71399e0d",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "77800fd9-169d-43e3-81b9-e64d943d9a02",
+      "log_id": "75000da6-2ae2-4405-bd11-adb95844204c",
       "timestamp": "2024-01-15T10:05:14.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4575,8 +4575,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b7f4613e-7fe1-48ec-99e0-0d2c75152f6e",
-      "span_id": "511127af6aef4a6e",
+      "trace_id": "ff451e90-c624-4a03-9aba-66a9f142bef3",
+      "span_id": "9004fbccecc64e41",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4589,13 +4589,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "4ae9f440-9142-4e1f-8fca-f4142a522aac",
+        "alert_id": "e10ca046-153c-4ec0-b3ac-e7f06c3d1ff3",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "3bfc4a1b-21ba-4617-b252-b3079331b560",
+      "log_id": "27c2626a-5012-438c-b095-a8ebc2373e29",
       "timestamp": "2024-01-15T10:05:15.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4605,8 +4605,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "054a6b31-275a-4dc3-8de3-7a39ae71619e",
-      "span_id": "45ba6e4e02834269",
+      "trace_id": "0e956048-6f9b-4861-891c-e48609193f52",
+      "span_id": "2301b5ce1ead4324",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4619,13 +4619,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5745371e-34d3-4561-9927-eea3a4fe1ff8",
+        "alert_id": "1563e1d2-b397-489f-bee8-14d506a450a7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "eca7ea4b-adbf-4387-89e4-9cfc13fe95f7",
+      "log_id": "7fe013ce-65ec-403b-b366-450cbb22e363",
       "timestamp": "2024-01-15T10:05:16.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4635,8 +4635,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "db44b217-9251-4e39-8918-c158362782b7",
-      "span_id": "80a230e1d83242f3",
+      "trace_id": "51a99bc5-51a8-4dd8-8e82-5dcb67517f0f",
+      "span_id": "51584316303c4b56",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4649,13 +4649,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "3317ed09-30bd-4348-89f0-1b871346a760",
+        "alert_id": "85312b60-8f37-4a04-81c3-a31b08dfe2a2",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "45d50b2a-ee70-432c-a98a-6d37a468761e",
+      "log_id": "6950e518-ff70-4abd-bdb5-0ebef00d4940",
       "timestamp": "2024-01-15T10:05:17.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4665,8 +4665,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f62b4104-d9ef-45d7-baf6-e7005c7f8e54",
-      "span_id": "6dcbb1ccf004480d",
+      "trace_id": "b639e22d-2153-48f0-9a65-73049ce7c57b",
+      "span_id": "c273123c70244a17",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4679,13 +4679,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "6591d2d0-45c5-4716-8fc4-5a2a514879f5",
+        "alert_id": "acead0d9-3d72-4f12-80e3-9a99361a46aa",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "5a2db232-10c1-41de-a8f7-681a1ffd0c2f",
+      "log_id": "1a46b628-d410-4cf9-afa8-5cc8828b251d",
       "timestamp": "2024-01-15T10:05:18.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4695,8 +4695,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "bddc91a3-2be2-42c8-8899-1e9844b20f7c",
-      "span_id": "5579259b99014b85",
+      "trace_id": "7c93902a-5d6c-4844-86c9-f5af740e382a",
+      "span_id": "0e13403660b84322",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4709,13 +4709,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "7dd0c974-87ac-4126-a222-b643e59b8389",
+        "alert_id": "1d4600ad-355b-4ae8-aab6-74d077fbeb94",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "a6192229-cdf0-4037-95f0-31c48281e3e8",
+      "log_id": "c6654a23-69ec-4546-8c0d-0b962c6e2603",
       "timestamp": "2024-01-15T10:05:19.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4725,8 +4725,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.146.148",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "8395340f-6b5f-401d-946d-eec762a85270",
-      "span_id": "8f91b4b9163446f9",
+      "trace_id": "a02769d0-0923-4802-b542-d6457fb25534",
+      "span_id": "9f6ef3fd99634350",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4739,13 +4739,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "4991dc90-0b0d-43d5-b08e-0f947411bce5",
+        "alert_id": "42c2b2fe-bfbb-4729-8df1-b734bbb15cca",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "9f3fb9c9-0a8e-45c4-b1d2-37d158b432f1",
+      "log_id": "432211f6-46bd-4c27-b862-ad1f29c2a04e",
       "timestamp": "2024-01-15T10:05:20.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4755,8 +4755,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "b6666ea9-15f7-4366-bc17-bf0c88bdba65",
-      "span_id": "1fa93678f3ea4b6b",
+      "trace_id": "a001e09d-6aa9-4fde-b567-a7dd1a8a18e8",
+      "span_id": "78d9b30a58ac47f4",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4769,13 +4769,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "44b91339-b78c-4307-bf2a-c5d47bc478f5",
+        "alert_id": "e5228e3e-96a8-41e1-96f1-088ed466741e",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "95a2f300-68ae-45aa-aa34-ca7145a3b691",
+      "log_id": "dd37df19-938b-45c2-868a-049f15d2f3ff",
       "timestamp": "2024-01-15T10:05:21.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4785,8 +4785,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "5ac7a2e9-d3b7-4228-ba75-5fe8a8e797a1",
-      "span_id": "119ed85bf8f04438",
+      "trace_id": "f394df17-87b2-45ba-8a66-8d8251dbe184",
+      "span_id": "5fef21a025224e95",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4799,13 +4799,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "778225c2-35e9-4122-8eaf-6176078fb1bc",
+        "alert_id": "1513c2aa-fae3-4f29-b788-dbdf32aa82ac",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "14ede4b6-0e26-4879-b37f-0e7de34b3f9c",
+      "log_id": "c4fe1f2e-8d70-44fa-b70d-a806c021c5d6",
       "timestamp": "2024-01-15T10:05:22.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4815,8 +4815,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "7894407b-c941-4bec-966b-20a226a79e9f",
-      "span_id": "35e2ab7dbd9b41fb",
+      "trace_id": "ff20a00b-c043-456f-8ee6-4c513503230f",
+      "span_id": "990f66d9b795433b",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4829,13 +4829,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "fc6ae008-10ab-434f-bcc1-3d122e1c874e",
+        "alert_id": "bcfc490e-2c29-4225-840d-82e6fdd6f4e7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "1574fed2-e7d7-43fe-9a0d-20ba47407675",
+      "log_id": "03ca9395-8b64-4f9f-b9d1-e082350eb9d7",
       "timestamp": "2024-01-15T10:05:23.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4845,8 +4845,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f43ea3cb-69ad-447a-a007-7a707e7788e8",
-      "span_id": "06a1ce2661064d54",
+      "trace_id": "5dab5dc4-ebeb-4e1c-ac0e-ec0fd0d03bc8",
+      "span_id": "76d6bb0f7fdb49f5",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4859,13 +4859,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "9093d132-5c28-4a55-a4dd-abe4067df5ab",
+        "alert_id": "f8cffa94-f866-4468-8b8f-756e672a75a8",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "8c62d2e4-42fa-4a66-a8e6-a10690cd986f",
+      "log_id": "ab76108e-c813-4aa2-829c-2940d763aa8c",
       "timestamp": "2024-01-15T10:05:24.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4875,8 +4875,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a8eb01c3-787a-4b77-b015-6b9433d570d9",
-      "span_id": "f762aa2eaf9449ee",
+      "trace_id": "0eaf18df-eedb-4d6a-9b06-20aebddcf1dd",
+      "span_id": "c634df4a135f4085",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4889,13 +4889,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5aa13ac9-2359-4827-bac8-d3abfaa20dae",
+        "alert_id": "a344ce69-e822-4e4f-b155-df1ba7165afb",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "95764095-7bf3-4811-9564-b75a950d8c7b",
+      "log_id": "ea9d7361-e286-4ae2-85b0-b5b073261af2",
       "timestamp": "2024-01-15T10:05:25.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4905,8 +4905,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a95b0991-bc09-474c-ae1e-1f680d7d6679",
-      "span_id": "d26e3d4fbf0641eb",
+      "trace_id": "0a7bd3aa-1192-403e-95aa-4f2fb8107c28",
+      "span_id": "7ab1f985b3764987",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4919,13 +4919,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "3d88d88a-81e8-447c-8386-c6c827f30417",
+        "alert_id": "d1372fc8-078f-4ac0-9135-0731820c7fee",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "d80be03c-608e-4870-aeac-e3e36008d3b7",
+      "log_id": "e2d665f9-a0d7-47a6-b5de-89d2a65d5db5",
       "timestamp": "2024-01-15T10:05:26.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4935,8 +4935,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.110.219",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "37d739c8-367c-413c-9377-dabe82dff205",
-      "span_id": "f7258194896e4399",
+      "trace_id": "eb411cc8-4d26-409c-8b1b-657ab6fc42e6",
+      "span_id": "f4d7db5df17b408f",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4949,13 +4949,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "d50582df-6694-4f14-8273-663eed43df7a",
+        "alert_id": "a7327408-7cc4-41c6-a33e-27202076f364",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "554fa536-b80d-4f3a-9aa9-771671dd869d",
+      "log_id": "c94ee07f-b958-4538-b1e0-f017fc56e2ae",
       "timestamp": "2024-01-15T10:05:27.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4965,8 +4965,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "575d383e-5678-4839-9d4a-c21d85d9bf1e",
-      "span_id": "69d96e98a05245b4",
+      "trace_id": "1ecc8ce9-faf7-48a9-8e44-7d6b1fdf8dba",
+      "span_id": "0c586187ce214b98",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -4979,13 +4979,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "82c55638-5d18-4e14-af7b-f2fb4924c5c2",
+        "alert_id": "b448b041-940c-4559-8468-40af3ad37f46",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "addca070-a129-4ae2-9705-ac7eae2a7fc9",
+      "log_id": "dc6ec142-adaf-49ad-95ec-cbaa65e4e07e",
       "timestamp": "2024-01-15T10:05:28.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -4995,8 +4995,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6d2e9bed-0b75-4a41-891a-80d40d892155",
-      "span_id": "3a5273fc30d742c4",
+      "trace_id": "557bd1ba-e2a6-415b-a782-06027719bc63",
+      "span_id": "b87e59d8424c4299",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5009,13 +5009,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "1c0113ac-ab4e-45e4-8738-a1a0047248b7",
+        "alert_id": "eb985dba-14d5-4aa8-89e5-19fe49e56a51",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "994a8ebb-5aa0-4aa8-abf7-8718e678d2e6",
+      "log_id": "d6e3ea7c-c4f0-4e7d-a54b-fddaad16e23a",
       "timestamp": "2024-01-15T10:05:29.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5025,8 +5025,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "bfefdea5-0860-4757-b240-e340f7bb0042",
-      "span_id": "c87b300eed1e4e84",
+      "trace_id": "e41fc653-10e5-475d-b56f-dcd3f0e67576",
+      "span_id": "8910117f43e64e64",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5039,13 +5039,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "c115d2e2-ebd6-45c0-b1a3-ee86934f235a",
+        "alert_id": "82610e19-4983-4437-a95b-c86c4018a410",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "97d7a96b-549b-4fca-8a45-8b537d9bb260",
+      "log_id": "14faac5c-78d6-42e3-a981-4fd8ede310b6",
       "timestamp": "2024-01-15T10:05:30.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5055,8 +5055,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "ac53b0e0-6a89-49f1-8af2-18723df889a5",
-      "span_id": "72a1b7dc61d048ab",
+      "trace_id": "cd12f24a-b9f8-4d2a-99b4-fa1f0505ab50",
+      "span_id": "ecb8457e907044cb",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5069,13 +5069,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "8029f981-2e1c-4c73-84d8-06dd9f25c6cb",
+        "alert_id": "1cae8c0a-088b-4390-8e65-9b16f1a4f40b",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "823d221b-0d44-4625-b3bc-b06be37d1d05",
+      "log_id": "74bb5475-a970-474c-80ea-787e272ac67c",
       "timestamp": "2024-01-15T10:05:31.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5085,8 +5085,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.108.12",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "9105c28a-37b6-4469-9701-2c44d4fba3e1",
-      "span_id": "589b05249c444c99",
+      "trace_id": "d5c6475d-8086-49c6-b53c-9ccc28c32f9b",
+      "span_id": "9897fe9961a84502",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5099,13 +5099,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "865d195a-9c30-4be4-a845-45bcd484854d",
+        "alert_id": "ca4546b2-f655-4fe1-83dc-2ec50ed68263",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "5051123f-7cb0-4af2-a213-cdd8789731c4",
+      "log_id": "ed02bfb8-b334-4732-bbb7-45897013bdd1",
       "timestamp": "2024-01-15T10:05:32.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5115,8 +5115,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a56d6269-a029-4d13-b722-df5691e4805b",
-      "span_id": "04769b5f746b4660",
+      "trace_id": "0f0cdb69-2911-4336-8379-e616a7290dce",
+      "span_id": "223e9262302d4712",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5129,13 +5129,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "dc0117b7-d30d-434f-9888-d9bd0f0f56a8",
+        "alert_id": "fd6ff55c-5a65-4336-a2fc-49edb7404e37",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "b072536f-1d1e-45ea-a782-50e0bab1f87c",
+      "log_id": "a4ff9409-cc95-4898-8f79-d13c0383162f",
       "timestamp": "2024-01-15T10:05:33.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5145,8 +5145,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "c691ab29-bff5-4afd-a345-f0f13259aa8a",
-      "span_id": "1a39224b9d0a48ef",
+      "trace_id": "464c79f3-ad9d-44e5-9a93-bb3148d24ab9",
+      "span_id": "f51d72b23ca845d4",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5159,13 +5159,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ee9fbd4a-035e-4828-acc4-ae8bb67c06ae",
+        "alert_id": "473ada2f-6eb6-44b4-baf6-bc7a136c45e1",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "7b4a9401-01ab-422a-9920-f7c680ca337c",
+      "log_id": "7f2554a0-f42c-4d77-96cc-072e17b86766",
       "timestamp": "2024-01-15T10:05:34.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5175,8 +5175,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "870becfe-6bbd-4966-827c-4ec62caa093d",
-      "span_id": "ab3a02f7fda94fbb",
+      "trace_id": "64f9e4e5-bb0a-4d3b-b644-9629be39d9e9",
+      "span_id": "1d1c36f09b104a48",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5189,13 +5189,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "c7ef18ae-fddf-428a-b2e4-96984435e862",
+        "alert_id": "cce99504-f21e-4f53-a5d7-7161f6a389d3",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4376fc08-cd24-4e25-bf5f-1de027d9d933",
+      "log_id": "58de36c1-fbe5-4af2-b055-d6bc6d3b76f3",
       "timestamp": "2024-01-15T10:05:35.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5205,8 +5205,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "27573a75-e7ac-4c58-8f16-0724f3dc4f28",
-      "span_id": "4438dacaabcf4011",
+      "trace_id": "ee73d398-b9fe-4925-ab27-91cd255c8fc5",
+      "span_id": "393ce994a0e449fd",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5219,13 +5219,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ae54f889-249c-40d8-91ac-00c90f3ae755",
+        "alert_id": "079886d7-0819-4897-9881-86938462ba61",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "dd19a090-ff97-4117-9d76-93c72b0e47a2",
+      "log_id": "8b3925f3-6c98-4b94-8c06-dc5acab7ee00",
       "timestamp": "2024-01-15T10:05:36.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5235,8 +5235,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "367b4e1c-c1b2-4539-8208-a4f71c04ebc8",
-      "span_id": "1a3e217a89bd4b23",
+      "trace_id": "f62f6f91-43f5-4304-afea-9ceaf2415300",
+      "span_id": "11d8ca2dcc18461a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5249,13 +5249,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "43fcdf26-7f32-48fc-9753-3108aeb84704",
+        "alert_id": "553169ab-ead2-43bc-9551-7015d93ae058",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "23bc44f7-c988-4562-9c21-0e2bf76cc507",
+      "log_id": "b35d68a9-e1b0-4ac9-bd72-730ef03baeba",
       "timestamp": "2024-01-15T10:05:37.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5265,8 +5265,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3e37ec9f-a824-4948-9bca-4eb331533355",
-      "span_id": "5c93f6c7b51149cc",
+      "trace_id": "e010fcda-044e-4b54-84b3-0ab33a00cc53",
+      "span_id": "c1b52f68edbc4689",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5279,13 +5279,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "e885d1e2-39ab-44ca-acdf-c2f8269369ad",
+        "alert_id": "601945ce-a8ce-4dac-8d0d-de6c6b02fda1",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "29e35dc1-34f4-4b15-82a6-33beeec72909",
+      "log_id": "88927795-0220-4a11-896c-262c7a2a6f3e",
       "timestamp": "2024-01-15T10:05:38.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5295,8 +5295,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3f6610cd-abb9-4cfc-ade8-0905ca07217f",
-      "span_id": "717e8ff028df427e",
+      "trace_id": "ab1c8151-4796-4f5c-b667-5eb7f9885226",
+      "span_id": "d0dbc0fbcda845ed",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5309,13 +5309,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "0c3f45af-19a4-401c-b53f-f9b4731ac5e4",
+        "alert_id": "a6c0fa49-f421-42f7-9ca2-22f44b5871a1",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "58f1e287-b9c0-494e-8307-40f7e9c7e47f",
+      "log_id": "f0bf97f6-ab63-4589-a6bb-ad74ba9dc1ac",
       "timestamp": "2024-01-15T10:05:39.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5325,8 +5325,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "97ca1d03-43c1-4e57-8a75-e045135aadc5",
-      "span_id": "0a5323b66bcf4271",
+      "trace_id": "3bc0f34a-4f75-48ee-9b96-e63ccd2ab8fe",
+      "span_id": "dfcf62ca73db4be7",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5339,13 +5339,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "1ba9e6b6-7ecf-4572-914a-d9320124a310",
+        "alert_id": "e5d984c0-74ee-4e82-82f5-322f631dbe4f",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "c748bef9-7b74-463d-bcd4-3fe002405773",
+      "log_id": "e5839add-bc78-4d9f-9e77-593e8ef93230",
       "timestamp": "2024-01-15T10:05:40.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5355,8 +5355,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "233f091e-82d4-4f1f-9ceb-dfe41cc18918",
-      "span_id": "81d5d271247449cf",
+      "trace_id": "e17cab9b-0257-44ae-9cbe-4b9322b3a79e",
+      "span_id": "f2af78e407ca460e",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5369,13 +5369,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "e0aafc82-f71f-44f4-854b-4ed67d8d1684",
+        "alert_id": "98a8089a-2bdf-43c7-a4cf-b8b5a6758962",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f0987bd8-3b4f-47c1-a9da-4583ff2e436a",
+      "log_id": "af9294d5-f8f5-4fb0-8ee0-9fa1274af035",
       "timestamp": "2024-01-15T10:05:41.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5385,8 +5385,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.105.187",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "57a802b0-2a04-44db-b05b-ce511b2b65d5",
-      "span_id": "654f56f337934528",
+      "trace_id": "cdfdcdd9-b9a6-4dc6-957c-eb0369ab368c",
+      "span_id": "f230aa43f0944723",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5399,13 +5399,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "4257ef12-dff7-46c6-ad52-417173482b80",
+        "alert_id": "d53770ee-a982-4355-9243-e6f1e86ec2b9",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4308e0c9-e8b6-429a-add5-399bb3bf215c",
+      "log_id": "a553bfe0-0f05-47d0-aca6-f1bc7a872844",
       "timestamp": "2024-01-15T10:05:42.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5415,8 +5415,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "7ba58245-218d-46fa-ae5a-3a5ba853e3a9",
-      "span_id": "720dcf15448746cf",
+      "trace_id": "83d6fb68-973c-4ba5-8524-14cea1446bde",
+      "span_id": "1a62e02937bd49ec",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5429,13 +5429,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "523da7c7-8586-4eca-a545-043af802e00e",
+        "alert_id": "db382336-1cfc-4146-89fd-c8ea09ee5a3e",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "706ac708-9b21-4c2d-a64a-6a789cbce180",
+      "log_id": "5fb84d41-b5bd-4461-b7a0-ac86c2c58c54",
       "timestamp": "2024-01-15T10:05:43.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5445,8 +5445,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e6f57a4e-ae7b-437b-9272-3da7ef9a7162",
-      "span_id": "27fee535b2824c1f",
+      "trace_id": "510619d5-417d-4304-bb62-e59d75f5c18c",
+      "span_id": "ccf74982dff94120",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5459,13 +5459,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "17ec4e0a-3fbb-482c-bb0d-8aea328bcc3e",
+        "alert_id": "963afaa1-91b3-4bf5-a2c1-a1a2b4829beb",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "46bc4c19-d597-4995-adf2-13c5d15dc7c7",
+      "log_id": "f11648a3-c631-4226-8c29-aaa181105ab1",
       "timestamp": "2024-01-15T10:05:44.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5475,8 +5475,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "61cfff1b-dff7-4d1a-b2cb-4df49f61c5ef",
-      "span_id": "628d0fa0f3d84612",
+      "trace_id": "f22f5b36-ec83-4373-be12-2037d6b419fb",
+      "span_id": "8085fd505c67419c",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5489,13 +5489,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "12cabafb-9972-433a-99bf-0aa741064b04",
+        "alert_id": "15d45eb3-9616-49fa-b7c3-b6ad5ade2b79",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e29c7347-bf92-4504-a624-2d803c543ab8",
+      "log_id": "897f1d24-4999-429f-acc8-481aa9ff1e56",
       "timestamp": "2024-01-15T10:05:45.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5505,8 +5505,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "97a64bd4-6e12-439a-b58d-a4ffc058b058",
-      "span_id": "0978017b4ac24404",
+      "trace_id": "ddfe6934-48fc-42bb-8776-c512582a86a3",
+      "span_id": "95dc1ddfecf14363",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5519,13 +5519,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "f36b2324-f8d4-447f-8cd7-24669b67c43f",
+        "alert_id": "baecb8e7-4e6a-43c4-b883-d40809e08a13",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "3587851f-5138-44a0-950a-3e6c6602cb24",
+      "log_id": "fb3bbb8a-46df-41a1-8bcb-1b127c785fbb",
       "timestamp": "2024-01-15T10:05:46.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5535,8 +5535,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "277fced2-1f48-4e4d-84f9-3f0b9a2223fb",
-      "span_id": "c4562123ffa044c5",
+      "trace_id": "e8cc5ec1-d46d-49cf-a5e0-8402bc367255",
+      "span_id": "6bbe143e491942b4",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5549,13 +5549,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ad508b81-5cdc-4122-ba32-7576959756c5",
+        "alert_id": "54a3d5af-f3a2-47b2-9dbf-5c20ebe0d316",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e9b0bcff-1b2b-413f-b92c-c2d365920df0",
+      "log_id": "390665b1-597d-4fd3-b2e1-5d6acfcf2b76",
       "timestamp": "2024-01-15T10:05:47.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5565,8 +5565,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "6ded9ff0-dce1-404b-a56d-c9d0c836064a",
-      "span_id": "1905788eb56f4df5",
+      "trace_id": "0ae1df42-9a37-4763-bf30-621ae1525d35",
+      "span_id": "f3f678833399438d",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5579,13 +5579,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a82cf4da-90fa-44c1-862d-a4aac7539074",
+        "alert_id": "12a8836f-0056-4742-a39c-928f69de1538",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "2ed91f83-0f97-473e-a8a9-2570b36493fa",
+      "log_id": "962884ec-a236-4a2a-a28e-a6d6be1ae5e7",
       "timestamp": "2024-01-15T10:05:48.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5595,8 +5595,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "e21b432a-bcf0-46ae-b469-0def09d5a74c",
-      "span_id": "bbee164c0a894f01",
+      "trace_id": "cfacb55f-67c4-4b60-ba2f-99334e4bc8c1",
+      "span_id": "331b8437e9e34547",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5609,13 +5609,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a379f2b7-d98b-48ac-bf8d-0625b1d9848f",
+        "alert_id": "e4413f64-c61b-4de1-bda0-1ad99ff71cc7",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "fea3caf9-2291-48bb-bd0f-85f432e88dbc",
+      "log_id": "a25b5f3f-eeda-41ee-97dc-405464f08a73",
       "timestamp": "2024-01-15T10:05:49.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5625,8 +5625,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "0b36f034-3d51-4810-a1f7-93fcc4229420",
-      "span_id": "c532e88dc7a04854",
+      "trace_id": "8b8bb925-ee99-46e2-8a0b-cc5cd096efbc",
+      "span_id": "ff913d83db144ad3",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5639,13 +5639,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "263c8f0e-936a-4d19-9e36-c8e3375b491f",
+        "alert_id": "f111f178-58d0-4759-a811-fadc4378d4c8",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "3582e0ac-61fe-4b25-a15d-49d56b1c17ad",
+      "log_id": "47d58107-d10b-4f70-95e4-f5c22a6e91b4",
       "timestamp": "2024-01-15T10:05:50.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5655,8 +5655,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.115.250",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "777e1940-8fbc-473a-b589-14ccd714a2bb",
-      "span_id": "90c36148dbed41f9",
+      "trace_id": "74892dd2-f6e0-46bf-86a7-eb3016bd8ec7",
+      "span_id": "162af7388bd642ea",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5669,13 +5669,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "7e5724bb-1a46-4d08-983d-1b092a1b4c54",
+        "alert_id": "a2d82d94-18bd-4997-b01b-2af7e7dc2750",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4c12d5ac-f854-4f24-ba46-8bc54c4dcd76",
+      "log_id": "4891c75f-7492-4078-80bd-4a330ee0843b",
       "timestamp": "2024-01-15T10:05:51.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5685,8 +5685,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.198.75",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "f9b6fe12-c2aa-4d19-b88e-fd1d5241d7cc",
-      "span_id": "2c0ad0a325574266",
+      "trace_id": "5e67b765-4422-439d-b068-306f3b9f210c",
+      "span_id": "299b7736b8984180",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5699,13 +5699,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "4e09dfe2-ae28-424a-a38b-cb6f13523828",
+        "alert_id": "a26ff606-8a09-4ada-964b-4a5b5db98abf",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "7a6aff2f-df2c-4662-bc64-3e4725b709d5",
+      "log_id": "d109c752-58fe-4bb3-87ed-4d4f6be73b80",
       "timestamp": "2024-01-15T10:05:52.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5715,8 +5715,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "3b31de18-9655-4b4a-90d4-55185577c1f5",
-      "span_id": "3aff439d656c4b4d",
+      "trace_id": "52e73811-af5e-4dc6-acb0-c5a49758e115",
+      "span_id": "5dd1f27310cf4e4f",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5729,13 +5729,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "cc2da666-27f9-4a07-aaff-32ba5d360bbd",
+        "alert_id": "bfd23251-f257-4dbf-9a7c-a366e1f39e6a",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "8743c32e-12b9-4d5c-8cd1-337073cbc6a3",
+      "log_id": "97e290cd-633e-4eb5-aab8-11469d890d0b",
       "timestamp": "2024-01-15T10:05:53.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5745,8 +5745,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "40aa29e2-e3ae-4e84-9e8b-bf343076791a",
-      "span_id": "54b853b751ad4280",
+      "trace_id": "8ef3a52b-07f0-4651-8c48-928f816f0530",
+      "span_id": "6e45adf023824f82",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5759,13 +5759,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "b128066a-f9ee-4285-895c-7a63d64839ac",
+        "alert_id": "96239291-3ce9-46a4-9eca-8b3c109aab84",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f09ab885-4d6c-4617-896a-1a2ecf51f4cb",
+      "log_id": "c0f87497-3af0-4e95-8018-bac067fff1f6",
       "timestamp": "2024-01-15T10:05:54.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5775,8 +5775,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.124.181",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "512ebf05-f5de-408c-9079-f2680927569d",
-      "span_id": "74aed1d88b704368",
+      "trace_id": "36932f43-0e22-4eb8-93b6-b8bf33440c94",
+      "span_id": "22fd00ac8f214bc0",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5789,13 +5789,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ebc37708-6bba-46cb-886b-b3bd6c13b758",
+        "alert_id": "ba792b8a-e1af-4ff3-8da6-e7e287677e55",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "0f71eb8e-5515-4a67-8153-1a9eeba75fab",
+      "log_id": "f9328eb7-2f55-45ba-9cd1-837328a4a178",
       "timestamp": "2024-01-15T10:05:55.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5805,8 +5805,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.184.59",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "07d4731d-35b1-4735-9891-1c7401b5a4e7",
-      "span_id": "093e7fedb7994f49",
+      "trace_id": "68e882d1-bae6-4d67-8e9f-92200ae51fa9",
+      "span_id": "fd58b70d62b84dff",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5819,13 +5819,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "5b81d5f2-dd07-4cf7-901c-c1a2522dad00",
+        "alert_id": "18515a73-85d7-43c5-8535-9ac7ff84f23b",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "5a6fd303-ef84-4b8b-b35f-6f0f1840dae9",
+      "log_id": "1698613c-ecc0-45b0-827a-21e65116a174",
       "timestamp": "2024-01-15T10:05:56.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5835,8 +5835,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.158.138",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "a8f10074-2850-4ecc-a642-b5434fb99e7c",
-      "span_id": "6dc798b4baff4155",
+      "trace_id": "f312f6f9-771f-40b4-aab9-8c0ad10bf63e",
+      "span_id": "715492008cc5475a",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5849,13 +5849,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "60a4c5c1-6d51-485a-a678-b2d9c0d15330",
+        "alert_id": "5c18777e-20c9-4d0c-930d-8344a4dfcdfd",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "128d4b7f-e963-42ba-823e-19cd8c5d5996",
+      "log_id": "56ee8bd2-a8b1-4f85-b501-3d008fe8f450",
       "timestamp": "2024-01-15T10:05:57.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5865,8 +5865,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.148.21",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "4ccafd96-e516-406a-8f6e-95d94475bc5b",
-      "span_id": "967b2dd0df504d6d",
+      "trace_id": "e81f94dc-9f66-4461-9d37-cbac1dd76ef0",
+      "span_id": "72632a0141c34bc9",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5879,13 +5879,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "a34feebe-732d-427f-a7b9-80e53df7c997",
+        "alert_id": "227fa7db-c405-4a69-9439-e2e0eff6fc83",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "0344f463-b9c0-4036-b20b-4a3d1328ab6b",
+      "log_id": "2b5026ab-a63d-40d8-9f1e-0c178c19a902",
       "timestamp": "2024-01-15T10:05:58.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5895,8 +5895,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.170.76",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "594594b9-cfe9-4519-a3ea-464893f104ce",
-      "span_id": "b356d87ef6174b01",
+      "trace_id": "b3db61b0-1271-4864-82da-b0733d5fc36f",
+      "span_id": "94d4c043e9184f6d",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5909,13 +5909,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "42f677bf-5063-45aa-9b20-b0e002246dfc",
+        "alert_id": "40066c0d-547e-4495-a6df-f55cdc911e7d",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "49be9d08-b8a4-4c81-9419-afb755c64168",
+      "log_id": "30f9d1c2-71f2-4f64-9826-1f94fdf34a54",
       "timestamp": "2024-01-15T10:05:59.000Z",
       "service": "auth-service",
       "environment": "production",
@@ -5925,8 +5925,8 @@
       "message": "Login failed: invalid credentials for attempted user 'admin' from 185.220.180.159",
       "host": "10.0.1.100",
       "region": "us-east-1",
-      "trace_id": "fa5700e9-c2c5-405e-8ad6-e9a1afbbcabe",
-      "span_id": "beaecf4afe5b46bc",
+      "trace_id": "263042a2-5be9-43ae-9039-21ca930f32e3",
+      "span_id": "d69de451ca524e9f",
       "error_code": "ERR_AUTH_001",
       "schema_version": "1.0",
       "metadata": {
@@ -5939,7 +5939,7 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "dd1b63c7-31c0-4e2a-8ba8-a91cc5147cfa",
+        "alert_id": "de3944a4-f377-489a-a595-aee4ccbd9817",
         "rule_name": "authentication_failure_threshold",
         "suppressed": false
       }

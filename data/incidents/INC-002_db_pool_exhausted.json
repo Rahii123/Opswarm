@@ -25,7 +25,7 @@
   },
   "logs": [
     {
-      "log_id": "cc5d89c7-e895-473c-a169-4e3c7a869189",
+      "log_id": "c6cd40e6-e8fb-4aa0-8b70-4fa4b6dd6601",
       "timestamp": "2024-01-15T12:00:00.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -35,8 +35,8 @@
       "message": "Connection pool usage at 5% (5/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "cb492759-8417-4138-b0b4-f0281af57544",
-      "span_id": "6b6e1028c86c4ccc",
+      "trace_id": "ab241a1c-f22e-4008-9707-e86ee1eba7aa",
+      "span_id": "00b0149b020f4bec",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -54,7 +54,7 @@
       }
     },
     {
-      "log_id": "33405be5-6a57-4eda-889c-8439efbb48eb",
+      "log_id": "6a69cadb-9dec-4787-a06d-25bf02813e93",
       "timestamp": "2024-01-15T12:00:12.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -64,8 +64,8 @@
       "message": "Connection pool usage at 7% (7/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "157eb598-9035-4cc3-8c89-7afdc230b091",
-      "span_id": "d7e5aba2002a452f",
+      "trace_id": "8ec63a54-7fa6-411f-b3b9-6766dcfe60f6",
+      "span_id": "1a096c6d654a4ea2",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -83,7 +83,7 @@
       }
     },
     {
-      "log_id": "74659b28-d10a-4fe6-805e-e5551569e197",
+      "log_id": "6aa60bbc-6ba0-4be6-9c7f-fa50a8936f18",
       "timestamp": "2024-01-15T12:00:24.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -93,8 +93,8 @@
       "message": "Connection pool usage at 9% (9/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "0016fd00-428f-41ee-ab98-f1832c114832",
-      "span_id": "a3a1c5892fe24abb",
+      "trace_id": "a64024b6-0a4c-40c5-a823-62a97e6b9eb2",
+      "span_id": "1af5c959b9c84cdc",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -112,7 +112,7 @@
       }
     },
     {
-      "log_id": "ebee38aa-8c23-4aec-a5fb-d0716c6aa95c",
+      "log_id": "8b27a67d-3fd5-4593-a2a0-29b3265b5ffe",
       "timestamp": "2024-01-15T12:00:36.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -122,8 +122,8 @@
       "message": "Connection pool usage at 11% (11/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "740fd799-3297-4910-a778-4f9bf61d40c2",
-      "span_id": "679184a803084493",
+      "trace_id": "db3451a9-dd5b-40e1-b615-165b845db835",
+      "span_id": "6fc59fe6fa52481b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -141,7 +141,7 @@
       }
     },
     {
-      "log_id": "d14032b5-2d58-48ec-bdfd-30be99939d29",
+      "log_id": "9cc32737-c70a-415a-8407-723eefcf2e05",
       "timestamp": "2024-01-15T12:00:48.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -151,8 +151,8 @@
       "message": "Connection pool usage at 13% (13/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "feb3f6d2-3f4b-43c2-9c1c-4b6e94f8de90",
-      "span_id": "6dafafc3ff7049c2",
+      "trace_id": "9678058b-3361-494a-82f3-a25210cda915",
+      "span_id": "365d3f008d534b45",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -170,7 +170,7 @@
       }
     },
     {
-      "log_id": "fae3cd83-d178-4711-aaee-3968096389fb",
+      "log_id": "591f2278-7f8e-4c49-9cba-a879ae7da74a",
       "timestamp": "2024-01-15T12:01:00.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -180,8 +180,8 @@
       "message": "Connection pool usage at 15% (15/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "c2c61deb-fc8e-4d6d-8265-def78a19ac27",
-      "span_id": "16a75a3b308a4a5e",
+      "trace_id": "92fcf833-64c7-46cb-ad24-806bd2240ffb",
+      "span_id": "6918fa0914ef4f91",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -199,7 +199,7 @@
       }
     },
     {
-      "log_id": "d3a80ce1-bdfc-4783-9cd2-ab80a3295e09",
+      "log_id": "db5d304e-163c-40bb-bed7-574137707a91",
       "timestamp": "2024-01-15T12:01:12.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -209,8 +209,8 @@
       "message": "Connection pool usage at 17% (17/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "3e05f1a1-8899-47b4-83aa-9366a38183d5",
-      "span_id": "d3c935b520af4f20",
+      "trace_id": "1d1feb36-bee6-40ae-8278-cec12231d32a",
+      "span_id": "362bdf2ad7a24124",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -228,7 +228,7 @@
       }
     },
     {
-      "log_id": "5fce04a2-e34f-45e2-826e-55228c09603d",
+      "log_id": "6dce8fe3-dddd-4c5f-8e11-782a591ccb25",
       "timestamp": "2024-01-15T12:01:24.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -238,8 +238,8 @@
       "message": "Connection pool usage at 19% (19/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "8faba2ff-4caa-4e88-b024-152930bea9f7",
-      "span_id": "f1f692bdb01e46b4",
+      "trace_id": "e10a1540-e44e-4097-9f1c-549f5c026227",
+      "span_id": "1887b04c51364fa4",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -257,7 +257,7 @@
       }
     },
     {
-      "log_id": "12fd2039-88fb-4045-997d-73ad7da6c46b",
+      "log_id": "6abcaebd-e4d3-448a-933a-7f80bc5c6b28",
       "timestamp": "2024-01-15T12:01:36.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -267,8 +267,8 @@
       "message": "Connection pool usage at 21% (21/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "7e7804a4-a002-4a04-823c-f0c9471fa314",
-      "span_id": "fad04216031443ea",
+      "trace_id": "ef43e809-74f8-486c-8ff7-74125509aa54",
+      "span_id": "773f71d740cb4bdc",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -286,7 +286,7 @@
       }
     },
     {
-      "log_id": "a86791b6-3443-4dc3-901e-d27569721825",
+      "log_id": "50f818c4-2a74-4de7-9bf8-7de0e1375ec8",
       "timestamp": "2024-01-15T12:01:48.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -296,8 +296,8 @@
       "message": "Connection pool usage at 23% (23/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "7b14af0e-0c2c-46ad-b74c-ca9940cddff1",
-      "span_id": "4cdf7103925243a9",
+      "trace_id": "9e877f01-6357-4b0b-9fe2-fb26f694ea64",
+      "span_id": "91e6d05f2c064dbc",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -315,7 +315,7 @@
       }
     },
     {
-      "log_id": "2238f691-7757-4355-99f8-676b9e585b9c",
+      "log_id": "75640106-c63a-4aaa-b1e4-224151a7394f",
       "timestamp": "2024-01-15T12:02:00.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -325,8 +325,8 @@
       "message": "Connection pool usage at 25% (25/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "6c315f18-1661-40e1-a04b-4bbd4f7e4c97",
-      "span_id": "143672a4b5e446f5",
+      "trace_id": "4653ad4a-86e3-4784-88fb-6de222305f29",
+      "span_id": "a796371f880745f1",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -344,7 +344,7 @@
       }
     },
     {
-      "log_id": "0e919f70-63ca-4fcd-bf0d-7b8970f6a146",
+      "log_id": "62092b2e-f1a9-4558-9bf8-cf26e30506e6",
       "timestamp": "2024-01-15T12:02:12.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -354,8 +354,8 @@
       "message": "Connection pool usage at 27% (27/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "efef68f6-9b68-4593-a44c-e65929091775",
-      "span_id": "df4e893f94bb4e48",
+      "trace_id": "cfe7904d-a599-430f-8ec8-9644e10bc444",
+      "span_id": "a3e386ade1f8416e",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -373,7 +373,7 @@
       }
     },
     {
-      "log_id": "4293fb5b-af9b-44f6-a234-3b9e5f9f2594",
+      "log_id": "372a5230-69e9-4f89-b72f-8e631aa6b3b0",
       "timestamp": "2024-01-15T12:02:24.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -383,8 +383,8 @@
       "message": "Connection pool usage at 29% (29/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "7ad25c98-ed64-42ed-a837-03147beffce6",
-      "span_id": "aa6a5173f21349a6",
+      "trace_id": "bd67590e-6cf1-4827-aeb9-ea867ef80a71",
+      "span_id": "097672965f024627",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -402,7 +402,7 @@
       }
     },
     {
-      "log_id": "b2a4728e-c688-4189-8f38-e33b111646f1",
+      "log_id": "3d06ed23-92c6-4008-ac88-336d1c08af4e",
       "timestamp": "2024-01-15T12:02:36.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -412,8 +412,8 @@
       "message": "Connection pool usage at 31% (31/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "4176cab4-baab-4f26-866f-92c196a127e8",
-      "span_id": "7c9e29e04bec4736",
+      "trace_id": "3db16ce4-554f-49b8-88cd-c2a63a128ae3",
+      "span_id": "bba941e674a74713",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -431,7 +431,7 @@
       }
     },
     {
-      "log_id": "d1ff06d1-a9a6-42d5-9f92-edec7e316ab6",
+      "log_id": "fdb3ed38-ea5c-40f6-a572-6dcef8551cc9",
       "timestamp": "2024-01-15T12:02:48.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -441,8 +441,8 @@
       "message": "Connection pool usage at 33% (33/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "db97a4c6-267c-4d4f-920a-af82d2d9bca9",
-      "span_id": "9315a6465def4e3f",
+      "trace_id": "538257d4-2d82-4b1a-9c5d-14b61e1f1296",
+      "span_id": "05eb003b4f5344f5",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -460,7 +460,7 @@
       }
     },
     {
-      "log_id": "cead3444-e3ab-4347-b9bb-0ada35cc7d05",
+      "log_id": "ccbd9b75-623d-4eaf-8622-8104a7c48da2",
       "timestamp": "2024-01-15T12:03:00.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -470,8 +470,8 @@
       "message": "Connection pool usage at 35% (35/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "1991f012-14cd-4ac8-8010-8cc793075c6c",
-      "span_id": "296bc6a5a2794609",
+      "trace_id": "deada1b4-c0cc-4d1f-bca2-6fdf0651d2ff",
+      "span_id": "09bb66cc6f144e4b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -489,7 +489,7 @@
       }
     },
     {
-      "log_id": "3cfa6abd-4f17-42f3-a0a1-be7416d8def1",
+      "log_id": "e52bdc21-9848-4adb-8d58-88b2a702c486",
       "timestamp": "2024-01-15T12:03:12.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -499,8 +499,8 @@
       "message": "Connection pool usage at 37% (37/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "1aaf175b-e110-476e-b9aa-3200e46ad799",
-      "span_id": "382a241cb8ea4878",
+      "trace_id": "1cb74527-23f6-4eae-b82b-70b45f5c0d69",
+      "span_id": "c46af9b613d54ba2",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -518,7 +518,7 @@
       }
     },
     {
-      "log_id": "67b8166e-55d7-467c-9fe9-70b4c11a6590",
+      "log_id": "17ef5b43-9411-493e-a84e-58faec9334cc",
       "timestamp": "2024-01-15T12:03:24.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -528,8 +528,8 @@
       "message": "Connection pool usage at 39% (39/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "6f8aa4d0-8448-499b-82ab-f745da885e2e",
-      "span_id": "014c5fb6c8694dea",
+      "trace_id": "9f21ccda-1e2f-4cf3-8f6c-7954c213f7f2",
+      "span_id": "9a34d55488a5435d",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -547,7 +547,7 @@
       }
     },
     {
-      "log_id": "b5a706ae-f960-4c18-b231-f556428671bd",
+      "log_id": "0af579be-ddb6-438b-b894-c71e2dfba018",
       "timestamp": "2024-01-15T12:03:36.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -557,8 +557,8 @@
       "message": "Connection pool usage at 41% (41/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "d1efae1a-0d04-4194-bc93-09eb51bc1d89",
-      "span_id": "758c7f32b8eb45a1",
+      "trace_id": "7c0e2651-abee-4cc2-ab8b-36aaab2436f9",
+      "span_id": "5ab4decfcefa49e7",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -576,7 +576,7 @@
       }
     },
     {
-      "log_id": "bf4b357c-fdb5-438a-a376-1de731f9072d",
+      "log_id": "08dc5bac-13fb-445d-b35c-f439b1dbb339",
       "timestamp": "2024-01-15T12:03:48.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -586,8 +586,8 @@
       "message": "Connection pool usage at 43% (43/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "8725faa9-5f42-46c4-9046-d4693434a74d",
-      "span_id": "d51800f6055549bf",
+      "trace_id": "4e5cc1a0-6d36-4fbb-a22e-7d9422414bab",
+      "span_id": "5beac5d4dd4f49b3",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -605,7 +605,7 @@
       }
     },
     {
-      "log_id": "5b242b72-0539-4f63-a21d-f22abc3e02a6",
+      "log_id": "588f004e-adaf-4dbd-bf6f-78b1565183c7",
       "timestamp": "2024-01-15T12:04:00.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -615,8 +615,8 @@
       "message": "Connection pool usage at 45% (45/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "6d5e484a-14c6-414a-81c0-42f409d29066",
-      "span_id": "5634887d2b524ea8",
+      "trace_id": "50a7d2f1-6bac-4cbd-aaa5-d6d7f4c2f36b",
+      "span_id": "d7d433b0db254f65",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -634,7 +634,7 @@
       }
     },
     {
-      "log_id": "90688c50-d562-41df-af34-f4996147385d",
+      "log_id": "af23bc2d-1dc5-467d-9732-54d77f76d1e2",
       "timestamp": "2024-01-15T12:04:12.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -644,8 +644,8 @@
       "message": "Connection pool usage at 47% (47/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "31c9a1bd-6f2d-4871-a077-8390cc7aaf15",
-      "span_id": "b92562ac91844d29",
+      "trace_id": "b70e23a9-6f93-429c-9021-74d4a581c1ac",
+      "span_id": "07ee170c6de84f8c",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -663,7 +663,7 @@
       }
     },
     {
-      "log_id": "926fe3bb-646e-4ba6-97c8-7be0d88b852b",
+      "log_id": "a8a95ecb-78cc-4057-a7e1-cfe53aa3be75",
       "timestamp": "2024-01-15T12:04:24.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -673,8 +673,8 @@
       "message": "Connection pool usage at 49% (49/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "dbc87a59-94f7-4a1d-ab4e-634ebc7c36f0",
-      "span_id": "b838abdb11ec41a5",
+      "trace_id": "b05f2112-17d3-4403-9f1f-65e0dad9687b",
+      "span_id": "d3d05ee0ab5f4a3b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -692,7 +692,7 @@
       }
     },
     {
-      "log_id": "5b96e1c0-3cef-4393-b914-3b2b410e8da5",
+      "log_id": "bf0e8d91-ba23-4caf-9ec7-7262b67ae768",
       "timestamp": "2024-01-15T12:04:36.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -702,8 +702,8 @@
       "message": "Connection pool usage at 51% (51/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "8d5c0b11-8530-4c23-98c7-4bcf5b2693b0",
-      "span_id": "4077b1bffa2940bb",
+      "trace_id": "5a1279a7-bbf0-4521-8021-0ddefe753b56",
+      "span_id": "9aa55c75c000485d",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -721,7 +721,7 @@
       }
     },
     {
-      "log_id": "32e3b5a0-37dd-4a77-87a5-676828273b67",
+      "log_id": "a6c18f7e-a424-474f-b2b6-32a6ff5b499f",
       "timestamp": "2024-01-15T12:04:48.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -731,8 +731,8 @@
       "message": "Connection pool usage at 53% (53/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "d0644152-ddf9-48e7-9b0c-a9c92d6de09d",
-      "span_id": "32b70d4de9c04f02",
+      "trace_id": "bfebccf2-e257-4342-8416-1ee4b05bb31d",
+      "span_id": "ad3c05e576a644f8",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -750,7 +750,7 @@
       }
     },
     {
-      "log_id": "37b0e845-bf8b-44a6-9759-6ec6ddddadb0",
+      "log_id": "9822d367-c203-473b-a445-990e9f19709d",
       "timestamp": "2024-01-15T12:05:00.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -760,8 +760,8 @@
       "message": "Connection pool usage at 55% (55/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "0bdef4d7-d3c4-4849-b9e4-f538722e3669",
-      "span_id": "f621fd5a54fd40c1",
+      "trace_id": "e16ca6a8-b0dc-4587-879e-6ae106fffe29",
+      "span_id": "b18da7439ae94b37",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -779,7 +779,7 @@
       }
     },
     {
-      "log_id": "8e546135-d799-4361-a639-09bb5fa14473",
+      "log_id": "e6d2f04e-d398-419b-a1ed-795f9fefa8b0",
       "timestamp": "2024-01-15T12:05:12.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -789,8 +789,8 @@
       "message": "Connection pool usage at 57% (57/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "83328a77-e417-422e-94e3-bfe5ac48f860",
-      "span_id": "04a617d8812445f2",
+      "trace_id": "3d5f5e36-a29a-4edd-92f3-47fc4989b1cd",
+      "span_id": "80314da9a82b46c1",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -808,7 +808,7 @@
       }
     },
     {
-      "log_id": "6c553faf-1e17-4d7f-b60a-788b4484b63e",
+      "log_id": "80a0ff40-1c65-4a1b-9f13-28dc183e1e7b",
       "timestamp": "2024-01-15T12:05:24.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -818,8 +818,8 @@
       "message": "Connection pool usage at 59% (59/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "393e899f-5263-4b70-833c-37ffb0a02fa2",
-      "span_id": "b8ca9031f680472d",
+      "trace_id": "f770eb07-7fb0-474e-97fa-a59a2a9b006e",
+      "span_id": "98e9292e1c404f1e",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -837,7 +837,7 @@
       }
     },
     {
-      "log_id": "d6c2422c-d656-44e9-9a0e-429c600a34cf",
+      "log_id": "ddefa51b-c121-4caa-9fa5-223bea1b08f2",
       "timestamp": "2024-01-15T12:05:36.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -847,8 +847,8 @@
       "message": "Connection pool usage at 61% (61/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "3403e3a7-8ed8-4b3f-abad-3141c1a44c53",
-      "span_id": "def6412f1f764055",
+      "trace_id": "389ff4d9-4c24-40b0-bf6a-be722f66727f",
+      "span_id": "0530bc5b74ea447e",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -866,7 +866,7 @@
       }
     },
     {
-      "log_id": "95665aa1-1e8a-4f6b-a4f5-753d045a3933",
+      "log_id": "0ea22083-c0ca-47f9-b378-012348b8f255",
       "timestamp": "2024-01-15T12:05:48.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -876,8 +876,8 @@
       "message": "Connection pool usage at 63% (63/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "04b3a83d-8789-4d19-82c0-9f123cf84e7a",
-      "span_id": "1eeac8c231d24f2a",
+      "trace_id": "c7eb315e-2f2e-411d-a81f-a85c48d2aac6",
+      "span_id": "ca828f6ad4844785",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -895,7 +895,7 @@
       }
     },
     {
-      "log_id": "cca85b03-6d24-4c54-838b-a512b83493cc",
+      "log_id": "80f07282-32b6-4f63-8974-9777515ecdd7",
       "timestamp": "2024-01-15T12:06:00.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -905,8 +905,8 @@
       "message": "Connection pool usage at 65% (65/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "8e497176-94de-41d3-84e1-c87baa5c7cb1",
-      "span_id": "007abb4635794d6d",
+      "trace_id": "46d6e244-d441-414c-8a5b-1adb38c29539",
+      "span_id": "ac660a5efde4442b",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -924,7 +924,7 @@
       }
     },
     {
-      "log_id": "5ed6f32f-91e6-47ca-8ecc-6ed622ffa5b5",
+      "log_id": "a1d6bed1-ae77-4e87-b99e-993ca9d3b338",
       "timestamp": "2024-01-15T12:06:12.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -934,8 +934,8 @@
       "message": "Connection pool usage at 67% (67/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "e72402ac-9d91-43df-8fd8-d4ac91e04d74",
-      "span_id": "f1ac05e996c34bf1",
+      "trace_id": "31201301-223e-4758-820b-b07e35e92593",
+      "span_id": "076a393213b044a1",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -953,7 +953,7 @@
       }
     },
     {
-      "log_id": "6b3416b3-4007-4076-a389-ca387666ec38",
+      "log_id": "8ec8f952-8ec6-410f-8353-99fedcf7d987",
       "timestamp": "2024-01-15T12:06:24.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -963,8 +963,8 @@
       "message": "Connection pool usage at 69% (69/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "04c1106b-60b8-4a0d-bbe4-971d493256dc",
-      "span_id": "3731983c567a4dfc",
+      "trace_id": "8e8e1669-3a05-422e-9492-252880148ed2",
+      "span_id": "53bca4f33a8b4c36",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -982,7 +982,7 @@
       }
     },
     {
-      "log_id": "2f5e02f2-c9ae-4bfa-80fb-3ffe4b49671e",
+      "log_id": "c47fb0a5-feee-40be-817f-f189334e4e1b",
       "timestamp": "2024-01-15T12:06:36.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -992,8 +992,8 @@
       "message": "Connection pool usage at 71% (71/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "0ad36d43-120e-4ad3-a105-5af9da4a20c8",
-      "span_id": "cd574e7f105e4e6c",
+      "trace_id": "41f971a6-ae3d-43d6-9a0a-087fb592a5df",
+      "span_id": "8a1f453489104d58",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1011,7 +1011,7 @@
       }
     },
     {
-      "log_id": "4ef693e2-0f49-4af8-8402-9cbe00b2cabf",
+      "log_id": "68229a22-0a00-4e35-85fb-f99481e643f8",
       "timestamp": "2024-01-15T12:06:48.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -1021,8 +1021,8 @@
       "message": "Connection pool usage at 73% (73/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "a163138f-bde8-46d5-b02f-2d310523230b",
-      "span_id": "4afba4858fa64e88",
+      "trace_id": "834227c2-96b0-4f0a-a734-b3620f427ec5",
+      "span_id": "4bddab6aa6b646a7",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1040,7 +1040,7 @@
       }
     },
     {
-      "log_id": "63fda722-16ad-44e8-81a8-008d41826e5d",
+      "log_id": "acb9b9a1-02e5-42e9-9e8f-63e8b86da69b",
       "timestamp": "2024-01-15T12:07:00.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -1050,8 +1050,8 @@
       "message": "Connection pool usage at 75% (75/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "1a1636b4-4242-4640-83db-2b2605e843cf",
-      "span_id": "4af27d2d3bee4978",
+      "trace_id": "5f7cba78-c3aa-45d3-a5ef-0b0c8876a137",
+      "span_id": "d8195caacfa7486a",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1069,7 +1069,7 @@
       }
     },
     {
-      "log_id": "310aa738-9425-437f-b24b-89d46a9ccb0e",
+      "log_id": "55836272-5a79-4a75-bc4b-b0ccb944d0bc",
       "timestamp": "2024-01-15T12:07:12.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -1079,8 +1079,8 @@
       "message": "Connection pool usage at 77% (77/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "c1a615ad-7453-48ac-9972-7bf02f45930b",
-      "span_id": "f669ddb0318d487e",
+      "trace_id": "d0180789-3b56-474b-9f78-f206f0c39957",
+      "span_id": "f7f0b0871e864813",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1098,7 +1098,7 @@
       }
     },
     {
-      "log_id": "fbc28cc3-c68e-4fec-8e05-a9cd02c040c2",
+      "log_id": "b57958ca-cc77-44dd-852a-9f782afe929d",
       "timestamp": "2024-01-15T12:07:24.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -1108,8 +1108,8 @@
       "message": "Connection pool usage at 79% (79/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "811f5586-cd2d-4861-a309-3091296fdcbb",
-      "span_id": "082f63b772964695",
+      "trace_id": "99bc6dcf-8aa1-49a9-9304-d045d998ff75",
+      "span_id": "2ce77398b6384c11",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1127,7 +1127,7 @@
       }
     },
     {
-      "log_id": "4510526e-05df-4c07-b1a0-4a7acf5fb349",
+      "log_id": "f05b01ce-81bf-443a-ad5f-2e9ac91d408c",
       "timestamp": "2024-01-15T12:07:36.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -1137,8 +1137,8 @@
       "message": "Connection pool usage at 81% (81/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "5a7cd9d3-fcdd-4550-a531-7997fc283296",
-      "span_id": "ec67f41a6f5246fb",
+      "trace_id": "89da73cb-3999-4df1-8106-b306a4ca4a82",
+      "span_id": "b103d8dba2ad41a6",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1150,13 +1150,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "94cb51cc-732d-4ed0-b926-0913ba4abaec",
+        "alert_id": "62823298-8f5a-4203-8b7c-1e9e13d0f3b2",
         "rule_name": "db_connection_error_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "de0a6b54-6a27-4769-9392-fab88516fea1",
+      "log_id": "d78cb68d-488d-4baf-8903-c00fa07a6c0a",
       "timestamp": "2024-01-15T12:07:48.000Z",
       "service": "db-primary",
       "environment": "production",
@@ -1166,8 +1166,8 @@
       "message": "Connection pool usage at 83% (83/100 connections in use)",
       "host": "db-primary.internal",
       "region": "us-east-1",
-      "trace_id": "f23cb71f-1770-4377-9954-892e6b1b3762",
-      "span_id": "cbc8ed778c0b4f3f",
+      "trace_id": "93bac265-27e4-4956-82c9-17e0c0d33fda",
+      "span_id": "a70947aa72b24e6e",
       "error_code": null,
       "schema_version": "1.0",
       "metadata": {
@@ -1179,13 +1179,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "552c77fb-1c32-456e-8ff0-29738680aeb0",
+        "alert_id": "f4a73caa-59e1-4196-8cb2-f9257d93b81f",
         "rule_name": "db_connection_error_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "5917101f-9cdb-4268-9e6f-d826df9e9cb1",
+      "log_id": "c3ff5354-e3fb-44f1-856b-e7db73b3c5a6",
       "timestamp": "2024-01-15T12:06:40.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1195,8 +1195,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "64cf7308-3c91-43e9-a176-02607a52a0f4",
-      "span_id": "f535c8ae6f074a06",
+      "trace_id": "9e61100e-7e4f-4edb-b873-03941b463d0d",
+      "span_id": "24b7c86770124503",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1206,13 +1206,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "d9ff3843-da85-4e69-8708-2892d7d88cb7",
+        "alert_id": "00bd4da9-93fe-4d88-a4c9-5659337a8a90",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "7a73784f-0f6a-44fc-a353-3db02b849712",
+      "log_id": "34021805-b616-4db0-ac3b-c35d4cf8a4cc",
       "timestamp": "2024-01-15T12:06:45.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1222,8 +1222,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "cf333d3b-a2aa-452d-b3ba-6c96044924be",
-      "span_id": "6ccb9934ed3044af",
+      "trace_id": "0e685258-de17-45b8-a328-c5072bacc45d",
+      "span_id": "6a315a92742d4d10",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1233,13 +1233,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "d926e984-39eb-4f5f-abd0-a7e8534057a7",
+        "alert_id": "39d5b4d9-5f0b-4f74-a750-5f4d4c4f8d05",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "71639365-d0eb-424d-8b10-486d83f1d841",
+      "log_id": "97a4badb-5ccd-435c-913f-a9daffc73286",
       "timestamp": "2024-01-15T12:06:50.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1249,8 +1249,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "6427fb4a-3ae9-4528-92be-64c146cbbdd1",
-      "span_id": "f2b7ef73c22a4775",
+      "trace_id": "a54aac07-e961-448f-9c43-a03e65fcc0c0",
+      "span_id": "8df384f1fe3e480e",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1260,13 +1260,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "2c7cc53f-9bed-4e43-ac12-9bda2b932089",
+        "alert_id": "aff25b6c-66bf-49e1-8871-b801dc124c1c",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "d4147b5b-7cd2-4289-88d5-51f0da1e7322",
+      "log_id": "c72e3c78-3cdd-4080-8d8b-723c5b7e5b5c",
       "timestamp": "2024-01-15T12:06:55.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1276,8 +1276,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "104e3e20-b8cb-400a-90e9-ef2bba859a23",
-      "span_id": "b7dd55eda5d742fd",
+      "trace_id": "59c5eccd-ff33-4e49-b7a3-a249c9381df6",
+      "span_id": "59b635bba8bc4005",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1287,13 +1287,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "c6104fa5-3cac-4493-a8ab-05e94064e802",
+        "alert_id": "69ae7e1f-ba56-40f4-9b22-af3b7769a1b0",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "f97d7cb4-8a4e-44cb-9e83-46387ca22728",
+      "log_id": "34cc679a-f8e2-4a11-bb0e-baa95572f83a",
       "timestamp": "2024-01-15T12:07:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1303,8 +1303,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "daac4e41-6286-41e6-a6ff-81fad9edb398",
-      "span_id": "4d7f9e1f71834a94",
+      "trace_id": "d54c3d4e-27d6-4a5b-8028-4be8c87c7ed1",
+      "span_id": "ab7d0ecc5614400a",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1314,13 +1314,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "15fbb0a9-2a9a-41f0-bf17-d0747fc0bd76",
+        "alert_id": "2f4fdd9f-a0ce-4fad-9668-84e39b836151",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "38331ec9-b1fa-41db-b81c-2a1777f03866",
+      "log_id": "66fef97a-9f3e-45ed-a879-514d468cebd7",
       "timestamp": "2024-01-15T12:07:05.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1330,8 +1330,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "029c56f4-a299-406c-ba56-f9e200dad9dc",
-      "span_id": "f0dfd8475b8c40e0",
+      "trace_id": "b3d54298-605b-4315-bd90-a7ae97ebf0a0",
+      "span_id": "86086f017f014d5c",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1341,13 +1341,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "dd0e9ded-d68a-4a81-ba98-3f2a720ffce0",
+        "alert_id": "18cfd7c1-bfbd-4e66-bb96-a3d739154427",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4ba79160-2e2f-4e51-bf9b-2f78e46c346e",
+      "log_id": "3e745da9-779a-471a-ae84-f224fb7b201f",
       "timestamp": "2024-01-15T12:07:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1357,8 +1357,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "66fb5d56-d704-46f6-bd8e-2645ec31a2cd",
-      "span_id": "262d1c2084414db9",
+      "trace_id": "822a4145-d849-4aa3-8045-39702a7171a5",
+      "span_id": "55cfbdaba4474c33",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1368,13 +1368,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "0386a985-d3b6-470a-8169-fed65762980b",
+        "alert_id": "637bdfb8-ce26-479d-a28a-c1c721f4f395",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "81e2fbd5-0626-4040-bdd9-53cc8da51ddb",
+      "log_id": "3420ffb7-823c-46bb-bffc-99ed421a7cb7",
       "timestamp": "2024-01-15T12:07:15.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1384,8 +1384,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "85fef6f6-27ce-415a-ba7a-c72652953e5c",
-      "span_id": "cd1b924420a04dc4",
+      "trace_id": "4c8b32a5-392b-44d1-8818-61113c4193dc",
+      "span_id": "6d78ac6363d947a5",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1395,13 +1395,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "33735850-28f7-486c-8c7c-c21cb747aea8",
+        "alert_id": "e807965d-c7c2-4d30-99fd-f5c7a1725fcf",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "2bb2447d-a4ec-4bf3-8eaf-f17504a80ef5",
+      "log_id": "12eb7dcf-c335-414d-b15b-5baa9c2e409b",
       "timestamp": "2024-01-15T12:07:20.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1411,8 +1411,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "61831b47-7475-4c94-9cf6-cc2744030117",
-      "span_id": "300cc63128ca45c8",
+      "trace_id": "e1faf456-f912-4a6f-93f0-c212a699daf8",
+      "span_id": "3b7a097fc56e45ee",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1422,13 +1422,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "07099f7a-5843-400e-b640-77d256e88b3b",
+        "alert_id": "e9dee55d-cb0e-4bb2-ba70-871d2cf1a0ae",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "e3bd6ec0-4de5-4d4f-a9cc-c36223cb4969",
+      "log_id": "a7aa4689-96b2-429b-940e-b5be6ba5992e",
       "timestamp": "2024-01-15T12:07:25.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1438,8 +1438,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "33abeaa3-2b3e-4e35-beab-5f6ae263690c",
-      "span_id": "26d66fef53e84044",
+      "trace_id": "61a8a862-5797-47cc-8c81-fcfc8414318c",
+      "span_id": "62c1d54600644579",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1449,13 +1449,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "1f427e72-d32b-4530-b307-55fd5440c4e9",
+        "alert_id": "d33ec128-29d6-4eb9-86e8-4385968fe67d",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "3aeeed18-cb78-4ed2-ac38-ce7fa9e22007",
+      "log_id": "2b251a74-048c-4b4f-863e-00bce3c5e8b6",
       "timestamp": "2024-01-15T12:07:30.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1465,8 +1465,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "430e5a83-310b-40ea-bd3e-21fed54422e5",
-      "span_id": "fdac748590dd4520",
+      "trace_id": "7ad74e25-28f0-4c97-bc04-635bf1fd5674",
+      "span_id": "f5c51f103d99459b",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1476,13 +1476,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "514b68fe-aff4-4eb0-8498-ec2d6c19f72b",
+        "alert_id": "cc0a8031-186e-4aed-a3ca-3144590f4347",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "4fed3e81-1eba-4fbb-ba23-f77256b657b6",
+      "log_id": "b67a13c0-0c17-4f77-9f46-eecdd6a685ca",
       "timestamp": "2024-01-15T12:07:35.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1492,8 +1492,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "e72a111b-f394-42b3-80bc-d185bd87e376",
-      "span_id": "c33283737f7d415f",
+      "trace_id": "9738bb97-e930-47a6-9a27-790bfcb7b282",
+      "span_id": "711085cbe91e4356",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1503,13 +1503,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "b4dec4e3-f1a9-43c7-a074-4f5093e5d172",
+        "alert_id": "65b2f7cf-4519-4233-8460-f51ef2d419d7",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "065cc96b-132c-4812-b4b8-ea685470edeb",
+      "log_id": "e134e921-5d02-4866-b104-c0b6a9e27b2b",
       "timestamp": "2024-01-15T12:07:40.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1519,8 +1519,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "8b8c401c-ce49-4d8b-910b-cb0b610ef9ba",
-      "span_id": "980275e467874d16",
+      "trace_id": "c8d18593-c975-4a7a-a498-775607589d42",
+      "span_id": "ed52cb9955f64af4",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1530,13 +1530,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "ca56c8bf-cf0d-4ef1-9588-9abedc9eb20f",
+        "alert_id": "0cc77312-d23a-46f7-b557-484d514f9472",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "1e023849-82bf-4071-97c9-601dd38dd85f",
+      "log_id": "0d725da5-87e4-408a-a71c-aa04ab354a61",
       "timestamp": "2024-01-15T12:07:45.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1546,8 +1546,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "ded21556-b239-4b1f-9325-fd238850bde8",
-      "span_id": "4d2f9df629164119",
+      "trace_id": "6c956733-4273-41c3-a79a-4467bff848ac",
+      "span_id": "a3773403c3864b73",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1557,13 +1557,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "48308350-a317-430f-b4f1-a8e1ee4cb433",
+        "alert_id": "5b81f6fa-b005-4a1e-b170-ba322558cdb8",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "25613a91-0c5b-4acd-af1a-888aeb831401",
+      "log_id": "7aca9ef5-34c0-4a03-8c6c-84ef144780e1",
       "timestamp": "2024-01-15T12:07:50.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1573,8 +1573,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "b40de401-dbdf-4ab6-9ab0-6b1c44a9094c",
-      "span_id": "9485d7d1b7824b42",
+      "trace_id": "7d9fd9c1-5c1e-428d-921d-dd02fa213dcb",
+      "span_id": "1f9913f96e9745ae",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1584,13 +1584,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "0056b918-31e3-4ebf-ad8a-8f79e18ca43e",
+        "alert_id": "f55a1838-d48c-4150-ba0b-435061abaa75",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "3e591cd1-69a9-4f7b-8b5a-db032e7fb6f1",
+      "log_id": "978883be-939c-4fc6-8e7b-53fa34b302a0",
       "timestamp": "2024-01-15T12:07:55.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1600,8 +1600,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "8fd33048-0267-4035-8627-7c3e9135ba81",
-      "span_id": "b244cabc0f4d44a1",
+      "trace_id": "4cc06f8c-c67e-4ed7-90a7-f1507f58491d",
+      "span_id": "5171f6ed5b184cec",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1611,13 +1611,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "480b1fe0-a8ba-4bc1-8c13-56dc6a4b4a83",
+        "alert_id": "abcaabe9-dd91-4c22-97f4-028dac5590a5",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "7ebd7482-00a2-4a5d-9908-6e0bae6f1668",
+      "log_id": "05ee6677-827d-4f0f-b9db-0133203849e2",
       "timestamp": "2024-01-15T12:08:00.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1627,8 +1627,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "5e3afa3b-374f-4820-a527-c257c409d4ac",
-      "span_id": "a0e13828462b4b8c",
+      "trace_id": "5621517f-80f6-41b8-98ce-6000d9d8b661",
+      "span_id": "f80584cbb90743d2",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1638,13 +1638,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "203c9a29-c141-49bf-90fa-331d8355af48",
+        "alert_id": "aff9e94f-690e-480c-84ee-74bb50c0975e",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "2455efbf-ab73-47c5-aef0-d3951a0bf98a",
+      "log_id": "db0b2252-4f80-4027-a838-c94009b722eb",
       "timestamp": "2024-01-15T12:08:05.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1654,8 +1654,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "9e317018-858d-413e-9e99-2bd2e1f3299b",
-      "span_id": "40c6908ab179448e",
+      "trace_id": "13172f61-0051-4ee0-8112-5e59caa671a2",
+      "span_id": "374cf165cb3c4436",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1665,13 +1665,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "9da2558a-3b25-4d19-a48a-442c2177ac95",
+        "alert_id": "9eb34cbd-31b8-4dba-8a32-335c35c3c4ec",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "3575fcd2-effc-41c1-a8ac-1bf46da874c8",
+      "log_id": "267a9d82-3b9b-4574-8fae-951208023628",
       "timestamp": "2024-01-15T12:08:10.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1681,8 +1681,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "4fbda55e-470f-4943-b15d-5922ab62ea77",
-      "span_id": "3078020ed6104156",
+      "trace_id": "5672735b-216a-4f35-93e3-02a5836b183e",
+      "span_id": "123c99c930a748b4",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1692,13 +1692,13 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "80ee06c0-a0a5-4d22-99e9-2f25dbc71f3e",
+        "alert_id": "f3ca6c02-9d45-44e7-b5bd-bf6454962730",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
     },
     {
-      "log_id": "0f3e0a78-e328-457d-b532-75eb2089607e",
+      "log_id": "e1a8dbc2-81fc-470d-8c92-334b2f798a48",
       "timestamp": "2024-01-15T12:08:15.000Z",
       "service": "api-gateway",
       "environment": "production",
@@ -1708,8 +1708,8 @@
       "message": "503 Service Unavailable: upstream database connection timeout",
       "host": "api-gw.internal",
       "region": "us-east-1",
-      "trace_id": "216858df-0db4-407c-9420-64610ba594f1",
-      "span_id": "4b5ce5aa2c3646fd",
+      "trace_id": "06a8b8c0-6945-49d8-9810-361434b6f958",
+      "span_id": "702769ee0f324f55",
       "error_code": "ERR_API_001",
       "schema_version": "1.0",
       "metadata": {
@@ -1719,7 +1719,7 @@
       },
       "alert": {
         "is_alert": true,
-        "alert_id": "0fa43155-e0a1-4eb3-b7f5-4f71f777b8fb",
+        "alert_id": "38598476-130a-4414-9f59-fba27f1eb114",
         "rule_name": "api_5xx_spike_threshold",
         "suppressed": false
       }
