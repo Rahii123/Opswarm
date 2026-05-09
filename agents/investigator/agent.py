@@ -80,5 +80,5 @@ class InvestigatorAgent:
             impact_scope=f"Limited to {service} functionality and downstream consumers.",
             suggested_fix=suggested_fix,
             confidence=confidence,
-            analyzed_at=datetime.utcnow().isoformat()
+            timestamp=datetime.now().isoformat()
         )

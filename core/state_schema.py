@@ -101,12 +101,31 @@ class RemediationStep:
 
 
 @dataclass
+class AnomalyDetails:
+    """Details of a specific anomaly detected by the Sentry agent."""
+    type: str = ""
+    description: str = ""
+    confidence: float = 0.0
+    metadata: dict[str, Any] = field(default_factory=dict)
+
+    def dict(self) -> dict[str, Any]:
+        return {
+            "type": self.type,
+            "description": self.description,
+            "confidence": self.confidence,
+            "metadata": self.metadata,
+        }
+
+
+@dataclass
 class RCAReport:
     """Root Cause Analysis report produced by the Investigator agent."""
     report_id: str = field(default_factory=lambda: str(uuid.uuid4()))
     incident_id: str = ""
     timestamp: str = field(default_factory=lambda: datetime.utcnow().isoformat() + "Z")
     root_cause: str = ""
+    impact_scope: str = ""
+    suggested_fix: str = ""
     contributing_factors: list[str] = field(default_factory=list)
     confidence: float = 0.0
     evidence: list[dict[str, Any]] = field(default_factory=list)
@@ -114,6 +133,18 @@ class RCAReport:
     similar_incidents: list[str] = field(default_factory=list)
     generated_by: str = AgentName.INVESTIGATOR.value
     model_used: str = ""
+
+    def dict(self) -> dict[str, Any]:
+        return {
+            "report_id": self.report_id,
+            "incident_id": self.incident_id,
+            "timestamp": self.timestamp,
+            "root_cause": self.root_cause,
+            "impact_scope": self.impact_scope,
+            "suggested_fix": self.suggested_fix,
+            "confidence": self.confidence,
+            "metadata": {"generated_by": self.generated_by, "model": self.model_used}
+        }
 
 
 # ─── MAIN GRAPH STATE ─────────────────────────────────────────────────────────

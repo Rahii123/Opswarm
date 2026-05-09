@@ -30,8 +30,8 @@ class CommanderAgent:
         # 2. Finalize State
         state["postmortem"] = postmortem
         state["status"] = "resolved" if state.get("severity") != "critical" else "pending_review"
-        state["last_updated"] = datetime.utcnow().isoformat()
-        state["completed_at"] = datetime.utcnow().isoformat()
+        state["last_updated"] = datetime.now().isoformat()
+        state["completed_at"] = datetime.now().isoformat()
         
         logger.info(
             "commander_finalization_complete", 
@@ -54,7 +54,7 @@ class CommanderAgent:
 # Incident Postmortem: {incident_id}
 **Service:** {service}
 **Severity:** {severity.upper()}
-**Timestamp:** {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}
+**Timestamp:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}
 
 ## Executive Summary
 The OpsSwarm pipeline has completed its autonomous analysis of this incident. 
@@ -68,7 +68,7 @@ The system detected {len(state.get('anomalies', []))} anomalies.
 {rca.get('impact_scope', 'N/A')}
 
 ## Remediation Plan
-**Suggested Action:** {rca.get('suggest_fix', 'N/A')}
+**Suggested Action:** {rca.get('suggested_fix', 'N/A')}
 **Status:** {state.get('status', 'complete')}
 
 ---
