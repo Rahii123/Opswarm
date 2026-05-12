@@ -24,17 +24,33 @@ class InvestigatorAgent:
 
     name = "investigator"
 
-    # Prompt template sent to the LLM
-    SYSTEM_PROMPT = """You are an expert Site Reliability Engineer (SRE) performing 
-Root Cause Analysis (RCA) for infrastructure incidents. 
-You will be given log lines and anomaly data. Your job is to analyze them 
-and return a JSON object with exactly these fields:
-- root_cause: A concise one-sentence explanation of WHY the failure happened.
-- impact_scope: Which services or users are affected.
-- suggested_fix: The exact remediation action to take.
-- confidence: A float between 0.0 and 1.0 representing your certainty.
+    # ── Anti-Hallucination Prompt (Grounded) ────────────────────────────────
+    # Key rules enforce evidence-based reasoning and prevent the LLM from
+    # inventing problems that don't exist in the actual log data.
+    SYSTEM_PROMPT = """You are an expert Site Reliability Engineer (SRE) performing
+Root Cause Analysis (RCA) for infrastructure incidents.
 
-Respond ONLY with a valid JSON object. No markdown, no explanation."""
+You will be given:
+  1. A list of detected anomalies (may be empty)
+  2. Raw log lines from the service
+
+Your STRICT rules:
+  - ONLY use evidence that is EXPLICITLY present in the provided logs.
+  - If the anomaly list is EMPTY and the logs show no errors, warnings, or failures,
+    you MUST set root_cause to "No incident detected" and confidence to 0.1.
+  - NEVER infer a failure from startup or informational messages (INFO logs).
+  - Normal operations (CREATE TABLE, INFO, starting services) are NOT incidents.
+  - Do NOT assume a problem if one is not clearly evidenced by ERROR, CRITICAL,
+    FATAL, WARN with failure context, or explicit exception messages.
+  - The word "Initializing" means starting fresh — it is NOT a failure.
+
+Return a JSON object with exactly these fields:
+  - root_cause: One sentence citing specific evidence from the logs.
+  - impact_scope: Which services or users are affected (or "None" if no incident).
+  - suggested_fix: Exact remediation action, or "No action required" if healthy.
+  - confidence: Float 0.0-1.0. Use low values (< 0.3) when logs show no errors.
+
+Respond ONLY with a valid JSON object. No markdown, no extra text."""
 
     async def run(self, state: Dict[str, Any]) -> Dict[str, Any]:
         """Main execution point for the Investigator Agent."""
@@ -54,6 +70,22 @@ Respond ONLY with a valid JSON object. No markdown, no explanation."""
             logger.info("investigator_mode", mode="Heuristic (no GROQ_API_KEY set)")
             rca_report = self._heuristic_reasoning(service, anomalies, logs)
 
+        # ── Confidence Thresholding (Anti-Hallucination Safety Net) ───────────
+        # Rule: If Sentry found ZERO anomalies AND the LLM still claims high
+        # confidence about a problem, the LLM is hallucinating.
+        # Override its conclusion to protect against false positives.
+        if len(anomalies) == 0 and rca_report.confidence >= 0.75:
+            logger.warning(
+                "confidence_threshold_override",
+                reason="Sentry found 0 anomalies but LLM claimed high confidence — likely hallucination",
+                original_confidence=rca_report.confidence,
+                original_root_cause=rca_report.root_cause,
+            )
+            rca_report.root_cause    = "No incident detected — service logs show normal operation."
+            rca_report.suggested_fix = "No action required."
+            rca_report.impact_scope  = "None"
+            rca_report.confidence    = 0.1
+
         state["rca_report"]  = rca_report.dict()
         state["status"]      = "investigated"
         state["last_updated"] = datetime.now().isoformat()
@@ -61,7 +93,8 @@ Respond ONLY with a valid JSON object. No markdown, no explanation."""
         logger.info(
             "investigator_analysis_complete",
             incident_id=state.get("incident_id"),
-            confidence=rca_report.confidence
+            confidence=rca_report.confidence,
+            anomalies_count=len(anomalies)
         )
         return state
 
@@ -78,16 +111,26 @@ Respond ONLY with a valid JSON object. No markdown, no explanation."""
             log_sample = "\n".join(logs[-40:])
             anomaly_summary = json.dumps(anomalies, indent=2)
 
-            user_message = f"""
-Service: {service}
+            # Tell the LLM explicitly when there are no anomalies
+            anomaly_context = (
+                f"Detected Anomalies (from Sentry Agent):\n{anomaly_summary}"
+                if anomalies
+                else "Detected Anomalies: NONE — The Sentry Agent found zero anomalies in these logs."
+            )
 
-Detected Anomalies:
-{anomaly_summary}
+            user_message = f"""Service Under Analysis: {service}
 
-Log Sample (last 40 lines):
+{anomaly_context}
+
+Raw Log Sample (last 40 lines):
 {log_sample}
 
-Analyze the above and return your RCA as a JSON object.
+IMPORTANT REMINDER:
+- If there are no anomalies and logs show only INFO messages, return confidence <= 0.2
+- Only cite evidence that is EXPLICITLY in the logs above
+- "Initializing" and "Starting" are healthy startup messages, NOT failures
+
+Return your RCA as a JSON object.
 """
             client = AsyncGroq(api_key=api_key)
 
@@ -100,11 +143,18 @@ Analyze the above and return your RCA as a JSON object.
                     {"role": "system", "content": self.SYSTEM_PROMPT},
                     {"role": "user",   "content": user_message},
                 ],
-                temperature=0.1,   # Low temperature = more deterministic, factual answers
+                temperature=0.0,   # Zero temperature = maximum determinism, no creative guessing
                 max_tokens=512,
             )
 
             raw_text = response.choices[0].message.content.strip()
+            # Strip markdown code blocks if LLM ignores instructions
+            # e.g. ```json { ... } ``` → { ... }
+            if raw_text.startswith("```"):
+                raw_text = raw_text.split("```")[1]
+                if raw_text.startswith("json"):
+                    raw_text = raw_text[4:]
+                raw_text = raw_text.strip()
             data = json.loads(raw_text)
 
             return RCAReport(
