@@ -3,9 +3,13 @@ import uuid
 import sys
 import os
 from datetime import datetime
+from dotenv import load_dotenv
 
 # Add the project root to the Python path so it can find the 'agents' folder
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Load environment variables from .env BEFORE importing agents
+load_dotenv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env"))
 
 from agents.sentry.agent import SentryAgent
 from agents.correlator.agent import CorrelatorAgent
